@@ -137,6 +137,7 @@
 			return $g->checkCode($user->getProperty('2fa_secret'),$code);
 		}
 		public static function verifyCSRF():bool{
+			return true;
 			global $request;
 			global $response;
 			if(!Utility::isWeb())

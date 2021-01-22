@@ -24,11 +24,15 @@ class Model{
 		}
 		return null;
 	}
-	function getInstance(string $id=null):Model{
-		if($id)
-			return new Model($this->getUID(),$id);
-		else
+	function getInstance(string $id=null):?Model{
+		if($id){
+			$model = new Model($this->getUID(),$id);
+			if($model->getCache())
+				return $model;
+		}else
 			return $this;
+			
+		return null;
 	}
 	function getPref(string $key,string $default=null,bool $debug=false):?string{
 		global $Pref;
@@ -368,15 +372,13 @@ class Model{
 	function deleteAll(){
 		$this->delete('1','1');
 	}
-	function delete($haystack,$needle){
-		global $dbController;
-		$query = "DELETE FROM ".$this->getTable()." WHERE $haystack='$needle'";
-		return $dbController->getResultSet($query);
+	function delete($haystack,$needle,$debug=false,$soft=false){
+		$query = " WHERE $haystack='$needle'";
+		return $this->deleteGeneric($query,$debug,$soft);
 	}
-	function deleteGeneric($filter,$debug=false){
+	function deleteGeneric($filter,$debug=false,$soft=false){
 		global $dbController;
-		$query = "DELETE FROM ".$this->getTable()." $filter";
-		return $dbController->getResultSet($query);
+		return $dbController->deleteGeneric($this->getTable(),$filter,$debug,$soft);
 	}
 	function hasProperty($field){
 		return !empty($this->getProperty("$field"));

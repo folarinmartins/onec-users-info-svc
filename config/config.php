@@ -322,73 +322,7 @@ $config = array(
 					'password'=>[
 						'options'=>[OPTION_HASH],
 						'type'=>TYPE_STRING
-					],
-					'avatar'=>[
-						'options'=>[],
-						'type'=>TYPE_ID,
-						'fk'=>[MODEL_FILE],
-					],
-					'id_file'=>[
-						'options'=>[],
-						'type'=>TYPE_ID,
-						'fk'=>[MODEL_FILE],
-					],
-					'id_type'=>[
-						'options'=>[],
-						'type'=>TYPE_STRING,
-					],
-					'reset_code'=>[
-						'options'=>[],
-						'type'=>TYPE_STRING
-					],
-					'email_verification_code'=>[
-						'options'=>[],
-						'type'=>TYPE_STRING
-					],
-					'email_verified_at'=>[
-						'options'=>[],
-						'type'=>TYPE_TIMESTAMP
-					],
-					'phone_verification_code'=>[
-						'options'=>[],
-						'type'=>TYPE_STRING
-					],
-					'phone_verified_at'=>[
-						'options'=>[],
-						'type'=>TYPE_TIMESTAMP
-					],
-					'2fa_secret'=>[
-						'options'=>[],
-						'type'=>TYPE_STRING
-					],
-					'2fa_enabled_at'=>[
-						'options'=>[],
-						'type'=>TYPE_TIMESTAMP
-					],
-					'2fa_reset_code'=>[
-						'options'=>[],
-						'type'=>TYPE_STRING
-					],
-					'cookie_compliance_at'=>[
-						'options'=>[],
-						'type'=>TYPE_TIMESTAMP
-					],
-					'api_key_live_pk'=>[
-						'options'=>[],
-						'type'=>TYPE_STRING
-					],
-					'api_key_live_sk'=>[
-						'options'=>[],
-						'type'=>TYPE_STRING
-					],
-					'api_key_test_pk'=>[
-						'options'=>[],
-						'type'=>TYPE_STRING
-					],
-					'api_key_test_sk'=>[
-						'options'=>[],
-						'type'=>TYPE_STRING
-					],
+					]
 				]
 			],
 			MODEL_TRANSITION => [
@@ -1054,10 +988,11 @@ define("DB_DBNAME", $config['db'][$config['env']['env']]['dbname']);
     Error reporting.
 */
 	ini_set("error_reporting", "true");
+	ini_set('display_errors', 1);
 	//set session cookie to be read only via http and not by JavaScript
 	// ini_set('session.cookie_httponly', '1');
 	error_reporting(E_ALL);
-	// error_reporting(E_ALL ^ E_WARNING);
+	error_reporting(E_ALL ^ E_WARNING);
 	date_default_timezone_set("Africa/Lagos");
 	ini_set('max_execution_time', 300); //300 seconds = 5 minutes
 	set_time_limit(300);

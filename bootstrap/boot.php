@@ -14,19 +14,19 @@
 	use controller\AccountController;
 	use plaf\ActionListener;
 	use Paystack\Paystack;
-	
+
 	// git remote set-url origin git@github.com:username/repo.git
 	// nohup blockchain-wallet-service start --port 3000
 	// ps -ef | grep blockchain
 	// kill PID
 	// systemctl enable blockchain.service
-	
+
 	// grep CRON /var/log/syslog
 	// sudo crontab -e
 	// */5 * * * *  php -q /home/folarin/Documents/FMInc/code/EE/blockstale/app/cron/btx-monitor.php
 	// */7 * * * *  php -q /home/folarin/Documents/FMInc/code/EE/blockstale/app/cron/zombie-btx-monitor.php
 	// php -q /home/folarin/Documents/FMInc/code/EE/blockstale/app/cron/btx-monitor.php
-	
+
 	Autoloader::register();
 	$dbController = new DBController();
 	Event::listen(new ActionListener(),QUANTIFIER_ALL,QUANTIFIER_ALL,QUANTIFIER_ALL);
@@ -59,7 +59,7 @@
 	$Action = new Model(LOG_ACTION);
 	$Cron = new Model(SYS_CRON);
 	$BLOCKCHAIN_V2_API_KEY = Utility::getCredential('blockchain','v2-api');
-	
+
 	$admin = $User->getInstance(USER_ADMIN);
 	$user = $User->getInstance(Utility::getSession('user')[0]??null);
 	$Blockchain = new \Blockchain\Blockchain(Utility::getCredential('blockchain','api'),Utility::getCredential('blockchain','password'),Utility::getCredential('blockchain','guid'));
@@ -95,24 +95,27 @@
 		GEO_LGA=>$GLGA,
 		WEB_LINK=>$Link,
 	];
-	
-	
+
+
 	$request = new Request([],'',[]);
 	$response = new Response($request);
-	if(Utility::isWeb()){		
+	if(Utility::isWeb()){
 		$input = file_get_contents('php://input');
 		$tarray = [];
 		if($input){
-			parse_str($input,$tarray);
+			if($tarray = json_decode($input,true)){
+			}else
+				parse_str($input,$tarray);
 		}
 		$request = new Request(array_merge($_REQUEST,$tarray),$_SERVER['REQUEST_METHOD'],$_FILES);
 		$response = new Response($request);
+		ul($_POST);
 	}
 	$DIR_ASSETS = Link::getBaseURL()."assets";
 	function ul($expr){
 		Utility::log($expr);
 	}
-	
+
 	/**
 	 * @param string $UID
 	 * @param string $stateful

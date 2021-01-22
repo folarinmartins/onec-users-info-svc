@@ -133,9 +133,20 @@ class DBController{
 	function delete(string $table,string $haystack, string $needle, bool $debug=false, string $dkey=null){
 		return $this->updateAdvanced($table,['del'=>'1','dkey'=>$dkey??Utility::getUID()],$haystack,$needle,$debug);
 	}
-	function deleteGeneric(string $table, string $filter, bool $debug=false){
-		$query = "SET del='1' $filter";
-		return $this->updateGeneric($table,$query,$debug);
+	function deleteGeneric(string $table, string $filter, bool $debug=false,$soft=false){
+		if($soft){
+			$query = "SET del='1' $filter";
+			return $this->updateGeneric($table,$query,$debug);
+		}else{
+			$query = "DELETE FROM $table $filter";
+			$ret = $this->runQuery($query);
+			
+			$affectedRows = $this->affectedRows();
+			if($affectedRows){
+				$this->migrate($query);
+			}
+			return $affectedRows>0?$affectedRows:0;
+		}
 	}
 	function getAll(string $table,bool $debug=false,bool $skipCache=true){
 		return $this->getGeneric($table,'WHERE true','*',$debug,$skipCache);

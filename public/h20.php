@@ -1,11 +1,13 @@
 <?php
-	require_once '../bootstrap/boot.php';
+	// chdir(realpath(__DIR__));
+
+	require_once realpath(__DIR__).'/../bootstrap/boot.php';
 	use helper\Utility;
 	use view\Page;
 	use comm\Link;
-use contract\Message;
+	use contract\Message;
 
-$basedir = Link::getBaseDir(false);
+	$basedir = Link::getBaseDir(false);
 
 	$dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) use ($basedir){
 		$r->addGroup("/users", function (FastRoute\RouteCollector $r) {

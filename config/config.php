@@ -863,7 +863,7 @@ $config = array(
     "url" => array(
 		'host' =>[
 			ENV_PRODUCTION => "users.onec.com",
-			ENV_DEV => 'users.onech.localhost',
+			ENV_DEV => 'onech.localhost',
 			ENV_STAGE => "users.onec.com",	
 		],
 		'basedir' =>[
@@ -926,7 +926,7 @@ $config = array(
 		// "dummy.image" => "assets/img/sample/avatar/avatar1.jpg"
 	),
 	"email" => array(
-		"email.admin" => "blockstale@onech",
+		"email.admin" => "admin@onech.com",
 		"email.admin.password" => "7~6%{ipu[n1w"
 	),
     "paths" => array(
@@ -1000,9 +1000,10 @@ define("DB_DBNAME", $config['db'][$config['env']['env']]['dbname']);
 /*
     Session
 */
-if(session_status()!=PHP_SESSION_ACTIVE)
+if(session_status()!=PHP_SESSION_ACTIVE){
 	ini_set('session.cookie_lifetime', 60 * 60 * 24 * 7);
 	ini_set('session.gc_maxlifetime', 60 * 60 * 24 * 7);
 	ini_set('session.save_path', SESSION_PATH);
 	session_start();
+}
 ?>

@@ -1,0 +1,75 @@
+
+2021-01-23 07:58:30.592817 
+http://onec.localhost/usersassets
+
+2021-01-23 08:05:49.873099 
+Duplicate entry '800000003' for key 'mod_users.phone'
+
+2021-01-23 08:05:49.873145 
+INSERT INTO mod_users (id,`name`,`phone`,`email`,`password`) VALUES ('600bcacdd3d18','TestName','0800000003','testmail5@example.com','e16b2ab8d12314bf4efbd6203906ea6c')
+
+2021-01-23 08:11:36.167465 
+Event::trigger called OP:1, PROP:*, FROM:, TO: TYPE:user
+
+2021-01-23 08:24:08.633432 
+Event::trigger called OP:1, PROP:*, FROM:, TO: TYPE:user
+
+2021-01-23 09:16:41.292724 
+Event::trigger called OP:1, PROP:*, FROM:, TO: TYPE:user
+
+2021-01-23 09:18:38.917295 
+Event::trigger called OP:1, PROP:*, FROM:, TO: TYPE:user
+
+2021-01-23 09:18:49.448213 
+Event::trigger called OP:1, PROP:*, FROM:, TO: TYPE:user
+
+2021-01-23 09:19:09.117466 
+Event::trigger called OP:1, PROP:*, FROM:, TO: TYPE:user
+
+2021-01-23 09:20:32.430551 
+Event::trigger called OP:1, PROP:*, FROM:, TO: TYPE:user
+
+2021-01-23 09:22:48.990130 
+Event::trigger called OP:1, PROP:*, FROM:, TO: TYPE:user
+
+2021-01-23 09:24:03.137891 
+Event::trigger called OP:1, PROP:*, FROM:, TO: TYPE:user
+
+2021-01-23 09:24:19.997498 
+Event::trigger called OP:1, PROP:*, FROM:, TO: TYPE:user
+
+2021-01-23 09:25:30.879252 
+Event::trigger called OP:1, PROP:*, FROM:, TO: TYPE:user
+
+2021-01-23 09:26:03.162829 
+Event::trigger called OP:1, PROP:*, FROM:, TO: TYPE:user
+
+2021-01-23 09:26:24.034852 
+Event::trigger called OP:1, PROP:*, FROM:, TO: TYPE:user
+
+2021-01-23 09:26:37.232300 
+Event::trigger called OP:1, PROP:*, FROM:, TO: TYPE:user
+
+2021-01-23 09:27:05.885494 
+Event::trigger called OP:1, PROP:*, FROM:, TO: TYPE:user
+
+2021-01-23 09:28:38.582197 
+Event::trigger called OP:1, PROP:*, FROM:, TO: TYPE:user
+
+2021-01-23 09:32:18.957837 
+Event::trigger called OP:1, PROP:*, FROM:, TO: TYPE:user
+
+2021-01-23 09:39:42.678643 
+Event::trigger called OP:1, PROP:*, FROM:, TO: TYPE:user
+
+2021-01-23 09:40:09.889639 
+Event::trigger called OP:1, PROP:*, FROM:, TO: TYPE:user
+
+2021-01-23 09:40:37.701574 
+Event::trigger called OP:1, PROP:*, FROM:, TO: TYPE:user
+
+2021-01-23 09:45:54.213034 
+Event::trigger called OP:1, PROP:*, FROM:, TO: TYPE:user
+
+2021-01-23 09:47:31.874297 
+Event::trigger called OP:1, PROP:*, FROM:, TO: TYPE:user

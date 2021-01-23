@@ -1,6 +1,6 @@
 <?php
-chdir(realpath(__DIR__));
-require_once '../bootstrap/boot.php';
+// chdir(realpath(__DIR__));
+require_once realpath(__DIR__).'/../bootstrap/boot.php';
 use controller\CronController;
 use controller\SessionController;
 

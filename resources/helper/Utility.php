@@ -431,7 +431,7 @@ abstract class Utility{
 	public static function curl(string $endpoint, array $default=null,$jsondecode=true,array $curlOpt=[]):array{
 		$ch = curl_init($endpoint);
 
-        curl_setopt($ch, CURLOPT_USERAGENT, 'Blockstale-PHP/1.0');
+        curl_setopt($ch, CURLOPT_USERAGENT, 'Onechurch-PHP/1.0');
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5); //CURLOPT_CONNECTTIMEOUT - The number of seconds to wait while trying to connect. Use 0 to wait indefinitely.
 		curl_setopt($ch, CURLOPT_TIMEOUT, 400); //CURLOPT_TIMEOUT - The maximum number of seconds to allow cURL functions to execute.
@@ -443,8 +443,7 @@ abstract class Utility{
 		curl_close($ch);
 		
 		
-		// if($http_status !== 200){
-		// }
+		// if($http_status !== 200){}
         if(curl_error($ch)) {
 			if(!is_null($default))
 				return $default;
@@ -453,7 +452,6 @@ abstract class Utility{
         }else{
 			if($jsondecode){
 				return json_decode($json,true);
-
 			}else
 				return [$json];
 		}

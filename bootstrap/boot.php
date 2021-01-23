@@ -1,8 +1,8 @@
 <?php
 	declare(strict_types=1);
 	require_once 'autoloader.php';
-	require_once '../vendor/autoload.php';
-	require_once '../config/config.php';
+	require_once realpath(__DIR__).'/../vendor/autoload.php';
+	require_once realpath(__DIR__).'/../config/config.php';
 
 	use comm\Link;
 	use database\DBController;
@@ -13,7 +13,7 @@
 	use contract\Response;
 	use controller\AccountController;
 	use plaf\ActionListener;
-	use Paystack\Paystack;
+	// use Paystack\Paystack;
 
 	// git remote set-url origin git@github.com:username/repo.git
 	// nohup blockchain-wallet-service start --port 3000
@@ -29,71 +29,71 @@
 
 	Autoloader::register();
 	$dbController = new DBController();
-	Event::listen(new ActionListener(),QUANTIFIER_ALL,QUANTIFIER_ALL,QUANTIFIER_ALL);
+	// Event::listen(new ActionListener(),QUANTIFIER_ALL,QUANTIFIER_ALL,QUANTIFIER_ALL);
 
 	$User = new Model(MODEL_USER);
-	$File = new Model(MODEL_FILE);
-	$Notification = new Model(MODEL_NOTIFICATION);
-	$State = new Model(MODEL_STATE);
-	$Transition = new Model(MODEL_TRANSITION);
-	$Pref = new Model(MODEL_PREFS);
-	$Business = new Model(MODEL_BUSINESS);
-	$Config = new Model(MODEL_CONFIG);
-	$Bank = new Model(ORG_BANK);
-	$BankAccount = new Model(TX_ACCOUNT);
-	$Currency = new Model(TX_CURRENCY);
-	$GCountry = new Model(GEO_COUNTRY);
-	$GState = new Model(GEO_STATE);
-	$GLGA = new Model(GEO_LGA);
-	$Link = new Model(WEB_LINK);
+	// $File = new Model(MODEL_FILE);
+	// $Notification = new Model(MODEL_NOTIFICATION);
+	// $State = new Model(MODEL_STATE);
+	// $Transition = new Model(MODEL_TRANSITION);
+	// $Pref = new Model(MODEL_PREFS);
+	// $Business = new Model(MODEL_BUSINESS);
+	// $Config = new Model(MODEL_CONFIG);
+	// $Bank = new Model(ORG_BANK);
+	// $BankAccount = new Model(TX_ACCOUNT);
+	// $Currency = new Model(TX_CURRENCY);
+	// $GCountry = new Model(GEO_COUNTRY);
+	// $GState = new Model(GEO_STATE);
+	// $GLGA = new Model(GEO_LGA);
+	// $Link = new Model(WEB_LINK);
 
-	$BTCWallet = new Model(BTC_WALLET);
-	$BTCAddress = new Model(BTC_ADDRESS);
-	$BTCTransaction = new Model(BTC_TRANSACTION);
-	$BTCVoucher = new Model(BTC_VOUCHER);
-	$TransactionType = new Model(TX_TYPE);
-	$FX = new Model(TX_FX);
-	$Account = new Model(ACC_ACCOUNT);
-	$Balance = new Model(ACC_BALANCE);
-	$Entry = new Model(ACC_ENTRY);
-	$Action = new Model(LOG_ACTION);
-	$Cron = new Model(SYS_CRON);
-	$BLOCKCHAIN_V2_API_KEY = Utility::getCredential('blockchain','v2-api');
+	// $BTCWallet = new Model(BTC_WALLET);
+	// $BTCAddress = new Model(BTC_ADDRESS);
+	// $BTCTransaction = new Model(BTC_TRANSACTION);
+	// $BTCVoucher = new Model(BTC_VOUCHER);
+	// $TransactionType = new Model(TX_TYPE);
+	// $FX = new Model(TX_FX);
+	// $Account = new Model(ACC_ACCOUNT);
+	// $Balance = new Model(ACC_BALANCE);
+	// $Entry = new Model(ACC_ENTRY);
+	// $Action = new Model(LOG_ACTION);
+	// $Cron = new Model(SYS_CRON);
+	// $BLOCKCHAIN_V2_API_KEY = Utility::getCredential('blockchain','v2-api');
 
-	$admin = $User->getInstance(USER_ADMIN);
-	$user = $User->getInstance(Utility::getSession('user')[0]??null);
-	$Blockchain = new \Blockchain\Blockchain(Utility::getCredential('blockchain','api'),Utility::getCredential('blockchain','password'),Utility::getCredential('blockchain','guid'));
-	$Blockchain->setServiceUrl('http://localhost:3000');
-	$Paystack = new Paystack(Utility::getCredential('paystack','sk'));
+	// $admin = $User->getInstance(USER_ADMIN);
+	// $user = $User->getInstance(Utility::getSession('user')[0]??null);
+	// $Blockchain = new \Blockchain\Blockchain(Utility::getCredential('blockchain','api'),Utility::getCredential('blockchain','password'),Utility::getCredential('blockchain','guid'));
+	// $Blockchain->setServiceUrl('http://localhost:3000');
+	// $Paystack = new Paystack(Utility::getCredential('paystack','sk'));
 
 	$models = [
-		LOG_ACTION=>$Action,
-		TX_FX=>$FX,
-		ACC_ACCOUNT=>$Account,
-		SYS_CRON=>$Cron,
-		ACC_BALANCE=>$Balance,
-		ACC_ENTRY=>$Entry,
+		// LOG_ACTION=>$Action,
+		// TX_FX=>$FX,
+		// ACC_ACCOUNT=>$Account,
+		// SYS_CRON=>$Cron,
+		// ACC_BALANCE=>$Balance,
+		// ACC_ENTRY=>$Entry,
 		MODEL_USER=>$User,
-		MODEL_FILE=>$File,
-		MODEL_NOTIFICATION=>$Notification,
-		MODEL_STATE=>$State,
-		MODEL_TRANSITION=>$Transition,
-		MODEL_PREFS=>$Pref,
-		MODEL_CONFIG=>$Config,
-		MODEL_BUSINESS=>$Business,
-		ORG_BANK=>$Bank,
-		TX_CURRENCY=>$Currency,
-		BTC_WALLET=>$BTCWallet,
-		BTC_ADDRESS=>$BTCAddress,
-		BTC_TRANSACTION=>$BTCTransaction,
-		BTC_VOUCHER=>$BTCVoucher,
-		TX_ACCOUNT=>$BankAccount,
-		TX_TYPE=>$TransactionType,
-		ORG_BANK=>$Bank,
-		GEO_STATE=>$GState,
-		GEO_COUNTRY=>$GState,
-		GEO_LGA=>$GLGA,
-		WEB_LINK=>$Link,
+		// MODEL_FILE=>$File,
+		// MODEL_NOTIFICATION=>$Notification,
+		// MODEL_STATE=>$State,
+		// MODEL_TRANSITION=>$Transition,
+		// MODEL_PREFS=>$Pref,
+		// MODEL_CONFIG=>$Config,
+		// MODEL_BUSINESS=>$Business,
+		// ORG_BANK=>$Bank,
+		// TX_CURRENCY=>$Currency,
+		// BTC_WALLET=>$BTCWallet,
+		// BTC_ADDRESS=>$BTCAddress,
+		// BTC_TRANSACTION=>$BTCTransaction,
+		// BTC_VOUCHER=>$BTCVoucher,
+		// TX_ACCOUNT=>$BankAccount,
+		// TX_TYPE=>$TransactionType,
+		// ORG_BANK=>$Bank,
+		// GEO_STATE=>$GState,
+		// GEO_COUNTRY=>$GState,
+		// GEO_LGA=>$GLGA,
+		// WEB_LINK=>$Link,
 	];
 
 
@@ -109,9 +109,10 @@
 		}
 		$request = new Request(array_merge($_REQUEST,$tarray),$_SERVER['REQUEST_METHOD'],$_FILES);
 		$response = new Response($request);
-		ul($_POST);
 	}
-	$DIR_ASSETS = Link::getBaseURL()."assets";
+	$DIR_ASSETS = 'http://onec.localhost/assets';// Link::getBaseURL()."assets";
+	// ul($DIR_ASSETS);
+	
 	function ul($expr){
 		Utility::log($expr);
 	}

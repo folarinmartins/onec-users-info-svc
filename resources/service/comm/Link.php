@@ -34,12 +34,12 @@ Class Link{
 				Utility::cacheGraph('config','base-url',[$burl]);
 		}
 		return $burl;
-	}	
+	}
 
 	public static function getLink($uri,$redirect=false):string{
 		return '';
 		global $Link;
-		$links = $Link->getGeneric('uri',$uri);		
+		$links = $Link->getGeneric('uri',$uri);
 		if(!$links){
 			$link = $Link->insertMap(['uri'=>$uri]);
 		}else{

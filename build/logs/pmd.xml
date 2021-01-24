@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pmd version="2.9.1snapshot202009232245" timestamp="2021-01-24T23:56:47+01:00">
+  <file name="/home/folarin/code/onec/users-info-svc/src/bootstrap/boot.php">
+    <violation beginline="181" endline="181" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$key'.
+    </violation>
+  </file>
+  <file name="/home/folarin/code/onec/users-info-svc/src/contract/Event.php">
+    <violation beginline="19" endline="19" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$event'.
+    </violation>
+    <violation beginline="26" endline="61" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="contract" externalInfoUrl="https://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Event" method="trigger" priority="3">
+      The method trigger() has a Cyclomatic Complexity of 14. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="44" endline="44" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$i'.
+    </violation>
+    <violation beginline="47" endline="47" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$k'.
+    </violation>
+    <violation beginline="53" endline="53" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$event'.
+    </violation>
+  </file>
+  <file name="/home/folarin/code/onec/users-info-svc/src/controller/APIController.php">
+    <violation beginline="108" endline="213" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="controller" externalInfoUrl="https://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="APIController" method="getBTCAddressBalance" priority="3">
+      The method getBTCAddressBalance() has a Cyclomatic Complexity of 16. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="108" endline="213" rule="NPathComplexity" ruleset="Code Size Rules" package="controller" externalInfoUrl="https://phpmd.org/rules/codesize.html#npathcomplexity" class="APIController" method="getBTCAddressBalance" priority="3">
+      The method getBTCAddressBalance() has an NPath complexity of 1024. The configured NPath complexity threshold is 200.
+    </violation>
+    <violation beginline="220" endline="220" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$i'.
+    </violation>
+    <violation beginline="240" endline="240" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$i'.
+    </violation>
+    <violation beginline="254" endline="254" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$digits'.
+    </violation>
+  </file>
+  <file name="/home/folarin/code/onec/users-info-svc/src/controller/BTCController.php">
+    <violation beginline="32" endline="32" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$i'.
+    </violation>
+  </file>
+  <file name="/home/folarin/code/onec/users-info-svc/src/controller/CronController.php">
+    <violation beginline="45" endline="228" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="controller" externalInfoUrl="https://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="CronController" method="btxJob" priority="3">
+      The method btxJob() has a Cyclomatic Complexity of 20. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="45" endline="228" rule="NPathComplexity" ruleset="Code Size Rules" package="controller" externalInfoUrl="https://phpmd.org/rules/codesize.html#npathcomplexity" class="CronController" method="btxJob" priority="3">
+      The method btxJob() has an NPath complexity of 308. The configured NPath complexity threshold is 200.
+    </violation>
+    <violation beginline="163" endline="163" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$salesEntry'.
+    </violation>
+  </file>
+  <file name="/home/folarin/code/onec/users-info-svc/src/controller/DashboardController.php">
+    <violation beginline="69" endline="69" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$balanceQty'.
+    </violation>
+    <violation beginline="106" endline="149" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="controller" externalInfoUrl="https://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="DashboardController" method="updateKYC" priority="3">
+      The method updateKYC() has a Cyclomatic Complexity of 16. The configured cyclomatic complexity threshold is 10.
+    </violation>
+  </file>
+  <file name="/home/folarin/code/onec/users-info-svc/src/controller/FIATController.php">
+    <violation beginline="18" endline="18" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$user'.
+    </violation>
+    <violation beginline="21" endline="21" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$Blockchain'.
+    </violation>
+    <violation beginline="97" endline="97" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$request'.
+    </violation>
+    <violation beginline="98" endline="98" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$admin'.
+    </violation>
+    <violation beginline="99" endline="99" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$BTCTransaction'.
+    </violation>
+    <violation beginline="100" endline="100" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$BTCAddress'.
+    </violation>
+  </file>
+  <file name="/home/folarin/code/onec/users-info-svc/src/controller/SessionController.php">
+    <violation beginline="46" endline="46" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$g'.
+    </violation>
+  </file>
+  <file name="/home/folarin/code/onec/users-info-svc/src/controller/VoucherController.php">
+    <violation beginline="20" endline="88" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="controller" externalInfoUrl="https://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="VoucherController" method="redeemVTX" priority="3">
+      The method redeemVTX() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="190" endline="190" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$entry2'.
+    </violation>
+    <violation beginline="212" endline="212" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$entry4'.
+    </violation>
+  </file>
+  <file name="/home/folarin/code/onec/users-info-svc/src/database/DBController.php">
+    <violation beginline="120" endline="120" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$ret'.
+    </violation>
+    <violation beginline="142" endline="142" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$ret'.
+    </violation>
+  </file>
+  <file name="/home/folarin/code/onec/users-info-svc/src/database/RedisWrapper.php">
+    <violation beginline="9" endline="9" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
+      Avoid unused parameters such as '$server'.
+    </violation>
+    <violation beginline="9" endline="9" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
+      Avoid unused parameters such as '$port'.
+    </violation>
+    <violation beginline="33" endline="33" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$redisObj'.
+    </violation>
+    <violation beginline="41" endline="41" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$redisObj'.
+    </violation>
+  </file>
+  <file name="/home/folarin/code/onec/users-info-svc/src/helper/Utility.php">
+    <violation beginline="153" endline="153" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
+      Avoid unused parameters such as '$persist'.
+    </violation>
+    <violation beginline="156" endline="156" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
+      Avoid unused parameters such as '$persist'.
+    </violation>
+    <violation beginline="265" endline="298" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="helper" externalInfoUrl="https://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Utility" method="getCache" priority="3">
+      The method getCache() has a Cyclomatic Complexity of 13. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="273" endline="273" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$k'.
+    </violation>
+    <violation beginline="300" endline="300" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$config'.
+    </violation>
+    <violation beginline="491" endline="491" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$k'.
+    </violation>
+    <violation beginline="567" endline="598" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="helper" externalInfoUrl="https://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Utility" method="smartDate" priority="3">
+      The method smartDate() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="599" endline="599" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
+      Avoid unused parameters such as '$sortable'.
+    </violation>
+    <violation beginline="605" endline="637" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="helper" externalInfoUrl="https://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Utility" method="getFullDifff" priority="3">
+      The method getFullDifff() has a Cyclomatic Complexity of 11. The configured cyclomatic complexity threshold is 10.
+    </violation>
+  </file>
+  <file name="/home/folarin/code/onec/users-info-svc/src/model/Model.php">
+    <violation beginline="76" endline="76" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$config'.
+    </violation>
+    <violation beginline="101" endline="101" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
+      Avoid unused parameters such as '$prop'.
+    </violation>
+    <violation beginline="101" endline="101" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
+      Avoid unused parameters such as '$index'.
+    </violation>
+    <violation beginline="101" endline="101" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
+      Avoid unused parameters such as '$format'.
+    </violation>
+    <violation beginline="106" endline="106" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$spec'.
+    </violation>
+    <violation beginline="120" endline="158" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="model" externalInfoUrl="https://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Model" method="updateMap" priority="3">
+      The method updateMap() has a Cyclomatic Complexity of 12. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="161" endline="161" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$Action'.
+    </violation>
+    <violation beginline="217" endline="217" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$k'.
+    </violation>
+    <violation beginline="218" endline="218" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$spec'.
+    </violation>
+    <violation beginline="284" endline="284" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$i'.
+    </violation>
+    <violation beginline="296" endline="296" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$kkk'.
+    </violation>
+    <violation beginline="311" endline="311" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
+      Avoid unused parameters such as '$page'.
+    </violation>
+    <violation beginline="311" endline="311" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
+      Avoid unused parameters such as '$max'.
+    </violation>
+    <violation beginline="323" endline="323" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$k'.
+    </violation>
+    <violation beginline="388" endline="388" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$mysql_data_type_hash'.
+    </violation>
+  </file>
+  <file name="/home/folarin/code/onec/users-info-svc/src/providers/Paystack/Payment/Payment.php">
+    <violation beginline="50" endline="53" rule="UnusedPrivateMethod" ruleset="Unused Code Rules" package="Paystack\Payment" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedprivatemethod" class="Payment" method="call" priority="3">
+      Avoid unused private methods such as 'call'.
+    </violation>
+  </file>
+  <file name="/home/folarin/code/onec/users-info-svc/src/service/comm/Comm.php">
+    <violation beginline="9" endline="940" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="comm" externalInfoUrl="https://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Comm" method="sendNotification" priority="3">
+      The method sendNotification() has a Cyclomatic Complexity of 87. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="9" endline="940" rule="NPathComplexity" ruleset="Code Size Rules" package="comm" externalInfoUrl="https://phpmd.org/rules/codesize.html#npathcomplexity" class="Comm" method="sendNotification" priority="3">
+      The method sendNotification() has an NPath complexity of 602. The configured NPath complexity threshold is 200.
+    </violation>
+    <violation beginline="912" endline="912" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$link'.
+    </violation>
+    <violation beginline="941" endline="941" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
+      Avoid unused parameters such as '$type'.
+    </violation>
+    <violation beginline="941" endline="941" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
+      Avoid unused parameters such as '$title'.
+    </violation>
+    <violation beginline="941" endline="941" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
+      Avoid unused parameters such as '$medium'.
+    </violation>
+    <violation beginline="941" endline="941" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
+      Avoid unused parameters such as '$html'.
+    </violation>
+    <violation beginline="941" endline="941" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
+      Avoid unused parameters such as '$text'.
+    </violation>
+    <violation beginline="941" endline="941" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
+      Avoid unused parameters such as '$model'.
+    </violation>
+  </file>
+  <file name="/home/folarin/code/onec/users-info-svc/src/service/comm/Link.php">
+    <violation beginline="95" endline="95" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
+      Avoid unused parameters such as '$link'.
+    </violation>
+  </file>
+  <file name="/home/folarin/code/onec/users-info-svc/src/service/comm/Mailer.php">
+    <violation beginline="15" endline="104" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="comm" externalInfoUrl="https://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Mailer" method="send" priority="3">
+      The method send() has a Cyclomatic Complexity of 11. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="15" endline="104" rule="NPathComplexity" ruleset="Code Size Rules" package="comm" externalInfoUrl="https://phpmd.org/rules/codesize.html#npathcomplexity" class="Mailer" method="send" priority="3">
+      The method send() has an NPath complexity of 257. The configured NPath complexity threshold is 200.
+    </violation>
+    <violation beginline="17" endline="17" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$File'.
+    </violation>
+  </file>
+  <file name="/home/folarin/code/onec/users-info-svc/src/service/comm/Messager.php">
+    <violation beginline="8" endline="8" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
+      Avoid unused parameters such as '$from'.
+    </violation>
+    <violation beginline="8" endline="8" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
+      Avoid unused parameters such as '$cc'.
+    </violation>
+    <violation beginline="17" endline="17" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$result'.
+    </violation>
+  </file>
+  <file name="/home/folarin/code/onec/users-info-svc/src/service/plaf/ActionListener.php">
+    <violation beginline="11" endline="85" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="plaf" externalInfoUrl="https://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="ActionListener" method="stateChanged" priority="3">
+      The method stateChanged() has a Cyclomatic Complexity of 32. The configured cyclomatic complexity threshold is 10.
+    </violation>
+  </file>
+  <file name="/home/folarin/code/onec/users-info-svc/src/view/Page.php">
+    <violation beginline="150" endline="150" rule="ExitExpression" ruleset="Design Rules" externalInfoUrl="https://phpmd.org/rules/design.html#exitexpression" priority="1">
+      The method redirect() contains an exit expression.
+    </violation>
+    <violation beginline="186" endline="186" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$page'.
+    </violation>
+  </file>
+  <file name="/home/folarin/code/onec/users-info-svc/src/view/PageElement.php">
+    <violation beginline="47" endline="47" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$ret'.
+    </violation>
+  </file>
+</pmd>

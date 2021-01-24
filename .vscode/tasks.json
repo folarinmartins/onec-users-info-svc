@@ -4,9 +4,19 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
+			"label": "Ant",
+			"type": "shell",
+			"command": "ant",
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
 			"label": "PHP Unit",
 			"type": "shell",
-			"command": "phpunit --colors=always --bootstrap ./bootstrap/boot.php ./tests",
+			"command": "phpunit --colors=always --bootstrap ./src/bootstrap/boot.php ./tests",
 			"problemMatcher": [],
 			"group": {
 				"kind": "test",

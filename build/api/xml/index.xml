@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index xmlns="http://xml.phpdox.net/src" basedir="/home/folarin/code/onec/users-info-svc/src">
+  <namespace name="view">
+    <class name="PageElement" src="view/PageElement.php" xml="classes/view_PageElement.xml"/>
+    <class name="PageX" src="view/PageX.php" xml="classes/view_PageX.xml"/>
+    <class name="Page" src="view/Page.php" xml="classes/view_Page.xml"/>
+    <class name="Email" src="view/Email.php" xml="classes/view_Email.xml"/>
+  </namespace>
+  <namespace name="Paystack">
+    <class name="Paystack" src="providers/Paystack/Paystack.php" xml="classes/Paystack_Paystack.xml"/>
+  </namespace>
+  <namespace name="Paystack\Payment">
+    <class name="Payment" src="providers/Paystack/Payment/Payment.php" xml="classes/Paystack_Payment_Payment.xml"/>
+  </namespace>
+  <namespace name="model">
+    <class name="Model" src="model/Model.php" xml="classes/model_Model.xml"/>
+  </namespace>
+  <namespace name="helper">
+    <class name="Utility" src="helper/Utility.php" xml="classes/helper_Utility.xml"/>
+  </namespace>
+  <namespace name="database">
+    <class name="RedisWrapper" src="database/RedisWrapper.php" xml="classes/database_RedisWrapper.xml"/>
+    <class name="DBController" src="database/DBController.php" xml="classes/database_DBController.xml"/>
+  </namespace>
+  <namespace name="controller">
+    <class name="UserController" src="controller/UserController.php" xml="classes/controller_UserController.xml"/>
+    <class name="VoucherController" src="controller/VoucherController.php" xml="classes/controller_VoucherController.xml"/>
+    <class name="SettingsController" src="controller/SettingsController.php" xml="classes/controller_SettingsController.xml"/>
+    <class name="BTCController" src="controller/BTCController.php" xml="classes/controller_BTCController.xml"/>
+    <class name="AccountController" src="controller/AccountController.php" xml="classes/controller_AccountController.xml"/>
+    <class name="DashboardController" src="controller/DashboardController.php" xml="classes/controller_DashboardController.xml"/>
+    <class name="CronController" src="controller/CronController.php" xml="classes/controller_CronController.xml"/>
+    <class name="FIATController" src="controller/FIATController.php" xml="classes/controller_FIATController.xml"/>
+    <class name="SessionController" src="controller/SessionController.php" xml="classes/controller_SessionController.xml"/>
+    <class name="APIController" src="controller/APIController.php" xml="classes/controller_APIController.xml"/>
+  </namespace>
+  <namespace name="plaf">
+    <class name="ActionListener" src="service/plaf/ActionListener.php" xml="classes/plaf_ActionListener.xml"/>
+  </namespace>
+  <namespace name="comm">
+    <class name="Notification" src="service/comm/Notification.php" description="TODO: Log all communications for receipts, resend, scheduling, status, audit" xml="classes/comm_Notification.xml"/>
+    <class name="Mailer" src="service/comm/Mailer.php" xml="classes/comm_Mailer.xml"/>
+    <class name="Comm" src="service/comm/Comm.php" xml="classes/comm_Comm.xml"/>
+    <class name="Link" src="service/comm/Link.php" xml="classes/comm_Link.xml"/>
+    <class name="Messager" src="service/comm/Messager.php" xml="classes/comm_Messager.xml"/>
+  </namespace>
+  <namespace name="contract">
+    <class name="Event" src="contract/Event.php" xml="classes/contract_Event.xml"/>
+    <class name="Message" src="contract/Message.php" xml="classes/contract_Message.xml"/>
+    <class name="Controller" src="contract/Controller.php" xml="classes/contract_Controller.xml"/>
+    <class name="Request" src="contract/Request.php" xml="classes/contract_Request.xml"/>
+    <class name="Response" src="contract/Response.php" xml="classes/contract_Response.xml"/>
+    <class name="Quantity" src="contract/Quantity.php" xml="classes/contract_Quantity.xml"/>
+    <interface name="EventListener" src="contract/EventListener.php" xml="interfaces/contract_EventListener.xml"/>
+  </namespace>
+</index>

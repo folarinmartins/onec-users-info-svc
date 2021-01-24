@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="controller\DashboardController" namespace="controller" name="DashboardController" abstract="false" final="false" start="9" end="164">
+  <file path="../src/controller" file="DashboardController.php" realpath="/home/folarin/code/onec/users-info-svc/src/controller/DashboardController.php" size="6825" time="2020-12-08T03:10:16+00:00" unixtime="1607397016" sha1="d8f0210c94a9c50ff83526a1e85981514fa9fb08" relative="controller/DashboardController.php"/>
+  <extends full="contract\Controller" namespace="contract" name="Controller"/>
+  <method name="show" start="10" end="24" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="listPayout" start="25" end="31" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="readPayout" start="32" end="38" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="updatePayout" start="39" end="97" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="showKYC" start="98" end="104" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="updateKYC" start="106" end="149" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <return type="object">
+        <type full="controller\void" namespace="controller" name="void"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="listKYC" start="150" end="156" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="readKYC" start="157" end="163" abstract="false" final="false" static="true" visibility="public"/>
+  <parent full="contract\Controller" namespace="contract" name="Controller">
+    <member name="request" visibility="protected" static="false" line="6"/>
+    <method name="index" start="7" end="7" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="create" start="8" end="8" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="store" start="9" end="9" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="show" start="10" end="12" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="edit" start="13" end="13" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="update" start="14" end="14" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="destroy" start="15" end="15" abstract="false" final="false" static="true" visibility="public"/>
+  </parent>
+</class>

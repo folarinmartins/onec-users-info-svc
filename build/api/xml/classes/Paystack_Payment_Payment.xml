@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Paystack\Payment\Payment" namespace="Paystack\Payment" name="Payment" abstract="false" final="false" start="14" end="203">
+  <file path="../src/providers/Paystack/Payment" file="Payment.php" realpath="/home/folarin/code/onec/users-info-svc/src/providers/Paystack/Payment/Payment.php" size="4965" time="2020-11-26T14:13:17+00:00" unixtime="1606399997" sha1="7f44f15811496f41eca4784bebfe264cdbe8765c" relative="providers/Paystack/Payment/Payment.php"/>
+  <member name="identifier" default="NULL" visibility="private" static="false" line="15"/>
+  <member name="main_password" default="NULL" visibility="private" static="false" line="16"/>
+  <member name="second_password" default="NULL" visibility="private" static="false" line="17"/>
+  <member name="Paystack" default="NULL" visibility="private" static="false" line="18"/>
+  <constructor name="__construct" start="20" end="22" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="Paystack" byreference="false" type="object">
+      <type full="Paystack\Paystack" namespace="Paystack" name="Paystack"/>
+    </parameter>
+  </constructor>
+  <method name="credentials" start="24" end="30" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="id" byreference="false" type="{unknown}"/>
+    <parameter name="pw1" byreference="false" type="{unknown}"/>
+    <parameter name="pw2" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="_checkCredentials" start="32" end="34" abstract="false" final="false" static="false" visibility="private"/>
+  <method name="reqParams" start="35" end="42" abstract="false" final="false" static="false" visibility="private">
+    <parameter name="extras" byreference="false" type="array" default=""/>
+  </method>
+  <method name="url" start="43" end="45" abstract="false" final="false" static="false" visibility="private">
+    <parameter name="resource" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="get" start="46" end="49" abstract="false" final="false" static="false" visibility="private">
+    <parameter name="resource" byreference="false" type="{unknown}"/>
+    <parameter name="params" byreference="false" type="array" default=""/>
+  </method>
+  <method name="call" start="50" end="53" abstract="false" final="false" static="false" visibility="private">
+    <parameter name="resource" byreference="false" type="{unknown}"/>
+    <parameter name="params" byreference="false" type="array" default=""/>
+  </method>
+  <method name="getIdentifier" start="54" end="56" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="verify" start="67" end="202" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <desc value="Create New HD Account"/>
+      <desc value="Endpoint: https://api.paystack.co/transaction/verify/:reference"/>
+      <param type="string" variable="reference"/>
+      <return type="object">
+        <type full="model\Model" namespace="model" name="Model"/>
+      </return>
+      <throws type="object">
+        <type full="Paystack\Exception\CredentialsError" namespace="Paystack\Exception" name="CredentialsError"/>
+      </throws>
+    </docblock>
+    <return type="object" nullable="true">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </return>
+    <parameter name="reference" byreference="false" type="string"/>
+    <inline>
+      <comment value="2020-11-21 18:22:44.337784" line="88"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Array" line="89"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="(" line="90"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[status] =&gt; 1" line="91"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[message] =&gt; Verification successful" line="92"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[data] =&gt; Array" line="93"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="(" line="94"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[id] =&gt; 893126485" line="95"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[domain] =&gt; test" line="96"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[status] =&gt; success" line="97"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[reference] =&gt; 5fb94cd84820f423816505" line="98"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[amount] =&gt; 330000" line="99"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[message] =&gt;" line="100"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[gateway_response] =&gt; Successful" line="101"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[paid_at] =&gt; 2020-11-21T17:22:39.000Z" line="102"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[created_at] =&gt; 2020-11-21T17:22:33.000Z" line="103"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[channel] =&gt; card" line="104"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[currency] =&gt; NGN" line="105"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[ip_address] =&gt; 129.205.113.248" line="106"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[metadata] =&gt; Array" line="107"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="(" line="108"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[referrer] =&gt; http://localhost/app.blockstale.com/login" line="109"/>
+      <comment xmlns="http://xml.phpdox.net/src" value=")" line="110"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[log] =&gt; Array" line="111"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="(" line="112"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[start_time] =&gt; 1605979354" line="113"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[time_spent] =&gt; 6" line="114"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[attempts] =&gt; 1" line="115"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[errors] =&gt; 0" line="116"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[success] =&gt; 1" line="117"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[mobile] =&gt;" line="118"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[input] =&gt; Array" line="119"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="(" line="120"/>
+      <comment xmlns="http://xml.phpdox.net/src" value=")" line="121"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[history] =&gt; Array" line="122"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="(" line="123"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[0] =&gt; Array" line="124"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="(" line="125"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[type] =&gt; action" line="126"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[message] =&gt; Attempted to pay with card" line="127"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[time] =&gt; 4" line="128"/>
+      <comment xmlns="http://xml.phpdox.net/src" value=")" line="129"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[1] =&gt; Array" line="130"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="(" line="131"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[type] =&gt; success" line="132"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[message] =&gt; Successfully paid with card" line="133"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[time] =&gt; 6" line="134"/>
+      <comment xmlns="http://xml.phpdox.net/src" value=")" line="135"/>
+      <comment xmlns="http://xml.phpdox.net/src" value=")" line="136"/>
+      <comment xmlns="http://xml.phpdox.net/src" value=")" line="137"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[fees] =&gt; 14950" line="138"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[fees_split] =&gt;" line="139"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[authorization] =&gt; Array" line="140"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="(" line="141"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[authorization_code] =&gt; AUTH_e71v3hf52v" line="142"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[bin] =&gt; 408408" line="143"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[last4] =&gt; 4081" line="144"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[exp_month] =&gt; 12" line="145"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[exp_year] =&gt; 2020" line="146"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[channel] =&gt; card" line="147"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[card_type] =&gt; visa" line="148"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[bank] =&gt; TEST BANK" line="149"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[country_code] =&gt; NG" line="150"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[brand] =&gt; visa" line="151"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[reusable] =&gt; 1" line="152"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[signature] =&gt; SIG_XOsj8EET4apmWlG7fd2a" line="153"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[account_name] =&gt;" line="154"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[receiver_bank_account_number] =&gt;" line="155"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[receiver_bank] =&gt;" line="156"/>
+      <comment xmlns="http://xml.phpdox.net/src" value=")" line="157"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[customer] =&gt; Array" line="158"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="(" line="159"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[id] =&gt; 34128691" line="160"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[first_name] =&gt;" line="161"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[last_name] =&gt;" line="162"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[email] =&gt; folarinjmartins@gmail.com" line="163"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[customer_code] =&gt; CUS_ukt3axtop971sbc" line="164"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[phone] =&gt;" line="165"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[metadata] =&gt;" line="166"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[risk_action] =&gt; default" line="167"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[international_format_phone] =&gt;" line="168"/>
+      <comment xmlns="http://xml.phpdox.net/src" value=")" line="169"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[plan] =&gt;" line="170"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[split] =&gt; Array" line="171"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="(" line="172"/>
+      <comment xmlns="http://xml.phpdox.net/src" value=")" line="173"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[order_id] =&gt;" line="174"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[paidAt] =&gt; 2020-11-21T17:22:39.000Z" line="175"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[createdAt] =&gt; 2020-11-21T17:22:33.000Z" line="176"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[requested_amount] =&gt; 330000" line="177"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[pos_transaction_data] =&gt;" line="178"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[transaction_date] =&gt; 2020-11-21T17:22:33.000Z" line="179"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[plan_object] =&gt; Array" line="180"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="(" line="181"/>
+      <comment xmlns="http://xml.phpdox.net/src" value=")" line="182"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[subaccount] =&gt; Array" line="183"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="(" line="184"/>
+      <comment xmlns="http://xml.phpdox.net/src" value=")" line="185"/>
+      <comment xmlns="http://xml.phpdox.net/src" value=")" line="186"/>
+      <comment xmlns="http://xml.phpdox.net/src" value=")" line="187"/>
+    </inline>
+  </method>
+</class>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd>
+  <duplication lines="47" tokens="232">
+    <file path="/home/folarin/code/onec/users-info-svc/src/service/comm/Comm.php" line="211"/>
+    <file path="/home/folarin/code/onec/users-info-svc/src/service/comm/Comm.php" line="260"/>
+    <codefragment>					$text['email.title'] = 'Credit Alert';
+					$text['title'] = 'Credit Alert';
+					$text['title.sub'] = 'Your Blockstale account has been funded';
+					$text['user.name'] = $user-&gt;getProperty('name');
+					$text['email'] = $user-&gt;getProperty('email');
+					$text['information.title'] = 'Remark';
+					$text['information.desc'] = $model-&gt;getProperty('description');
+					$text['body'] = $text['information.desc'];
+					$text['account.title'] = $Account-&gt;getInstance($model-&gt;getProperty('account'))-&gt;getProperty('name');
+
+					$text['account.value.desc'][0] = 'Credit';
+					$text['account.value.symbol'][0] = $Currency-&gt;getInstance($model-&gt;getProperty('value_unit'))-&gt;getProperty('symbol');
+
+					$balanceQTY = AccountController::getBalance($User-&gt;getInstance($model-&gt;getProperty('party')),$user,$model-&gt;getProperty('value_unit'),$model-&gt;getProperty('account'));
+					$text['account.value.desc'][1] = 'Balance';
+					$text['account.value.symbol'][1] = $text['account.value.symbol'][0];
+
+					$cryptos = Utility::linearize($Currency-&gt;get('crypto','1'),'id');
+					if(Utility::in_array($model-&gt;getProperty('value_unit'),$cryptos)){
+						$text['account.value.number'][0] = sprintf('%.8f', $model-&gt;getProperty('value_number'));
+						$text['account.value.number'][1] = sprintf('%.8f', $balanceQTY-&gt;getNumber());
+					}else{
+						$text['account.value.number'][0] = sprintf('%.2f', $model-&gt;getProperty('value_number'));
+						$text['account.value.number'][1] = sprintf('%.2f', $balanceQTY-&gt;getNumber());
+					}
+					$text['text'] = $text['title'].'['.$text['account.title'].'] Amt:'.number_format($text['account.value.number'][0],2).' Bal:'.$text['account.value.number'][1];
+
+					$notification = $Notification-&gt;insertMap([
+						'type'=&gt;$notificationType,
+						'name'=&gt;$text['email.title'],
+						'medium'=&gt;$media[0],
+						'user'=&gt;$model-&gt;getProperty('coparty'),
+						'text'=&gt;$text['body'],
+						'html'=&gt;''
+					]);
+
+					if(Utility::in_array(MEDIUM_EMAIL,$media)){
+						$url['email.link'] = Link::getURL('comm').'/'.$notification-&gt;getID();
+						$variables['url'] = $url;
+						$variables['text'] = $text;
+						$email = Email::getInstance($variables,'transaction');
+						$html = $email-&gt;render();
+						$notification-&gt;updateMap(['html'=&gt;$html]);
+					}
+				}
+			}break;
+			case NOTIFICATION_CREDIT_ALERT:{
+</codefragment>
+  </duplication>
+  <duplication lines="33" tokens="149">
+    <file path="/home/folarin/code/onec/users-info-svc/src/service/comm/Comm.php" line="225"/>
+    <file path="/home/folarin/code/onec/users-info-svc/src/service/comm/Comm.php" line="324"/>
+    <codefragment>					$text['account.value.desc'][1] = 'Balance';
+					$text['account.value.symbol'][1] = $text['account.value.symbol'][0];
+
+					$cryptos = Utility::linearize($Currency-&gt;get('crypto','1'),'id');
+					if(Utility::in_array($model-&gt;getProperty('value_unit'),$cryptos)){
+						$text['account.value.number'][0] = sprintf('%.8f', $model-&gt;getProperty('value_number'));
+						$text['account.value.number'][1] = sprintf('%.8f', $balanceQTY-&gt;getNumber());
+					}else{
+						$text['account.value.number'][0] = sprintf('%.2f', $model-&gt;getProperty('value_number'));
+						$text['account.value.number'][1] = sprintf('%.2f', $balanceQTY-&gt;getNumber());
+					}
+					$text['text'] = $text['title'].'['.$text['account.title'].'] Amt:'.number_format($text['account.value.number'][0],2).' Bal:'.$text['account.value.number'][1];
+
+					$notification = $Notification-&gt;insertMap([
+						'type'=&gt;$notificationType,
+						'name'=&gt;$text['email.title'],
+						'medium'=&gt;$media[0],
+						'user'=&gt;$model-&gt;getProperty('coparty'),
+						'text'=&gt;$text['body'],
+						'html'=&gt;''
+					]);
+
+					if(Utility::in_array(MEDIUM_EMAIL,$media)){
+						$url['email.link'] = Link::getURL('comm').'/'.$notification-&gt;getID();
+						$variables['url'] = $url;
+						$variables['text'] = $text;
+						$email = Email::getInstance($variables,'transaction');
+						$html = $email-&gt;render();
+						$notification-&gt;updateMap(['html'=&gt;$html]);
+					}
+				}
+			}break;
+			case NOTIFICATION_CREDIT_ALERT:{
+</codefragment>
+  </duplication>
+  <duplication lines="32" tokens="113">
+    <file path="/home/folarin/code/onec/users-info-svc/src/service/comm/Comm.php" line="366"/>
+    <file path="/home/folarin/code/onec/users-info-svc/src/service/comm/Comm.php" line="407"/>
+    <codefragment>					$text['doc.state'] = $model-&gt;getStateInstance()-&gt;getProperty('name');
+					$text['doc.date'] = Utility::simpleDate(date_create($model-&gt;getProperty('updated_at')));
+
+					$text['recp.name'] = $user-&gt;getProperty('name');
+					$text['body'] = 'You are receiving this message as an update to your recent payout request';
+					$url['link.url'] = route('support');
+					$url['link.text'] = 'Contact Support';
+					$url['link.url.1'] = route('transactions').'/'.$model-&gt;getID();
+					$url['link.text.1'] = 'View Request';
+					// $text['text'] = $text['body'].' '.$url['link.url.1'];
+
+
+					$notification = $Notification-&gt;insertMap([
+						'type'=&gt;$notificationType,
+						'name'=&gt;$text['email.title'],
+						'medium'=&gt;$media[0],
+						'user'=&gt;$model-&gt;getProperty('user'),
+						'text'=&gt;$text['body'],
+						'html'=&gt;''
+					]);
+
+					if(Utility::in_array(MEDIUM_EMAIL,$media)){
+						$url['email.link'] = Link::getURL('comm').'/'.$notification-&gt;getID();
+						$variables['url'] = $url;
+						$variables['text'] = $text;
+						$email = Email::getInstance($variables,'account.message');
+						$html = $email-&gt;render();
+						$notification-&gt;updateMap(['html'=&gt;$html]);
+					}
+				}
+			}break;
+			case NOTIFICATION_PAYOUT_REQUESTED:{
+</codefragment>
+  </duplication>
+  <duplication lines="20" tokens="71">
+    <file path="/home/folarin/code/onec/users-info-svc/src/service/comm/Comm.php" line="32"/>
+    <file path="/home/folarin/code/onec/users-info-svc/src/service/comm/Comm.php" line="61"/>
+    <codefragment>					$text['text'] = $text['body'].' '.$url['link.url'];
+
+					$notification = $Notification-&gt;insertMap([
+							'type'=&gt;$notificationType,
+							'name'=&gt;$text['email.title'],
+							'medium'=&gt;$media[0],
+							'user'=&gt;$model-&gt;getID(),
+							'text'=&gt;$text['email.title'].' '.$text['body'],
+							'html'=&gt;'',
+						]
+					);
+					$url['email.link'] = Link::getURL('comm').'/'.$notification-&gt;getID();
+					$variables['url'] = $url;
+					$variables['text'] = $text;
+					$email = Email::getInstance($variables,'account.password.reset');
+					$html = $email-&gt;render();
+					$notification-&gt;updateMap(['html'=&gt;$html]);
+				}
+			}break;
+			case NOTIFICATION_PASSWORD_RESET:{
+</codefragment>
+  </duplication>
+  <duplication lines="16" tokens="79">
+    <file path="/home/folarin/code/onec/users-info-svc/src/controller/FIATController.php" line="174"/>
+    <file path="/home/folarin/code/onec/users-info-svc/src/controller/FIATController.php" line="215"/>
+    <codefragment>					'cleared_unit'=&gt;$request-&gt;getParam('currency'),
+				]);
+
+				if($btcTransaction){
+					$btcTransaction-&gt;setState(STATE_PENDING,$user,'New FIAT transaction initiated');
+					$response-&gt;addPayload('desc',$btcTransaction-&gt;getProperty('description'));
+					$response-&gt;addPayload('total',$totalFiat);
+					$response-&gt;addPayload('symbol',instance(TX_CURRENCY,'id',$request-&gt;getParam('currency')));
+					$response-&gt;addPayload('txid',$btcTransaction-&gt;getID());
+				}else{
+					$response-&gt;addMessage(new Message('Error initializing transaction 2','Error initializing transaction 2',THEME_SECONDARY));
+				}
+			}catch(Exception $e){
+				Utility::log($e-&gt;getMessage());
+				$response-&gt;addMessage(new Message($e-&gt;getMessage(),$e-&gt;getMessage(),THEME_SECONDARY));
+				$response-&gt;setStatusCode(500);
+</codefragment>
+  </duplication>
+  <duplication lines="14" tokens="71">
+    <file path="/home/folarin/code/onec/users-info-svc/src/service/comm/Comm.php" line="490"/>
+    <file path="/home/folarin/code/onec/users-info-svc/src/service/comm/Comm.php" line="529"/>
+    <codefragment>					$text['title.sub'] = 'You ticket is now resolved '.$senderProxy-&gt;getPropertyValue(PROPERTY_NAME)[0];
+
+					$fileProxy = TypeProxy::getInstanceByID(TYPE_FILE,$senderProxy-&gt;getPropertyValue([PROPERTY_ICON])[0]??'',REALM_KN);
+					if($fileProxy)
+						$text['user.image'] = Link::getFile($fileProxy);
+					else
+						$text['user.image'] = Link::getFile(TypeProxy::getInstance(TYPE_TYPE));
+
+					$text['user.name'] = $senderProxy-&gt;getPropertyValue([PROPERTY_NAME])[0];
+					$text['doc.state'] = $refProxy-&gt;getPropertyValue([PROPERTY_STATE,PROPERTY_NAME])[0];
+					$text['doc.date'] = Utility::simpleDate(date_create($refProxy-&gt;getDAObject()-&gt;getProperty('updated_at')));
+
+					$text['recp.name'] = $model-&gt;getProperty('name');
+					$text['body'] = "This is to notify you that you ticket is now resolved by our operatives. Please review and if you need to get back to us just reply this message. Cheers!";
+</codefragment>
+  </duplication>
+  <duplication lines="14" tokens="85">
+    <file path="/home/folarin/code/onec/users-info-svc/src/service/comm/Comm.php" line="504"/>
+    <file path="/home/folarin/code/onec/users-info-svc/src/service/comm/Comm.php" line="543"/>
+    <codefragment>					$url['link.url'] = "mailto:".$senderProxy-&gt;getPropertyValue([PROPERTY_EMAIL])[0]."?subject=RE:".$text['title'].' '.$refProxy-&gt;getID();
+					$url['link.text'] = 'Reply to Message';
+					$url['link.url.1'] = Link::getLink(Link::getURL('track',[$refProxy-&gt;getID()]));
+					$url['link.text.1'] = 'Track this Ticket';
+					$text['text'] = $text['body'].' '.$url['link.url.1'];
+
+					$notificationProxy = Comm::getNotification($notificationType,$text['email.title'],$media,'',$text['text'],$recipientProxy);
+					$url['email.link'] = Link::getLink(Link::getURL('comm',[$notificationProxy-&gt;getID()]));
+					$variables['url'] = $url;
+					$variables['text'] = $text;
+
+					$email = Email::getInstance($variables,'account.message');
+					$html = $email-&gt;render(); unset($email);
+					Utility::log("now printing email content of NOTIFICATION_ISSUE_RESOLVED id:".$notificationProxy-&gt;getID());
+</codefragment>
+  </duplication>
+</pmd-cpd>

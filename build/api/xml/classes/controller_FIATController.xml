@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="controller\FIATController" namespace="controller" name="FIATController" abstract="false" final="false" start="16" end="234">
+  <file path="../src/controller" file="FIATController.php" realpath="/home/folarin/code/onec/users-info-svc/src/controller/FIATController.php" size="8854" time="2020-12-14T21:18:10+00:00" unixtime="1607980690" sha1="b6026bdf6d01cfe111d2b6627342241dc88b8755" relative="controller/FIATController.php"/>
+  <extends full="contract\Controller" namespace="contract" name="Controller"/>
+  <method name="payoutFIAT" start="17" end="36" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="pingFTX" start="37" end="95" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="hookFTX" start="96" end="104" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="initWithdraw" start="105" end="151" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="initTopup" start="152" end="192" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="initReceivePayment" start="193" end="233" abstract="false" final="false" static="true" visibility="public"/>
+  <parent full="contract\Controller" namespace="contract" name="Controller">
+    <member name="request" visibility="protected" static="false" line="6"/>
+    <method name="index" start="7" end="7" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="create" start="8" end="8" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="store" start="9" end="9" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="show" start="10" end="12" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="edit" start="13" end="13" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="update" start="14" end="14" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="destroy" start="15" end="15" abstract="false" final="false" static="true" visibility="public"/>
+  </parent>
+</class>

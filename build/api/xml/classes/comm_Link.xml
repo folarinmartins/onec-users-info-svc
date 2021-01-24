@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="comm\Link" namespace="comm" name="Link" abstract="false" final="false" start="5" end="105">
+  <file path="../src/service/comm" file="Link.php" realpath="/home/folarin/code/onec/users-info-svc/src/service/comm/Link.php" size="3624" time="2021-01-23T07:08:11+00:00" unixtime="1611385691" sha1="5fae9b8ab26e72166e578943622721c74c55f6e1" relative="service/comm/Link.php"/>
+  <method name="getProtocol" start="6" end="12" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+    <parameter name="appendSlash" byreference="false" type="boolean" default="true"/>
+  </method>
+  <method name="getHost" start="13" end="19" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+    <parameter name="appendSlash" byreference="false" type="boolean" default="true"/>
+  </method>
+  <method name="getBaseDir" start="20" end="27" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+    <parameter name="appendSlash" byreference="false" type="boolean" default="true"/>
+  </method>
+  <method name="getBaseURL" start="28" end="37" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+    <parameter name="appendSlash" byreference="false" type="boolean" default="true"/>
+  </method>
+  <method name="getLink" start="39" end="49" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+    <parameter name="uri" byreference="false" type="{unknown}"/>
+    <parameter name="redirect" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="getDummyLink" start="50" end="52" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="get404" start="53" end="55" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="get505" start="56" end="58" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="getURL" start="59" end="67" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+    <parameter name="index" byreference="false" type="{unknown}"/>
+    <parameter name="params" byreference="false" type="array" default=""/>
+  </method>
+  <method name="getB64File" start="68" end="74" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+    <parameter name="file" byreference="false" type="object">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+    <inline>
+      <comment value="if($fileProxy-&gt;getRealm()==REALM_KN || $fileProxy-&gt;definesProperty([PROPERTY_FORMAT,REALM_KN]))" line="70"/>
+      <comment value="return 'data:'.$fileProxy-&gt;getPropertyValue([[PROPERTY_FORMAT,REALM_KN],[PROPERTY_MIME,REALM_KN]])[0].';base64,'.base64_encode(file_get_contents(UPLOAD_PATH.'/'.$fileProxy-&gt;getID().'.'.$fileProxy-&gt;getPropertyValue(PROPERTY_EXTENSION)[0]));" line="71"/>
+      <comment value="else" line="72"/>
+      <comment value="return 'data:'.$fileProxy-&gt;getPropertyValue([[PROPERTY_FORMAT,REALM_OP],[PROPERTY_MIME,REALM_KN]])[0].';base64,'.base64_encode(file_get_contents(UPLOAD_PATH.'/'.$fileProxy-&gt;getID().'.'.$fileProxy-&gt;getPropertyValue(PROPERTY_EXTENSION)[0]));" line="73"/>
+    </inline>
+  </method>
+  <method name="getFile" start="75" end="90" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+    <parameter name="file" byreference="false" type="object">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+    <parameter name="public" byreference="false" type="boolean" default="true"/>
+  </method>
+  <method name="getURI" start="91" end="94" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+    <parameter name="link" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="isAuth" start="95" end="98" abstract="false" final="false" static="true" visibility="public">
+    <return type="bool" nullable="false"/>
+    <parameter name="link" byreference="false" type="string"/>
+    <inline>
+      <comment value="return TypeProxy::getInstance(TYPE_LINE,$link)-&gt;getPropertyValue(PROPERTY_AUTH)[0]??false;" line="97"/>
+    </inline>
+  </method>
+  <method name="encode" start="99" end="104" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="link" byreference="false" type="{unknown}"/>
+    <parameter name="redirect" byreference="false" type="boolean" default="false"/>
+  </method>
+</class>

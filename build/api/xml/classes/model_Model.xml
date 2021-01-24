@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="model\Model" namespace="model" name="Model" abstract="false" final="false" start="10" end="441">
+  <file path="../src/model" file="Model.php" realpath="/home/folarin/code/onec/users-info-svc/src/model/Model.php" size="13893" time="2021-01-22T05:43:15+00:00" unixtime="1611294195" sha1="d17845558f517731e94682012d1b4d7f08fad3f7" relative="model/Model.php"/>
+  <member name="id" visibility="private" static="false" line="11"/>
+  <member name="cache" visibility="private" static="false" line="12"/>
+  <member name="UID" visibility="private" static="false" line="13"/>
+  <constructor name="__construct" start="15" end="20" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="UID" byreference="false" type="string"/>
+    <parameter name="id" byreference="false" type="string" default="NULL"/>
+  </constructor>
+  <method name="getInstanceByProperty" start="21" end="26" abstract="false" final="false" static="false" visibility="public">
+    <return type="object" nullable="true">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </return>
+    <parameter name="haystack" byreference="false" type="string"/>
+    <parameter name="needle" byreference="false" type="string"/>
+  </method>
+  <method name="getInstance" start="27" end="36" abstract="false" final="false" static="false" visibility="public">
+    <return type="object" nullable="true">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </return>
+    <parameter name="id" byreference="false" type="string" default="NULL"/>
+  </method>
+  <method name="getPref" start="37" end="43" abstract="false" final="false" static="false" visibility="public">
+    <return type="string" nullable="true"/>
+    <parameter name="key" byreference="false" type="string"/>
+    <parameter name="default" byreference="false" type="string" default="NULL"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="setPref" start="44" end="55" abstract="false" final="false" static="false" visibility="public">
+    <return type="bool" nullable="false"/>
+    <parameter name="key" byreference="false" type="string"/>
+    <parameter name="value" byreference="false" type="string" default="''"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="instanceof" start="56" end="58" abstract="false" final="false" static="false" visibility="public">
+    <return type="bool" nullable="false"/>
+    <parameter name="model" byreference="false" type="object">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+  </method>
+  <method name="getType" start="59" end="61" abstract="false" final="false" static="false" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getUID" start="62" end="64" abstract="false" final="false" static="false" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getSpecs" start="65" end="71" abstract="false" final="false" static="false" visibility="public">
+    <return type="array" nullable="false"/>
+  </method>
+  <method name="getTable" start="72" end="74" abstract="false" final="false" static="false" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="reloadCache" start="75" end="80" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="force" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="getCache" start="81" end="83" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getID" start="84" end="86" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="uncache" start="87" end="89" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="id" byreference="false" type="string" default="NULL"/>
+  </method>
+  <method name="create" start="90" end="94" abstract="false" final="false" static="false" visibility="public">
+    <return type="bool" nullable="false"/>
+    <parameter name="fields" byreference="false" type="{unknown}"/>
+    <parameter name="values" byreference="false" type="{unknown}"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="updateFiles" start="101" end="119" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$prop">
+        <type full="model\string|null" namespace="model" name="string|null"/>
+      </param>
+      <param type="object" variable="$index">
+        <type full="model\string|null" namespace="model" name="string|null"/>
+      </param>
+      <param type="object" variable="$format">
+        <type full="model\string|null" namespace="model" name="string|null"/>
+      </param>
+      <return type="object">
+        <type full="model\null|Model|void" namespace="model" name="null|Model|void"/>
+      </return>
+    </docblock>
+    <parameter name="prop" byreference="false" type="string" default="NULL"/>
+    <parameter name="index" byreference="false" type="string" default="NULL"/>
+    <parameter name="format" byreference="false" type="string" default="NULL"/>
+  </method>
+  <method name="updateMap" start="120" end="158" abstract="false" final="false" static="false" visibility="public">
+    <return type="int" nullable="false"/>
+    <parameter name="map" byreference="false" type="array"/>
+    <parameter name="id" byreference="false" type="string" default="NULL"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="insertMap" start="159" end="202" abstract="false" final="false" static="false" visibility="public">
+    <return type="object" nullable="true">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </return>
+    <parameter name="map" byreference="false" type="{unknown}"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="getProperty" start="203" end="205" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="field" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="init" start="206" end="226" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="force" byreference="false" type="boolean" default="false"/>
+    <parameter name="id" byreference="false" type="{unknown}" default="" constant="QUANTIFIER_ALL"/>
+  </method>
+  <method name="getState" start="234" end="241" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$stateful">
+        <type full="model\Model|null" namespace="model" name="Model|null"/>
+      </param>
+      <param type="object" variable="$transition">
+        <type full="model\bool" namespace="model" name="bool"/>
+      </param>
+      <return type="string"/>
+    </docblock>
+    <return type="string" nullable="false"/>
+    <parameter name="stateful" byreference="false" type="object" default="NULL">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+  </method>
+  <method name="getStateInstance" start="242" end="250" abstract="false" final="false" static="false" visibility="public">
+    <return type="object" nullable="true">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </return>
+    <parameter name="stateful" byreference="false" type="object" default="NULL">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="getTransition" start="251" end="258" abstract="false" final="false" static="false" visibility="public">
+    <return type="array" nullable="false"/>
+    <parameter name="stateful" byreference="false" type="object" default="NULL">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+  </method>
+  <method name="getTransitions" start="259" end="269" abstract="false" final="false" static="false" visibility="public">
+    <return type="array" nullable="false"/>
+    <parameter name="stateful" byreference="false" type="object" default="NULL">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+    <parameter name="transition" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="setState" start="270" end="274" abstract="false" final="false" static="false" visibility="public">
+    <return type="object" nullable="true">
+      <type full="model\MOdel" namespace="model" name="MOdel"/>
+    </return>
+    <parameter name="state" byreference="false" type="string"/>
+    <parameter name="user" byreference="false" type="object">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+    <parameter name="description" byreference="false" type="string"/>
+    <parameter name="stateful" byreference="false" type="object" default="NULL">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+  </method>
+  <method name="advance" start="275" end="279" abstract="false" final="false" static="false" visibility="public">
+    <return type="object" nullable="true">
+      <type full="model\MOdel" namespace="model" name="MOdel"/>
+    </return>
+    <parameter name="state0" byreference="false" type="string"/>
+    <parameter name="staten" byreference="false" type="string"/>
+    <parameter name="user" byreference="false" type="object">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+    <parameter name="description" byreference="false" type="string"/>
+    <parameter name="stateful" byreference="false" type="object" default="NULL">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+  </method>
+  <method name="groupByDate" start="281" end="288" abstract="false" final="false" static="false" visibility="public">
+    <return type="array" nullable="false"/>
+    <parameter name="filter" byreference="false" type="string"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="getInstancesMap" start="289" end="300" abstract="false" final="false" static="false" visibility="public">
+    <return type="array" nullable="false"/>
+    <parameter name="haystack" byreference="false" type="string" default="NULL"/>
+    <parameter name="needle" byreference="false" type="string" default="NULL"/>
+  </method>
+  <method name="get" start="301" end="310" abstract="false" final="false" static="false" visibility="public">
+    <return type="array" nullable="false"/>
+    <parameter name="haystack" byreference="false" type="{unknown}"/>
+    <parameter name="needle" byreference="false" type="{unknown}"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+    <parameter name="skipCache" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="getAllAtState" start="311" end="318" abstract="false" final="false" static="false" visibility="public">
+    <return type="array" nullable="false"/>
+    <parameter name="state" byreference="false" type="string"/>
+    <parameter name="haystack" byreference="false" type="string" default="NULL"/>
+    <parameter name="needle" byreference="false" type="string" default="NULL"/>
+    <parameter name="page" byreference="false" type="integer" default="1"/>
+    <parameter name="max" byreference="false" type="integer" default="50"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="getAll" start="319" end="331" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+    <parameter name="skipCache" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="getGeneric" start="332" end="335" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="filter" byreference="false" type="string" default="&quot;&quot;"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+    <parameter name="cols" byreference="false" type="string" default="'*'"/>
+    <parameter name="skipCache" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="getPaginated" start="336" end="339" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="filter" byreference="false" type="string" default="&quot;&quot;"/>
+    <parameter name="cols" byreference="false" type="string" default="'*'"/>
+    <parameter name="page" byreference="false" type="integer" default="0"/>
+    <parameter name="limit" byreference="false" type="integer" default="100"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="getAdvanced" start="340" end="342" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="cols" byreference="false" type="{unknown}"/>
+    <parameter name="filter" byreference="false" type="string" default="&quot;&quot;"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="updateProperty" start="343" end="356" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="field" byreference="false" type="string"/>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="update" start="357" end="364" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="field" byreference="false" type="{unknown}"/>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+    <parameter name="haystack" byreference="false" type="{unknown}"/>
+    <parameter name="needle" byreference="false" type="{unknown}"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="updateGeneric" start="365" end="371" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="filter" byreference="false" type="{unknown}"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="deleteAll" start="372" end="374" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="delete" start="375" end="378" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="haystack" byreference="false" type="{unknown}"/>
+    <parameter name="needle" byreference="false" type="{unknown}"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+    <parameter name="soft" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="deleteGeneric" start="379" end="382" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="filter" byreference="false" type="{unknown}"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+    <parameter name="soft" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="hasProperty" start="383" end="385" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="field" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getFieldMeta" start="386" end="440" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <todo value="Get DB field/column meta" line="386"/>
+      <comment value="According to" line="407"/>
+      <comment value="dev.mysql.com/sources/doxygen/mysql-5.1/mysql__com_8h-source.html" line="408"/>
+      <comment value="the flag bits are:" line="409"/>
+      <comment value="NOT_NULL_FLAG          1         /* Field can't be NULL */" line="411"/>
+      <comment value="PRI_KEY_FLAG           2         /* Field is part of a primary key */" line="412"/>
+      <comment value="UNIQUE_KEY_FLAG        4         /* Field is part of a unique key */" line="413"/>
+      <comment value="MULTIPLE_KEY_FLAG      8         /* Field is part of a key */" line="414"/>
+      <comment value="BLOB_FLAG             16         /* Field is a blob */" line="415"/>
+      <comment value="UNSIGNED_FLAG         32         /* Field is unsigned */" line="416"/>
+      <comment value="ZEROFILL_FLAG         64         /* Field is zerofill */" line="417"/>
+      <comment value="BINARY_FLAG          128         /* Field is binary   */" line="418"/>
+      <comment value="ENUM_FLAG            256         /* field is an enum */" line="419"/>
+      <comment value="AUTO_INCREMENT_FLAG  512         /* field is a autoincrement field */" line="420"/>
+      <comment value="TIMESTAMP_FLAG      1024         /* Field is a timestamp */" line="421"/>
+    </inline>
+  </method>
+</class>

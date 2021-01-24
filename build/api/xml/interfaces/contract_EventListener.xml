@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="contract\EventListener" namespace="contract" name="EventListener" abstract="false" final="false" start="5" end="7">
+  <file path="../src/contract" file="EventListener.php" realpath="/home/folarin/code/onec/users-info-svc/src/contract/EventListener.php" size="197" time="2020-11-27T00:06:14+00:00" unixtime="1606435574" sha1="74da8ac89b2441c4ee7889e4826e87b3fc98bd37" relative="contract/EventListener.php"/>
+  <method name="stateChanged" start="6" end="6" abstract="false" final="false" static="true" visibility="public">
+    <return type="bool" nullable="false"/>
+    <parameter name="model" byreference="false" type="object">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+    <parameter name="op" byreference="false" type="string"/>
+    <parameter name="prop" byreference="false" type="string" default="NULL"/>
+    <parameter name="from" byreference="false" type="string" default="NULL"/>
+    <parameter name="to" byreference="false" type="string" default="NULL"/>
+  </method>
+  <implementors>
+    <class full="plaf\ActionListener" namespace="plaf" name="ActionListener"/>
+  </implementors>
+</interface>

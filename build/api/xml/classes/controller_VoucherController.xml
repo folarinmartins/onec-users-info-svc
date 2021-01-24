@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="controller\VoucherController" namespace="controller" name="VoucherController" abstract="false" final="false" start="12" end="304">
+  <file path="../src/controller" file="VoucherController.php" realpath="/home/folarin/code/onec/users-info-svc/src/controller/VoucherController.php" size="13604" time="2020-12-14T16:43:01+00:00" unixtime="1607964181" sha1="3bab0baa2b329fe6b0dad9ad2de5147c79207cf8" relative="controller/VoucherController.php"/>
+  <extends full="contract\Controller" namespace="contract" name="Controller"/>
+  <method name="showRedeem" start="13" end="19" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="redeemVTX" start="20" end="88" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="issueVTX" start="89" end="277" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="initVTX" start="278" end="303" abstract="false" final="false" static="true" visibility="public">
+    <inline>
+      <comment value="Utility::log($response-&gt;getPayload());" line="302"/>
+    </inline>
+  </method>
+  <parent full="contract\Controller" namespace="contract" name="Controller">
+    <member name="request" visibility="protected" static="false" line="6"/>
+    <method name="index" start="7" end="7" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="create" start="8" end="8" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="store" start="9" end="9" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="show" start="10" end="12" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="edit" start="13" end="13" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="update" start="14" end="14" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="destroy" start="15" end="15" abstract="false" final="false" static="true" visibility="public"/>
+  </parent>
+</class>

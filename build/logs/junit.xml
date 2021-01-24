@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="4" assertions="18" errors="0" warnings="0" failures="0" skipped="0" time="0.135201">
+    <testsuite name="onec-users-info" tests="4" assertions="18" errors="0" warnings="0" failures="0" skipped="0" time="0.135201">
+      <testsuite name="test\controller\UserControllerTest" file="/home/folarin/code/onec/users-info-svc/tests/unit/UserControllerTest.php" tests="4" assertions="18" errors="0" warnings="0" failures="0" skipped="0" time="0.135201">
+        <testcase name="testCreate" class="test\controller\UserControllerTest" classname="test.controller.UserControllerTest" file="/home/folarin/code/onec/users-info-svc/tests/unit/UserControllerTest.php" line="28" assertions="5" time="0.069870"/>
+        <testcase name="testGetAll" class="test\controller\UserControllerTest" classname="test.controller.UserControllerTest" file="/home/folarin/code/onec/users-info-svc/tests/unit/UserControllerTest.php" line="53" assertions="4" time="0.003621"/>
+        <testcase name="testGetById" class="test\controller\UserControllerTest" classname="test.controller.UserControllerTest" file="/home/folarin/code/onec/users-info-svc/tests/unit/UserControllerTest.php" line="60" assertions="5" time="0.003172"/>
+        <testcase name="testDelete" class="test\controller\UserControllerTest" classname="test.controller.UserControllerTest" file="/home/folarin/code/onec/users-info-svc/tests/unit/UserControllerTest.php" line="72" assertions="4" time="0.058537"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

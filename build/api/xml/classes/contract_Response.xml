@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="contract\Response" namespace="contract" name="Response" abstract="false" final="false" start="8" end="100">
+  <file path="../src/contract" file="Response.php" realpath="/home/folarin/code/onec/users-info-svc/src/contract/Response.php" size="2389" time="2020-12-10T15:10:54+00:00" unixtime="1607613054" sha1="cfc80e019eaac645a6957dd3e80ec5c36c5976aa" relative="contract/Response.php"/>
+  <member name="request" visibility="private" static="false" line="9"/>
+  <member name="page" visibility="private" static="false" line="10"/>
+  <member name="messageBag" visibility="private" static="false" line="11"/>
+  <member name="payload" visibility="private" static="false" line="12"/>
+  <member name="header" visibility="private" static="false" line="13"/>
+  <member name="text" visibility="private" static="false" line="14"/>
+  <member name="url" visibility="private" static="false" line="15"/>
+  <member name="statusCode" visibility="private" static="false" line="16"/>
+  <constructor name="__construct" start="18" end="27" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="contract\Request" namespace="contract" name="Request"/>
+    </parameter>
+  </constructor>
+  <method name="getRequest" start="28" end="30" abstract="false" final="false" static="false" visibility="public">
+    <return type="object" nullable="false">
+      <type full="contract\Request" namespace="contract" name="Request"/>
+    </return>
+  </method>
+  <method name="setRequest" start="31" end="33" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="contract\Request" namespace="contract" name="Request"/>
+    </parameter>
+  </method>
+  <method name="getPage" start="34" end="36" abstract="false" final="false" static="false" visibility="public">
+    <return type="object" nullable="true">
+      <type full="view\Page" namespace="view" name="Page"/>
+    </return>
+  </method>
+  <method name="setPage" start="37" end="39" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="page" byreference="false" type="object">
+      <type full="view\Page" namespace="view" name="Page"/>
+    </parameter>
+  </method>
+  <method name="getURL" start="40" end="42" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="index" byreference="false" type="string"/>
+  </method>
+  <method name="setURL" start="43" end="45" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="index" byreference="false" type="string"/>
+    <parameter name="url" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getURLs" start="46" end="48" abstract="false" final="false" static="false" visibility="public">
+    <return type="array" nullable="false"/>
+  </method>
+  <method name="setURLs" start="49" end="51" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="url" byreference="false" type="array"/>
+  </method>
+  <method name="getTexts" start="52" end="54" abstract="false" final="false" static="false" visibility="public">
+    <return type="array" nullable="false"/>
+  </method>
+  <method name="setTexts" start="55" end="57" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="text" byreference="false" type="array"/>
+  </method>
+  <method name="setText" start="58" end="60" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="index" byreference="false" type="string"/>
+    <parameter name="text" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getText" start="61" end="63" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="index" byreference="false" type="string"/>
+  </method>
+  <method name="getMessageBag" start="64" end="66" abstract="false" final="false" static="false" visibility="public">
+    <return type="array" nullable="false"/>
+  </method>
+  <method name="setMessageBag" start="67" end="69" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="messageBag" byreference="false" type="array"/>
+  </method>
+  <method name="addMessage" start="70" end="72" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="message" byreference="false" type="object">
+      <type full="contract\Message" namespace="contract" name="Message"/>
+    </parameter>
+  </method>
+  <method name="getPayload" start="73" end="75" abstract="false" final="false" static="false" visibility="public">
+    <return type="array" nullable="false"/>
+  </method>
+  <method name="setPayload" start="76" end="78" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="payload" byreference="false" type="array"/>
+  </method>
+  <method name="addPayload" start="79" end="81" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="key" byreference="false" type="string"/>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getHeader" start="82" end="84" abstract="false" final="false" static="false" visibility="public">
+    <return type="array" nullable="false"/>
+  </method>
+  <method name="setHeader" start="85" end="87" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="header" byreference="false" type="array"/>
+  </method>
+  <method name="addHeader" start="88" end="90" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="key" byreference="false" type="string"/>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getPayloadValue" start="91" end="93" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="key" byreference="false" type="string"/>
+  </method>
+  <method name="getStatusCode" start="94" end="96" abstract="false" final="false" static="false" visibility="public">
+    <return type="int" nullable="false"/>
+  </method>
+  <method name="setStatusCode" start="97" end="99" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="statusCode" byreference="false" type="int"/>
+  </method>
+</class>

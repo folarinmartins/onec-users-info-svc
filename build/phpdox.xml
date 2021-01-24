@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<phpdox xmlns="http://xml.phpdox.net/config">
+	<project name="onec-users-info" source="../src" workdir="api/xml">
+		<collector publiconly="false">
+			<include mask="*.php" />
+		</collector>
+
+		<generator output="api">
+			<build engine="html" enabled="true" output="html">
+				<file extension="html" />
+			</build>
+			<enrich base="./logs">
+				<source type="phploc">
+					<file name="phploc.xml" />
+				</source>
+			</enrich>
+			<enrich base="./logs">
+				<source type="pmd">
+					<file name="pmd.xml" />
+				</source>
+			</enrich>
+			<enrich base="./logs">
+				<source type="checkstyle">
+					<file name="checkstyle.xml" />
+				</source>
+			</enrich>
+			<enrich base="../.git">
+				<source type="git">
+					<!-- <file name="phploc.xml" /> -->
+				</source>
+			</enrich>
+		</generator>
+	</project>
+</phpdox>

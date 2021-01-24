@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="view\Page" namespace="view" name="Page" abstract="false" final="false" start="11" end="203">
+  <file path="../src/view" file="Page.php" realpath="/home/folarin/code/onec/users-info-svc/src/view/Page.php" size="9855" time="2021-01-22T03:39:34+00:00" unixtime="1611286774" sha1="22cbfacc2323cfa865ff7ee567f59c20072237c3" relative="view/Page.php"/>
+  <extends full="view\PageElement" namespace="view" name="PageElement"/>
+  <constructor name="__construct" start="12" end="15" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="variables" byreference="false" type="array"/>
+    <parameter name="contentFile" byreference="false" type="string" default="'404.php'"/>
+    <parameter name="templatesPath" byreference="false" type="string" default="NULL"/>
+    <parameter name="interface" byreference="false" type="string" default="'app'"/>
+  </constructor>
+  <method name="init" start="16" end="141" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="if($userProxy-&gt;hasProperty(PROPERTY_ICON))" line="19"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$variables['url']['user.dp'] = '';//Link::getFile(TypeProxy::getInstanceByID(TYPE_FILE,$userProxy-&gt;getPropertyID(PROPERTY_ICON)[0]));" line="20"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="else" line="21"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$variables['url']['user.dp'] = 'assets/img/a0.jpg';" line="22"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if($userProxy){" line="23"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$variables['text']['user.name'] = $userProxy-&gt;getPropertyValue(PROPERTY_NAME)[0]??'';" line="24"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$variables['text']['user.email'] = $userProxy-&gt;getPropertyValue(PROPERTY_EMAIL)[0]??'';" line="25"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}else{" line="26"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$variables['text']['user.name'] = 'User';" line="27"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$variables['text']['user.email'] = '';" line="28"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="29"/>
+      <comment value="if(!isset($vars['url']['page.hero']))" line="45"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['page.hero'] = '.';" line="46"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['text']['page.desc']))" line="47"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['text']['page.desc'] = 'Welcome to '.$vars['text']['company.name'];" line="48"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['text']['alert.show']))" line="49"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['text']['alert.show'] = 'show';" line="50"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['text']['alert.theme']))" line="51"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['text']['alert.theme'] = 'info';" line="52"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['text']['alert.icon']))" line="53"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['text']['alert.icon'] = 'info';" line="54"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['login']))" line="55"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['login'] = Link::getURL('login');;" line="56"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['logout']))" line="57"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['logout'] = Link::getURL('logout');;" line="58"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['support']))" line="59"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['support'] = Link::getURL('support');;" line="60"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['services']))" line="61"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['services'] = Link::getURL('services');;" line="62"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['settings']))" line="63"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['settings'] = Link::getURL('settings');;" line="64"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['3pa']))" line="65"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['3pa'] = Link::getURL('3pa');;" line="66"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['3pa.r']))" line="67"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['3pa.r'] = Link::getURL('3pa').'?e0='.OP_R;;" line="68"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['3pa.l']))" line="69"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['3pa.l'] = Link::getURL('3pa').'?e0='.OP_L;;" line="70"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['3pa.x']))" line="71"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['3pa.x'] = Link::getURL('3pa').'?e0='.OP_X;;" line="72"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['shop']))" line="73"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['shop'] = Link::getURL('shop');" line="74"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['shop.c']))" line="75"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['shop.c'] = Link::getURL('shop').'?e0='.TYPE_PACKAGE.'&amp;e1='.OP_C;" line="76"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['shop.l']))" line="77"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['shop.l'] = Link::getURL('shop').'?e0='.TYPE_PACKAGE.'&amp;e1='.OP_L;" line="78"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['delivery.l']))" line="79"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['delivery.l'] = Link::getURL('logistics').'?e0='.TYPE_DELIVERY.'&amp;e1='.OP_L;" line="80"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['product.l']))" line="81"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['product.l'] = Link::getURL('logistics').'?e0='.TYPE_PRODUCT.'&amp;e1='.OP_L;" line="82"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['commodity.l']))" line="83"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['commodity.l'] = Link::getURL('logistics').'?e0='.TYPE_COMMODITY.'&amp;e1='.OP_L;" line="84"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['so.l']))" line="85"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['so.l'] = Link::getURL('logistics').'?e0='.TYPE_ORDER_SALES.'&amp;e1='.OP_L;" line="86"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['mrp']))" line="87"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['mrp'] = Link::getURL('mrp').'?e0='.TYPE_ORDER_SALES.'&amp;e1='.PROPERTY_CONFIGURATION;" line="88"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['mrp.so.l']))" line="89"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['mrp.so.l'] = Link::getURL('mrp').'?e0='.TYPE_ORDER_SALES.'&amp;e1='.OP_L;" line="90"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['mrp.rfq.l']))" line="91"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['mrp.rfq.l'] = Link::getURL('logistics').'?e0='.TYPE_RFQ.'&amp;e1='.OP_L;" line="92"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['mrp.rfq.c']))" line="93"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['mrp.rfq.c'] = Link::getURL('logistics').'?e0='.TYPE_RFQ.'&amp;e1='.OP_C;" line="94"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['mrp.quotation.l']))" line="95"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['mrp.quotation.l'] = Link::getURL('logistics').'?e0='.TYPE_QUOTATION.'&amp;e1='.OP_L;" line="96"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['mrp.vinvoice.l']))" line="97"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['mrp.vinvoice.l'] = Link::getURL('logistics').'?e0='.TYPE_INVOICE_VENDORS.'&amp;e1='.OP_L;" line="98"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['mrp.gr.l']))" line="99"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['mrp.gr.l'] = Link::getURL('logistics').'?e0='.TYPE_GOODS_RECEIPT.'&amp;e1='.OP_L;" line="100"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['mrp.po.l']))" line="101"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['mrp.po.l'] = Link::getURL('logistics').'?e0='.TYPE_ORDER_PURCHASE.'&amp;e1='.OP_L;" line="102"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['mrp.pro.l']))" line="103"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['mrp.pro.l'] = Link::getURL('logistics').'?e0='.TYPE_ORDER_PRODUCTION.'&amp;e1='.OP_L;" line="104"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['mrp.prs.l']))" line="105"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['mrp.prs.l'] = Link::getURL('logistics').'?e0='.TYPE_PRODUCTION_SCHEDULE.'&amp;e1='.OP_L;" line="106"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['mrp.sro.l']))" line="107"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['mrp.sro.l'] = Link::getURL('logistics').'?e0='.TYPE_ORDER_PROCESSING.'&amp;e1='.OP_L;" line="108"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['mrp.srs.l']))" line="109"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['mrp.srs.l'] = Link::getURL('logistics').'?e0='.TYPE_PROCESSING_SCHEDULE.'&amp;e1='.OP_L;" line="110"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['payment.l']))" line="111"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['payment.l'] = Link::getURL('logistics').'?e0='.TYPE_ORDER_PAY.'&amp;e1='.OP_L;" line="112"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['invoice.l']))" line="113"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['invoice.l'] = Link::getURL('logistics').'?e0='.TYPE_INVOICE_SALES.'&amp;e1='.OP_L;" line="114"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['entry.l']))" line="115"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['entry.l'] = Link::getURL('logistics').'?e0='.TYPE_ENTRY.'&amp;e1='.OP_L;" line="116"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['transaction.l']))" line="117"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['transaction.l'] = Link::getURL('logistics').'?e0='.TYPE_TRANSACTION.'&amp;e1='.OP_L;" line="118"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['support.l']))" line="119"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['support.l'] = Link::getURL('logistics').'?e0='.TYPE_ISSUE.'&amp;e1='.OP_L;" line="120"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['notification.l']))" line="121"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['notification.l'] = Link::getURL('logistics').'?e0='.TYPE_NOTIFICATION.'&amp;e1='.OP_L;" line="122"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['link.l']))" line="123"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['link.l'] = Link::getURL('logistics').'?e0='.TYPE_WEB_LINK.'&amp;e1='.OP_L;" line="124"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['weblog.l']))" line="125"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['weblog.l'] = Link::getURL('logistics').'?e0='.TYPE_WEB_LOG.'&amp;e1='.OP_L;" line="126"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['checkout']))" line="127"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['checkout'] = Link::getURL('checkout');" line="128"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['url']['gigs']))" line="129"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['url']['gigs'] = Link::getURL('gigs');" line="130"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!isset($vars['text']['alert.message'])){" line="131"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['text']['alert.message'] = '&lt;strong&gt;Yo guacamole!&lt;/strong&gt; You should check in on some of those fields below.';" line="132"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['text']['alert.show'] = 'hidden';" line="133"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['text']['alert.theme'] = 'info';" line="134"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$vars['text']['alert.icon'] = 'info';" line="135"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="136"/>
+    </inline>
+  </method>
+  <method name="getInstance" start="142" end="144" abstract="false" final="false" static="true" visibility="public">
+    <return type="object" nullable="false">
+      <type full="view\Page" namespace="view" name="Page"/>
+    </return>
+    <parameter name="variables" byreference="false" type="array"/>
+    <parameter name="contentFile" byreference="false" type="string"/>
+    <parameter name="templatePath" byreference="false" type="string" default="NULL"/>
+    <parameter name="interface" byreference="false" type="string" default="'app'"/>
+  </method>
+  <method name="redirect" start="145" end="152" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="url" byreference="false" type="string"/>
+    <parameter name="force" byreference="false" type="boolean" default="true"/>
+  </method>
+  <method name="show404" start="153" end="155" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="show505" start="156" end="158" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="showErrorPage" start="159" end="162" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="code" byreference="false" type="string" default="'404'"/>
+  </method>
+  <method name="getRoles" start="163" end="174" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getMenu" start="175" end="202" abstract="false" final="false" static="true" visibility="public">
+    <return type="object" nullable="false">
+      <type full="view\ProxyType" namespace="view" name="ProxyType"/>
+    </return>
+    <parameter name="companyProxy" byreference="false" type="object">
+      <type full="view\TypeProxy" namespace="view" name="TypeProxy"/>
+    </parameter>
+    <parameter name="userProxy" byreference="false" type="object">
+      <type full="view\TypeProxy" namespace="view" name="TypeProxy"/>
+    </parameter>
+  </method>
+  <extenders>
+    <extender full="view\PageX" namespace="view" name="PageX"/>
+  </extenders>
+  <parent full="view\PageElement" namespace="view" name="PageElement">
+    <member name="variables" default="" type="array" visibility="protected" static="false" line="7"/>
+    <member name="interface" default="''" type="string" visibility="protected" static="false" line="8"/>
+    <constructor name="__construct" start="12" end="18" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="variables" byreference="false" type="array"/>
+      <parameter name="contentFile" byreference="false" type="string"/>
+      <parameter name="templatesPath" byreference="false" type="string" default="NULL"/>
+      <parameter name="interface" byreference="false" type="string"/>
+    </constructor>
+    <method name="getTemplatePath" start="19" end="21" abstract="false" final="false" static="false" visibility="public"/>
+    <method name="getContentFile" start="22" end="24" abstract="false" final="false" static="false" visibility="public"/>
+    <method name="setContentFile" start="25" end="27" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="contentFile" byreference="false" type="string"/>
+    </method>
+    <method name="getContent" start="28" end="30" abstract="false" final="false" static="false" visibility="public"/>
+    <method name="getVariables" start="31" end="33" abstract="false" final="false" static="false" visibility="public"/>
+    <method name="setVariables" start="34" end="36" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="variables" byreference="false" type="array"/>
+    </method>
+    <method name="getInterface" start="37" end="39" abstract="false" final="false" static="false" visibility="public"/>
+    <method name="setInterface" start="40" end="42" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="interface" byreference="false" type="array"/>
+    </method>
+    <method name="setVariable" start="43" end="45" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="index" byreference="false" type="string"/>
+      <parameter name="value" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="render" start="46" end="57" abstract="false" final="false" static="false" visibility="public">
+      <return type="string" nullable="false"/>
+    </method>
+    <method name="canRender" start="58" end="60" abstract="false" final="false" static="false" visibility="public"/>
+  </parent>
+</class>

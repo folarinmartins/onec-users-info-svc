@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="../src/service/comm" file="Notification.php" realpath="/home/folarin/code/onec/users-info-svc/src/service/comm/Notification.php" size="185" time="2020-10-17T19:37:38+00:00" unixtime="1602963458" sha1="104fe5e449f6048c9388b30ba99d7b577b7bb014" relative="service/comm/Notification.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_NAMESPACE">namespace</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">comm</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="3">
+    <token name="T_USE">use</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">model</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">TypeProxy</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="4">
+    <token name="T_USE">use</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">helper</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Utility</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="5">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="6">
+    <token name="T_DOC_COMMENT"> * TODO:</token>
+  </line>
+  <line no="7">
+    <token name="T_DOC_COMMENT"> * Log all communications for receipts, resend, scheduling, status, audit</token>
+  </line>
+  <line no="8">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="9">
+    <token name="T_DOC_COMMENT"> * */</token>
+  </line>
+  <line no="10">
+    <token name="T_CLASS">Class</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Notification</token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="11">
+    <token name="T_WHITESPACE">	</token>
+  </line>
+  <line no="12">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="13">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+</source>

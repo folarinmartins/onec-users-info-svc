@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="comm\Messager" namespace="comm" name="Messager" abstract="false" final="false" start="7" end="46">
+  <file path="../src/service/comm" file="Messager.php" realpath="/home/folarin/code/onec/users-info-svc/src/service/comm/Messager.php" size="1297" time="2020-12-16T01:04:12+00:00" unixtime="1608080652" sha1="97d85a3ea39f720089f68189fb7a73a037660881" relative="service/comm/Messager.php"/>
+  <method name="send" start="8" end="45" abstract="false" final="false" static="true" visibility="public">
+    <return type="bool" nullable="false"/>
+    <parameter name="text" byreference="false" type="string"/>
+    <parameter name="to" byreference="false" type="array"/>
+    <parameter name="from" byreference="false" type="string" default="NULL"/>
+    <parameter name="cc" byreference="false" type="array" default=""/>
+    <inline>
+      <comment value="use 'sandbox' for development in the test environment" line="9"/>
+      <comment value="use your sandbox app API key for development in the test environment" line="10"/>
+      <comment value="Get one of the services" line="12"/>
+      <comment value="(" line="23"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[status] =&gt; success" line="24"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[data] =&gt; stdClass Object" line="25"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="(" line="26"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[SMSMessageData] =&gt; stdClass Object" line="27"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="(" line="28"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[Message] =&gt; Sent to 1/1 Total Cost: NGN 3.2000" line="29"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[Recipients] =&gt; Array" line="30"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="(" line="31"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[0] =&gt; stdClass Object" line="32"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="(" line="33"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[cost] =&gt; NGN 3.2000" line="34"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[messageId] =&gt; ATXid_7c184d41b295f1f17345536387f704df" line="35"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[messageParts] =&gt; 1" line="36"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[number] =&gt; +2348066288220" line="37"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[status] =&gt; Success" line="38"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[statusCode] =&gt; 101" line="39"/>
+      <comment xmlns="http://xml.phpdox.net/src" value=")" line="40"/>
+      <comment xmlns="http://xml.phpdox.net/src" value=")" line="41"/>
+      <comment xmlns="http://xml.phpdox.net/src" value=")" line="42"/>
+      <comment xmlns="http://xml.phpdox.net/src" value=")" line="43"/>
+      <comment xmlns="http://xml.phpdox.net/src" value=")" line="44"/>
+    </inline>
+  </method>
+</class>

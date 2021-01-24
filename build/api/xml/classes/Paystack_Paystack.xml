@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Paystack\Paystack" namespace="Paystack" name="Paystack" abstract="false" final="false" start="34" end="139">
+  <file path="../src/providers/Paystack" file="Paystack.php" realpath="/home/folarin/code/onec/users-info-svc/src/providers/Paystack/Paystack.php" size="3971" time="2020-12-10T10:57:02+00:00" unixtime="1607597822" sha1="a85f12be8865a304d97b611646fa4e713eda9143" relative="providers/Paystack/Paystack.php"/>
+  <constant type="string" name="URL" value="'https://api.paystack.co/'"/>
+  <member name="ch" visibility="private" static="false" line="38"/>
+  <member name="Payment" visibility="public" static="false" line="40"/>
+  <constant type="boolean" name="DEBUG" value="true"/>
+  <member name="log" default="" type="array" visibility="public" static="false" line="45"/>
+  <constructor name="__construct" start="47" end="70" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="api_code" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="$this-&gt;service_url = null;" line="48"/>
+      <comment value="if(!is_null($api_code)) {" line="50"/>
+      <comment value="$this-&gt;api_code = $api_code;" line="51"/>
+      <comment value="}" line="52"/>
+      <comment value="$this-&gt;Explorer  = new Explorer($this);" line="64"/>
+      <comment value="$this-&gt;Push      = new Push($this);" line="65"/>
+      <comment value="$this-&gt;Rates     = new Rates($this);" line="66"/>
+      <comment value="$this-&gt;ReceiveV2 = new ReceiveV2($this-&gt;ch);" line="67"/>
+      <comment value="$this-&gt;Stats     = new Stats($this);" line="68"/>
+      <comment value="$this-&gt;Wallet    = new Wallet($this);" line="69"/>
+    </inline>
+  </constructor>
+  <destructor name="__destruct" start="72" end="74" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="setTimeout" start="76" end="78" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="timeout" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="post" start="80" end="101" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="resource" byreference="false" type="{unknown}"/>
+    <parameter name="data" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="if(!is_null($this-&gt;api_code)) {" line="88"/>
+      <comment value="$data['api_code'] = $this-&gt;api_code;" line="89"/>
+      <comment value="}" line="90"/>
+      <comment value="throw ApiError if we get an 'error' field in the JSON" line="96"/>
+    </inline>
+  </method>
+  <method name="get" start="103" end="110" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="resource" byreference="false" type="{unknown}"/>
+    <parameter name="params" byreference="false" type="array" default=""/>
+  </method>
+  <method name="_call" start="112" end="138" abstract="false" final="false" static="false" visibility="private"/>
+</class>

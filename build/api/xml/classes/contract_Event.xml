@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="contract\Event" namespace="contract" name="Event" abstract="false" final="false" start="6" end="62">
+  <file path="../src/contract" file="Event.php" realpath="/home/folarin/code/onec/users-info-svc/src/contract/Event.php" size="2076" time="2020-12-10T22:54:37+00:00" unixtime="1607640877" sha1="d7e8788819389f025827c546b4df4bab14d5a5cf" relative="contract/Event.php"/>
+  <member name="listeners" default="" type="array" visibility="private" static="true" line="7"/>
+  <method name="listen" start="15" end="17" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$listener">
+        <type full="contract\EventListener" namespace="contract" name="EventListener"/>
+      </param>
+      <param type="string" variable="$op"/>
+      <param type="string" variable="$prop"/>
+      <param type="string" variable="$UID"/>
+      <return type="object">
+        <type full="contract\void" namespace="contract" name="void"/>
+      </return>
+    </docblock>
+    <parameter name="listener" byreference="false" type="object">
+      <type full="contract\EventListener" namespace="contract" name="EventListener"/>
+    </parameter>
+    <parameter name="op" byreference="false" type="{unknown}" default="" constant="QUANTIFIER_ALL"/>
+    <parameter name="prop" byreference="false" type="{unknown}" default="" constant="QUANTIFIER_ALL"/>
+    <parameter name="UID" byreference="false" type="{unknown}" default="" constant="QUANTIFIER_ALL"/>
+  </method>
+  <method name="unlisten" start="18" end="25" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="listener" byreference="false" type="object">
+      <type full="contract\EventListener" namespace="contract" name="EventListener"/>
+    </parameter>
+    <parameter name="op" byreference="false" type="{unknown}" default="" constant="QUANTIFIER_ALL"/>
+    <parameter name="model" byreference="false" type="string"/>
+  </method>
+  <method name="trigger" start="26" end="61" abstract="false" final="false" static="true" visibility="public">
+    <return type="bool" nullable="false"/>
+    <parameter name="model" byreference="false" type="object">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+    <parameter name="op" byreference="false" type="string"/>
+    <parameter name="prop" byreference="false" type="{unknown}" default="" constant="QUANTIFIER_ALL"/>
+    <parameter name="from" byreference="false" type="string" default="NULL"/>
+    <parameter name="to" byreference="false" type="string" default="NULL"/>
+  </method>
+</class>

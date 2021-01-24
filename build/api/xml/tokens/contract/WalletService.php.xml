@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="../src/contract" file="WalletService.php" realpath="/home/folarin/code/onec/users-info-svc/src/contract/WalletService.php" size="0" time="2020-10-14T19:16:59+00:00" unixtime="1602703019" sha1="da39a3ee5e6b4b0d3255bfef95601890afd80709" relative="contract/WalletService.php"/>
+  <line no="1"/>
+</source>

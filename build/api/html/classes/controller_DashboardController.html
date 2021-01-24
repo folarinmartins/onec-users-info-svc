@@ -1,0 +1,2556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - controller\DashboardController</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.html">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.html">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.html">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.html">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.html">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.html">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.html">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.html#controller">controller</a>
+          </li>
+          <li class="separator">DashboardController</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#violations">Violations</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="#history">History</a>
+          </li>
+          <li>
+            <a href="../source/controller/DashboardController.php.html#line9">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>controller\</small>DashboardController</h1>
+        <h4/>
+        <p/>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class DashboardController
+                extends <a title="contract\Controller" href="../classes/contract_Controller.html">Controller</a>
+            {<br/><ul class="none"><li>// Inherited members from <span title="contract\Controller">Controller</span></li><li>protected  <a href="#members">$request</a>;
+                        </li></ul><ul class="none"><li>// methods</li><li>public static void <a title="controller\DashboardController" href="../classes/controller_DashboardController/show.html">show</a>()
+                    </li><li>public static void <a title="controller\DashboardController" href="../classes/controller_DashboardController/listPayout.html">listPayout</a>()
+                    </li><li>public static void <a title="controller\DashboardController" href="../classes/controller_DashboardController/readPayout.html">readPayout</a>()
+                    </li><li>public static void <a title="controller\DashboardController" href="../classes/controller_DashboardController/updatePayout.html">updatePayout</a>()
+                    </li><li>public static void <a title="controller\DashboardController" href="../classes/controller_DashboardController/showKYC.html">showKYC</a>()
+                    </li><li>public static void <a title="controller\DashboardController" href="../classes/controller_DashboardController/updateKYC.html">updateKYC</a>()
+                    </li><li>public static void <a title="controller\DashboardController" href="../classes/controller_DashboardController/listKYC.html">listKYC</a>()
+                    </li><li>public static void <a title="controller\DashboardController" href="../classes/controller_DashboardController/readKYC.html">readKYC</a>()
+                    </li></ul><ul class="none"><li>// Inherited methods from <span title="contract\Controller">Controller</span></li><li>public static void <a title="contract\Controller" href="../classes/contract_Controller/index.html">index</a>()
+                        </li><li>public static void <a title="contract\Controller" href="../classes/contract_Controller/create.html">create</a>()
+                        </li><li>public static void <a title="contract\Controller" href="../classes/contract_Controller/store.html">store</a>()
+                        </li><li>public static void <a title="contract\Controller" href="../classes/contract_Controller/show.html">show</a>()
+                        </li><li>public static void <a title="contract\Controller" href="../classes/contract_Controller/edit.html">edit</a>()
+                        </li><li>public static void <a title="contract\Controller" href="../classes/contract_Controller/update.html">update</a>()
+                        </li><li>public static void <a title="contract\Controller" href="../classes/contract_Controller/destroy.html">destroy</a>()
+                        </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Extends</h4>
+          <ul>
+            <li>
+              <a title="contract\Controller" href="../classes/contract_Controller.html">contract\Controller</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="violations">Violations</h2>
+        <div class="styled">
+          <h3>PHPMessDetector</h3>
+          <table class="styled">
+            <thead>
+              <tr>
+                <th>Line</th>
+                <th>Rule</th>
+                <th>Message</th>
+              </tr>
+            </thead>
+            <tr>
+              <td class="line">69</td>
+              <td>
+                <a href="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" target="_blank" title="Unused Code Rules">UnusedLocalVariable</a>
+              </td>
+              <td>Avoid unused local variables such as '$balanceQty'.</td>
+            </tr>
+            <tr>
+              <td class="line">106 - 149</td>
+              <td>
+                <a href="https://phpmd.org/rules/codesize.html#cyclomaticcomplexity" target="_blank" title="Code Size Rules">CyclomaticComplexity</a>
+              </td>
+              <td>The method updateKYC() has a Cyclomatic Complexity of 16. The configured cyclomatic complexity threshold is 10.</td>
+            </tr>
+          </table>
+          <h3>Checkstyle</h3>
+          <table class="styled">
+            <thead>
+              <tr>
+                <th>Line</th>
+                <th>Column</th>
+                <th>Severity</th>
+                <th>Message</th>
+              </tr>
+            </thead>
+            <tr>
+              <td class="line">6</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">9</td>
+              <td>45</td>
+              <td>
+                <span title="PSR2.Classes.ClassDeclaration.OpenBraceNewLine">error</span>
+              </td>
+              <td>Opening brace of a class must be on the line after the definition</td>
+            </tr>
+            <tr>
+              <td class="line">10</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">10</td>
+              <td>9</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 4 spaces, found 8</td>
+            </tr>
+            <tr>
+              <td class="line">10</td>
+              <td>16</td>
+              <td>
+                <span title="Squiz.Scope.MethodScope.Missing">error</span>
+              </td>
+              <td>Visibility must be declared on method "show"</td>
+            </tr>
+            <tr>
+              <td class="line">10</td>
+              <td>31</td>
+              <td>
+                <span title="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine">error</span>
+              </td>
+              <td>Opening brace should be on a new line</td>
+            </tr>
+            <tr>
+              <td class="line">11</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">12</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">13</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">13</td>
+              <td>13</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 8 spaces, found 12</td>
+            </tr>
+            <tr>
+              <td class="line">13</td>
+              <td>13</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword">error</span>
+              </td>
+              <td>Expected 1 space(s) after IF keyword; 0 found</td>
+            </tr>
+            <tr>
+              <td class="line">13</td>
+              <td>52</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis">error</span>
+              </td>
+              <td>Expected 1 space(s) after closing parenthesis; found 0</td>
+            </tr>
+            <tr>
+              <td class="line">14</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">15</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">16</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">16</td>
+              <td>53</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">17</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">18</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">18</td>
+              <td>13</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 8 spaces, found 12</td>
+            </tr>
+            <tr>
+              <td class="line">18</td>
+              <td>13</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace">error</span>
+              </td>
+              <td>Expected 1 space after closing brace; 0 found</td>
+            </tr>
+            <tr>
+              <td class="line">18</td>
+              <td>14</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword">error</span>
+              </td>
+              <td>Expected 1 space(s) after ELSE keyword; 0 found</td>
+            </tr>
+            <tr>
+              <td class="line">19</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">20</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">21</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">21</td>
+              <td>53</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">22</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">23</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">23</td>
+              <td>13</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 8 spaces, found 12</td>
+            </tr>
+            <tr>
+              <td class="line">24</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">24</td>
+              <td>9</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 4 spaces, found 8</td>
+            </tr>
+            <tr>
+              <td class="line">25</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">25</td>
+              <td>9</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 4 spaces, found 8</td>
+            </tr>
+            <tr>
+              <td class="line">25</td>
+              <td>16</td>
+              <td>
+                <span title="Squiz.Scope.MethodScope.Missing">error</span>
+              </td>
+              <td>Visibility must be declared on method "listPayout"</td>
+            </tr>
+            <tr>
+              <td class="line">25</td>
+              <td>37</td>
+              <td>
+                <span title="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine">error</span>
+              </td>
+              <td>Opening brace should be on a new line</td>
+            </tr>
+            <tr>
+              <td class="line">26</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">27</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">28</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">29</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">29</td>
+              <td>49</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">30</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">31</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">31</td>
+              <td>9</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 4 spaces, found 8</td>
+            </tr>
+            <tr>
+              <td class="line">32</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">32</td>
+              <td>9</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 4 spaces, found 8</td>
+            </tr>
+            <tr>
+              <td class="line">32</td>
+              <td>16</td>
+              <td>
+                <span title="Squiz.Scope.MethodScope.Missing">error</span>
+              </td>
+              <td>Visibility must be declared on method "readPayout"</td>
+            </tr>
+            <tr>
+              <td class="line">32</td>
+              <td>37</td>
+              <td>
+                <span title="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine">error</span>
+              </td>
+              <td>Opening brace should be on a new line</td>
+            </tr>
+            <tr>
+              <td class="line">33</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">34</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">35</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">36</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">36</td>
+              <td>49</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">37</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">38</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">38</td>
+              <td>9</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 4 spaces, found 8</td>
+            </tr>
+            <tr>
+              <td class="line">39</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">39</td>
+              <td>9</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 4 spaces, found 8</td>
+            </tr>
+            <tr>
+              <td class="line">39</td>
+              <td>16</td>
+              <td>
+                <span title="Squiz.Scope.MethodScope.Missing">error</span>
+              </td>
+              <td>Visibility must be declared on method "updatePayout"</td>
+            </tr>
+            <tr>
+              <td class="line">39</td>
+              <td>39</td>
+              <td>
+                <span title="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine">error</span>
+              </td>
+              <td>Opening brace should be on a new line</td>
+            </tr>
+            <tr>
+              <td class="line">40</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">41</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">42</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">43</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">44</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">45</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">46</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">47</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">48</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">48</td>
+              <td>13</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 8 spaces, found 12</td>
+            </tr>
+            <tr>
+              <td class="line">48</td>
+              <td>13</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword">error</span>
+              </td>
+              <td>Expected 1 space(s) after IF keyword; 0 found</td>
+            </tr>
+            <tr>
+              <td class="line">48</td>
+              <td>47</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis">error</span>
+              </td>
+              <td>Expected 1 space(s) after closing parenthesis; found 0</td>
+            </tr>
+            <tr>
+              <td class="line">49</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">49</td>
+              <td>17</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 12 spaces, found 16</td>
+            </tr>
+            <tr>
+              <td class="line">49</td>
+              <td>17</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword">error</span>
+              </td>
+              <td>Expected 1 space(s) after IF keyword; 0 found</td>
+            </tr>
+            <tr>
+              <td class="line">49</td>
+              <td>47</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis">error</span>
+              </td>
+              <td>Expected 1 space(s) after closing parenthesis; found 0</td>
+            </tr>
+            <tr>
+              <td class="line">50</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">51</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">51</td>
+              <td>21</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 16 spaces, found 20</td>
+            </tr>
+            <tr>
+              <td class="line">51</td>
+              <td>21</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword">error</span>
+              </td>
+              <td>Expected 1 space(s) after IF keyword; 0 found</td>
+            </tr>
+            <tr>
+              <td class="line">51</td>
+              <td>80</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis">error</span>
+              </td>
+              <td>Expected 1 space(s) after closing parenthesis; found 0</td>
+            </tr>
+            <tr>
+              <td class="line">52</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">53</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">54</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">54</td>
+              <td>21</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 16 spaces, found 20</td>
+            </tr>
+            <tr>
+              <td class="line">54</td>
+              <td>21</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace">error</span>
+              </td>
+              <td>Expected 1 space after closing brace; 0 found</td>
+            </tr>
+            <tr>
+              <td class="line">54</td>
+              <td>22</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword">error</span>
+              </td>
+              <td>Expected 1 space(s) after ELSE keyword; 0 found</td>
+            </tr>
+            <tr>
+              <td class="line">55</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">56</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">56</td>
+              <td>78</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">56</td>
+              <td>84</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">57</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">57</td>
+              <td>25</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 20 spaces, found 24</td>
+            </tr>
+            <tr>
+              <td class="line">57</td>
+              <td>25</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword">error</span>
+              </td>
+              <td>Expected 1 space(s) after IF keyword; 0 found</td>
+            </tr>
+            <tr>
+              <td class="line">57</td>
+              <td>71</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis">error</span>
+              </td>
+              <td>Expected 1 space(s) after closing parenthesis; found 0</td>
+            </tr>
+            <tr>
+              <td class="line">58</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">59</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">60</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">61</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">62</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">63</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">64</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">65</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">66</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">66</td>
+              <td>101</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">66</td>
+              <td>103</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">67</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">68</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">69</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">69</td>
+              <td>78</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">69</td>
+              <td>85</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">69</td>
+              <td>130</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">69</td>
+              <td>147</td>
+              <td>
+                <span title="Generic.Files.LineLength.TooLong">warning</span>
+              </td>
+              <td>Line exceeds 120 characters; contains 147 characters</td>
+            </tr>
+            <tr>
+              <td class="line">70</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">70</td>
+              <td>50</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">71</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">71</td>
+              <td>25</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 20 spaces, found 24</td>
+            </tr>
+            <tr>
+              <td class="line">72</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">73</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">73</td>
+              <td>25</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 20 spaces, found 24</td>
+            </tr>
+            <tr>
+              <td class="line">73</td>
+              <td>25</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword">error</span>
+              </td>
+              <td>Expected 1 space(s) after IF keyword; 0 found</td>
+            </tr>
+            <tr>
+              <td class="line">73</td>
+              <td>72</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis">error</span>
+              </td>
+              <td>Expected 1 space(s) after closing parenthesis; found 0</td>
+            </tr>
+            <tr>
+              <td class="line">74</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">75</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">76</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">77</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">78</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">79</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">80</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">81</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">82</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">83</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">84</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">85</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">85</td>
+              <td>78</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">85</td>
+              <td>85</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">85</td>
+              <td>130</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">85</td>
+              <td>150</td>
+              <td>
+                <span title="Generic.Files.LineLength.TooLong">warning</span>
+              </td>
+              <td>Line exceeds 120 characters; contains 150 characters</td>
+            </tr>
+            <tr>
+              <td class="line">86</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">86</td>
+              <td>50</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">87</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">87</td>
+              <td>25</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 20 spaces, found 24</td>
+            </tr>
+            <tr>
+              <td class="line">88</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">88</td>
+              <td>55</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">89</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">90</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">90</td>
+              <td>54</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">91</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">91</td>
+              <td>21</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 16 spaces, found 20</td>
+            </tr>
+            <tr>
+              <td class="line">92</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">92</td>
+              <td>17</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 12 spaces, found 16</td>
+            </tr>
+            <tr>
+              <td class="line">92</td>
+              <td>17</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace">error</span>
+              </td>
+              <td>Expected 1 space after closing brace; 0 found</td>
+            </tr>
+            <tr>
+              <td class="line">92</td>
+              <td>18</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword">error</span>
+              </td>
+              <td>Expected 1 space(s) after ELSE keyword; 0 found</td>
+            </tr>
+            <tr>
+              <td class="line">93</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">94</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">95</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">95</td>
+              <td>17</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 12 spaces, found 16</td>
+            </tr>
+            <tr>
+              <td class="line">96</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">96</td>
+              <td>13</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 8 spaces, found 12</td>
+            </tr>
+            <tr>
+              <td class="line">97</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">97</td>
+              <td>9</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 4 spaces, found 8</td>
+            </tr>
+            <tr>
+              <td class="line">98</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">98</td>
+              <td>9</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 4 spaces, found 8</td>
+            </tr>
+            <tr>
+              <td class="line">98</td>
+              <td>16</td>
+              <td>
+                <span title="Squiz.Scope.MethodScope.Missing">error</span>
+              </td>
+              <td>Visibility must be declared on method "showKYC"</td>
+            </tr>
+            <tr>
+              <td class="line">98</td>
+              <td>34</td>
+              <td>
+                <span title="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine">error</span>
+              </td>
+              <td>Opening brace should be on a new line</td>
+            </tr>
+            <tr>
+              <td class="line">99</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">100</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">101</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">102</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">102</td>
+              <td>49</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">103</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">104</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">104</td>
+              <td>9</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 4 spaces, found 8</td>
+            </tr>
+            <tr>
+              <td class="line">106</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">106</td>
+              <td>9</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 4 spaces, found 8</td>
+            </tr>
+            <tr>
+              <td class="line">106</td>
+              <td>16</td>
+              <td>
+                <span title="Squiz.Scope.MethodScope.Missing">error</span>
+              </td>
+              <td>Visibility must be declared on method "updateKYC"</td>
+            </tr>
+            <tr>
+              <td class="line">106</td>
+              <td>36</td>
+              <td>
+                <span title="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine">error</span>
+              </td>
+              <td>Opening brace should be on a new line</td>
+            </tr>
+            <tr>
+              <td class="line">107</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">108</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">109</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">110</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">111</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">112</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">113</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">114</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">114</td>
+              <td>13</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 8 spaces, found 12</td>
+            </tr>
+            <tr>
+              <td class="line">114</td>
+              <td>13</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword">error</span>
+              </td>
+              <td>Expected 1 space(s) after IF keyword; 0 found</td>
+            </tr>
+            <tr>
+              <td class="line">114</td>
+              <td>47</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis">error</span>
+              </td>
+              <td>Expected 1 space(s) after closing parenthesis; found 0</td>
+            </tr>
+            <tr>
+              <td class="line">115</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">115</td>
+              <td>17</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 12 spaces, found 16</td>
+            </tr>
+            <tr>
+              <td class="line">115</td>
+              <td>17</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword">error</span>
+              </td>
+              <td>Expected 1 space(s) after IF keyword; 0 found</td>
+            </tr>
+            <tr>
+              <td class="line">115</td>
+              <td>148</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis">error</span>
+              </td>
+              <td>Expected 1 space(s) after closing parenthesis; found 0</td>
+            </tr>
+            <tr>
+              <td class="line">115</td>
+              <td>149</td>
+              <td>
+                <span title="Generic.Files.LineLength.TooLong">warning</span>
+              </td>
+              <td>Line exceeds 120 characters; contains 149 characters</td>
+            </tr>
+            <tr>
+              <td class="line">116</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">118</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">118</td>
+              <td>70</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">118</td>
+              <td>76</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">119</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">119</td>
+              <td>127</td>
+              <td>
+                <span title="Generic.Files.LineLength.TooLong">warning</span>
+              </td>
+              <td>Line exceeds 120 characters; contains 127 characters</td>
+            </tr>
+            <tr>
+              <td class="line">120</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">120</td>
+              <td>17</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 12 spaces, found 16</td>
+            </tr>
+            <tr>
+              <td class="line">120</td>
+              <td>17</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace">error</span>
+              </td>
+              <td>Expected 1 space after closing brace; 0 found</td>
+            </tr>
+            <tr>
+              <td class="line">120</td>
+              <td>18</td>
+              <td>
+                <span title="PSR2.ControlStructures.ElseIfDeclaration.NotAllowed">warning</span>
+              </td>
+              <td>Usage of ELSE IF is discouraged; use ELSEIF instead</td>
+            </tr>
+            <tr>
+              <td class="line">120</td>
+              <td>18</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword">error</span>
+              </td>
+              <td>Expected 1 space(s) after ELSE keyword; newline found</td>
+            </tr>
+            <tr>
+              <td class="line">121</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">121</td>
+              <td>17</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 12 spaces, found 16</td>
+            </tr>
+            <tr>
+              <td class="line">121</td>
+              <td>17</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword">error</span>
+              </td>
+              <td>Expected 1 space(s) after IF keyword; 0 found</td>
+            </tr>
+            <tr>
+              <td class="line">121</td>
+              <td>117</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis">error</span>
+              </td>
+              <td>Expected 1 space(s) after closing parenthesis; found 0</td>
+            </tr>
+            <tr>
+              <td class="line">122</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">124</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">124</td>
+              <td>71</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">124</td>
+              <td>77</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">125</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">125</td>
+              <td>131</td>
+              <td>
+                <span title="Generic.Files.LineLength.TooLong">warning</span>
+              </td>
+              <td>Line exceeds 120 characters; contains 131 characters</td>
+            </tr>
+            <tr>
+              <td class="line">126</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">126</td>
+              <td>17</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 12 spaces, found 16</td>
+            </tr>
+            <tr>
+              <td class="line">126</td>
+              <td>17</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace">error</span>
+              </td>
+              <td>Expected 1 space after closing brace; 0 found</td>
+            </tr>
+            <tr>
+              <td class="line">126</td>
+              <td>18</td>
+              <td>
+                <span title="PSR2.ControlStructures.ElseIfDeclaration.NotAllowed">warning</span>
+              </td>
+              <td>Usage of ELSE IF is discouraged; use ELSEIF instead</td>
+            </tr>
+            <tr>
+              <td class="line">126</td>
+              <td>18</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword">error</span>
+              </td>
+              <td>Expected 1 space(s) after ELSE keyword; newline found</td>
+            </tr>
+            <tr>
+              <td class="line">127</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">127</td>
+              <td>17</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 12 spaces, found 16</td>
+            </tr>
+            <tr>
+              <td class="line">127</td>
+              <td>17</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword">error</span>
+              </td>
+              <td>Expected 1 space(s) after IF keyword; 0 found</td>
+            </tr>
+            <tr>
+              <td class="line">127</td>
+              <td>117</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis">error</span>
+              </td>
+              <td>Expected 1 space(s) after closing parenthesis; found 0</td>
+            </tr>
+            <tr>
+              <td class="line">128</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">129</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">131</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">131</td>
+              <td>67</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">131</td>
+              <td>73</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">131</td>
+              <td>106</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">131</td>
+              <td>158</td>
+              <td>
+                <span title="Generic.Files.LineLength.TooLong">warning</span>
+              </td>
+              <td>Line exceeds 120 characters; contains 158 characters</td>
+            </tr>
+            <tr>
+              <td class="line">132</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">133</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">133</td>
+              <td>17</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 12 spaces, found 16</td>
+            </tr>
+            <tr>
+              <td class="line">133</td>
+              <td>17</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace">error</span>
+              </td>
+              <td>Expected 1 space after closing brace; 0 found</td>
+            </tr>
+            <tr>
+              <td class="line">133</td>
+              <td>18</td>
+              <td>
+                <span title="PSR2.ControlStructures.ElseIfDeclaration.NotAllowed">warning</span>
+              </td>
+              <td>Usage of ELSE IF is discouraged; use ELSEIF instead</td>
+            </tr>
+            <tr>
+              <td class="line">133</td>
+              <td>18</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword">error</span>
+              </td>
+              <td>Expected 1 space(s) after ELSE keyword; newline found</td>
+            </tr>
+            <tr>
+              <td class="line">134</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">134</td>
+              <td>17</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 12 spaces, found 16</td>
+            </tr>
+            <tr>
+              <td class="line">134</td>
+              <td>17</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword">error</span>
+              </td>
+              <td>Expected 1 space(s) after IF keyword; 0 found</td>
+            </tr>
+            <tr>
+              <td class="line">134</td>
+              <td>120</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis">error</span>
+              </td>
+              <td>Expected 1 space(s) after closing parenthesis; found 0</td>
+            </tr>
+            <tr>
+              <td class="line">134</td>
+              <td>121</td>
+              <td>
+                <span title="Generic.Files.LineLength.TooLong">warning</span>
+              </td>
+              <td>Line exceeds 120 characters; contains 121 characters</td>
+            </tr>
+            <tr>
+              <td class="line">135</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">136</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">137</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">137</td>
+              <td>57</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">138</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">140</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">140</td>
+              <td>68</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">140</td>
+              <td>74</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">141</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">141</td>
+              <td>67</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">141</td>
+              <td>73</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">142</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">142</td>
+              <td>64</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">142</td>
+              <td>70</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">142</td>
+              <td>106</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">142</td>
+              <td>157</td>
+              <td>
+                <span title="Generic.Files.LineLength.TooLong">warning</span>
+              </td>
+              <td>Line exceeds 120 characters; contains 157 characters</td>
+            </tr>
+            <tr>
+              <td class="line">143</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">144</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">144</td>
+              <td>17</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 12 spaces, found 16</td>
+            </tr>
+            <tr>
+              <td class="line">144</td>
+              <td>17</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace">error</span>
+              </td>
+              <td>Expected 1 space after closing brace; 0 found</td>
+            </tr>
+            <tr>
+              <td class="line">144</td>
+              <td>18</td>
+              <td>
+                <span title="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword">error</span>
+              </td>
+              <td>Expected 1 space(s) after ELSE keyword; 0 found</td>
+            </tr>
+            <tr>
+              <td class="line">145</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">146</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">147</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">147</td>
+              <td>17</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 12 spaces, found 16</td>
+            </tr>
+            <tr>
+              <td class="line">148</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">148</td>
+              <td>13</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 8 spaces, found 12</td>
+            </tr>
+            <tr>
+              <td class="line">149</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">149</td>
+              <td>9</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 4 spaces, found 8</td>
+            </tr>
+            <tr>
+              <td class="line">150</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">150</td>
+              <td>9</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 4 spaces, found 8</td>
+            </tr>
+            <tr>
+              <td class="line">150</td>
+              <td>16</td>
+              <td>
+                <span title="Squiz.Scope.MethodScope.Missing">error</span>
+              </td>
+              <td>Visibility must be declared on method "listKYC"</td>
+            </tr>
+            <tr>
+              <td class="line">150</td>
+              <td>34</td>
+              <td>
+                <span title="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine">error</span>
+              </td>
+              <td>Opening brace should be on a new line</td>
+            </tr>
+            <tr>
+              <td class="line">151</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">152</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">153</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">154</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">154</td>
+              <td>49</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">155</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">156</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">156</td>
+              <td>9</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 4 spaces, found 8</td>
+            </tr>
+            <tr>
+              <td class="line">157</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">157</td>
+              <td>9</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 4 spaces, found 8</td>
+            </tr>
+            <tr>
+              <td class="line">157</td>
+              <td>16</td>
+              <td>
+                <span title="Squiz.Scope.MethodScope.Missing">error</span>
+              </td>
+              <td>Visibility must be declared on method "readKYC"</td>
+            </tr>
+            <tr>
+              <td class="line">157</td>
+              <td>34</td>
+              <td>
+                <span title="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine">error</span>
+              </td>
+              <td>Opening brace should be on a new line</td>
+            </tr>
+            <tr>
+              <td class="line">158</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">159</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">160</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">161</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">161</td>
+              <td>49</td>
+              <td>
+                <span title="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">error</span>
+              </td>
+              <td>No space found after comma in argument list</td>
+            </tr>
+            <tr>
+              <td class="line">162</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">163</td>
+              <td>1</td>
+              <td>
+                <span title="Generic.WhiteSpace.DisallowTabIndent.TabsUsed">error</span>
+              </td>
+              <td>Spaces must be used to indent lines; tabs are not allowed</td>
+            </tr>
+            <tr>
+              <td class="line">163</td>
+              <td>9</td>
+              <td>
+                <span title="Generic.WhiteSpace.ScopeIndent.IncorrectExact">error</span>
+              </td>
+              <td>Line indented incorrectly; expected 4 spaces, found 8</td>
+            </tr>
+          </table>
+        </div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>protected</h4>
+          <ul class="members">
+            <li id="request">
+              <strong>$request</strong>
+            </li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>public</h4>
+          <ul>
+            <li id="listKYC">
+              <a title="controller\DashboardController" href="../classes/controller_DashboardController/listKYC.html">listKYC()</a>
+            </li>
+            <li id="listPayout">
+              <a title="controller\DashboardController" href="../classes/controller_DashboardController/listPayout.html">listPayout()</a>
+            </li>
+            <li id="readKYC">
+              <a title="controller\DashboardController" href="../classes/controller_DashboardController/readKYC.html">readKYC()</a>
+            </li>
+            <li id="readPayout">
+              <a title="controller\DashboardController" href="../classes/controller_DashboardController/readPayout.html">readPayout()</a>
+            </li>
+            <li id="show">
+              <a title="controller\DashboardController" href="../classes/controller_DashboardController/show.html">show()</a>
+            </li>
+            <li id="showKYC">
+              <a title="controller\DashboardController" href="../classes/controller_DashboardController/showKYC.html">showKYC()</a>
+            </li>
+            <li id="updateKYC">
+              <a title="controller\DashboardController" href="../classes/controller_DashboardController/updateKYC.html">updateKYC()</a>
+            </li>
+            <li id="updatePayout">
+              <a title="controller\DashboardController" href="../classes/controller_DashboardController/updatePayout.html">updatePayout()</a>
+            </li>
+          </ul>
+          <h3>Inherited from <a title="contract\Controller" href="../classes/contract_Controller.html">contract\Controller</a></h3>
+          <h4>public</h4>
+          <ul>
+            <li id="create">
+              <a title="contract\Controller" href="../classes/contract_Controller/create.html">create()</a>
+            </li>
+            <li id="destroy">
+              <a title="contract\Controller" href="../classes/contract_Controller/destroy.html">destroy()</a>
+            </li>
+            <li id="edit">
+              <a title="contract\Controller" href="../classes/contract_Controller/edit.html">edit()</a>
+            </li>
+            <li id="index">
+              <a title="contract\Controller" href="../classes/contract_Controller/index.html">index()</a>
+            </li>
+            <li id="show">
+              <a title="contract\Controller" href="../classes/contract_Controller/show.html">show()</a>
+            </li>
+            <li id="store">
+              <a title="contract\Controller" href="../classes/contract_Controller/store.html">store()</a>
+            </li>
+            <li id="update">
+              <a title="contract\Controller" href="../classes/contract_Controller/update.html">update()</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="history">History</h2>
+        <ul class="styled history"/>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0 - Copyright (C) 2010 - 2021 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

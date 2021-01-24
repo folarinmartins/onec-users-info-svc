@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="contract\Request" namespace="contract" name="Request" abstract="false" final="false" start="3" end="63">
+  <file path="../src/contract" file="Request.php" realpath="/home/folarin/code/onec/users-info-svc/src/contract/Request.php" size="1645" time="2020-12-01T22:10:06+00:00" unixtime="1606860606" sha1="bb1cd17b0e3ed8f1e8a4593d9405dba73f27c7c5" relative="contract/Request.php"/>
+  <member name="variables" visibility="private" static="false" line="4"/>
+  <member name="params" visibility="private" static="false" line="5"/>
+  <member name="files" visibility="private" static="false" line="6"/>
+  <member name="method" visibility="private" static="false" line="7"/>
+  <member name="contexts" visibility="private" static="false" line="8"/>
+  <constructor name="__construct" start="9" end="14" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="params" byreference="false" type="array"/>
+    <parameter name="method" byreference="false" type="string"/>
+    <parameter name="files" byreference="false" type="array" default=""/>
+  </constructor>
+  <method name="getParams" start="15" end="17" abstract="false" final="false" static="false" visibility="public">
+    <return type="array" nullable="false"/>
+  </method>
+  <method name="setParams" start="18" end="20" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="params" byreference="false" type="array"/>
+  </method>
+  <method name="getParam" start="21" end="23" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="index" byreference="false" type="string"/>
+  </method>
+  <method name="setParam" start="24" end="26" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="index" byreference="false" type="string"/>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getContexts" start="27" end="29" abstract="false" final="false" static="false" visibility="public">
+    <return type="array" nullable="false"/>
+  </method>
+  <method name="setContexts" start="30" end="32" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="contexts" byreference="false" type="array"/>
+  </method>
+  <method name="getContext" start="33" end="35" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="index" byreference="false" type="string"/>
+  </method>
+  <method name="setContext" start="36" end="38" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="index" byreference="false" type="string"/>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getFiles" start="39" end="41" abstract="false" final="false" static="false" visibility="public">
+    <return type="array" nullable="false"/>
+  </method>
+  <method name="setFiles" start="42" end="44" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="files" byreference="false" type="array"/>
+  </method>
+  <method name="getFile" start="45" end="47" abstract="false" final="false" static="false" visibility="public">
+    <return type="array" nullable="false"/>
+    <parameter name="index" byreference="false" type="string"/>
+  </method>
+  <method name="getVariables" start="48" end="50" abstract="false" final="false" static="false" visibility="public">
+    <return type="array" nullable="false"/>
+  </method>
+  <method name="setVariables" start="51" end="53" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="variables" byreference="false" type="array"/>
+  </method>
+  <method name="getVariable" start="54" end="56" abstract="false" final="false" static="false" visibility="public">
+    <return type="string" nullable="true"/>
+    <parameter name="index" byreference="false" type="string"/>
+  </method>
+  <method name="getMethod" start="57" end="59" abstract="false" final="false" static="false" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="setMethod" start="60" end="62" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="method" byreference="false" type="string"/>
+  </method>
+</class>

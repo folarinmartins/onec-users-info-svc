@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="helper\Utility" namespace="helper" name="Utility" abstract="true" final="false" start="7" end="702">
+  <file path="../src/helper" file="Utility.php" realpath="/home/folarin/code/onec/users-info-svc/src/helper/Utility.php" size="22770" time="2021-01-24T21:37:10+00:00" unixtime="1611524230" sha1="4b20524aab70f54cf2093d02ffbb66e3b1f9d5bd" relative="helper/Utility.php"/>
+  <method name="isMobile" start="8" end="10" abstract="false" final="false" static="false" visibility="public">
+    <return type="bool" nullable="false"/>
+  </method>
+  <member name="log" visibility="public" static="true" line="11"/>
+  <method name="startLog" start="12" end="18" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+    <parameter name="desc" byreference="false" type="string"/>
+  </method>
+  <method name="getLog" start="19" end="24" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="key" byreference="false" type="string"/>
+    <parameter name="end" byreference="false" type="boolean" default="true"/>
+  </method>
+  <method name="getInterface" start="26" end="34" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <return description="web|cron|cli" type="string"/>
+    </docblock>
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="isCron" start="35" end="37" abstract="false" final="false" static="true" visibility="public">
+    <return type="bool" nullable="false"/>
+  </method>
+  <method name="isCLI" start="38" end="40" abstract="false" final="false" static="true" visibility="public">
+    <return type="bool" nullable="false"/>
+  </method>
+  <method name="isWeb" start="41" end="43" abstract="false" final="false" static="true" visibility="public">
+    <return type="bool" nullable="false"/>
+  </method>
+  <method name="getWords" start="44" end="47" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="sentence" byreference="false" type="string"/>
+    <parameter name="count" byreference="false" type="integer" default="10"/>
+  </method>
+  <method name="migrate" start="48" end="53" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="log" start="54" end="58" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="value" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="opens file in append mode." line="55"/>
+    </inline>
+  </method>
+  <method name="debug" start="59" end="63" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="str" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getLogFile" start="64" end="67" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+    <parameter name="key" byreference="false" type="string"/>
+  </method>
+  <method name="getEnvVariable" start="68" end="71" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="key" byreference="false" type="string"/>
+  </method>
+  <method name="addDays" start="72" end="74" abstract="false" final="false" static="true" visibility="public">
+    <return type="object" nullable="false">
+      <type full="DateTime" namespace="" name="DateTime"/>
+    </return>
+    <parameter name="date" byreference="false" type="{unknown}"/>
+    <parameter name="op" byreference="false" type="string" default="'+'"/>
+    <parameter name="denor" byreference="false" type="string" default="'1 day'"/>
+  </method>
+  <method name="isAfterWorkingDays" start="75" end="78" abstract="false" final="false" static="true" visibility="public">
+    <return type="bool" nullable="false"/>
+    <parameter name="dn" byreference="false" type="{unknown}"/>
+    <parameter name="d0" byreference="false" type="{unknown}"/>
+    <parameter name="weekdays" byreference="false" type="integer" default="3"/>
+  </method>
+  <method name="isAfter" start="79" end="86" abstract="false" final="false" static="true" visibility="public">
+    <return type="bool" nullable="false"/>
+    <parameter name="dn" byreference="false" type="{unknown}"/>
+    <parameter name="d0" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="== &lt;seconds between the two times&gt;" line="83"/>
+      <comment value="$days = $secs / 86400;" line="84"/>
+    </inline>
+  </method>
+  <method name="getDateTrichotomy" start="87" end="98" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="dd" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getEnv" start="99" end="102" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getCredential" start="103" end="106" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="provider" byreference="false" type="{unknown}"/>
+    <parameter name="key" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getActiveStates" start="107" end="109" abstract="false" final="false" static="true" visibility="public">
+    <return type="array" nullable="false"/>
+  </method>
+  <method name="getInactiveStates" start="110" end="112" abstract="false" final="false" static="true" visibility="public">
+    <return type="array" nullable="false"/>
+  </method>
+  <method name="getURL" start="113" end="116" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+    <parameter name="index" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getNote" start="117" end="120" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+    <parameter name="index" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="newInstanceLimit" start="121" end="124" abstract="false" final="false" static="true" visibility="public">
+    <return type="int" nullable="false"/>
+  </method>
+  <method name="subtypeDepth" start="125" end="128" abstract="false" final="false" static="true" visibility="public">
+    <return type="int" nullable="false"/>
+  </method>
+  <method name="UIDLength" start="129" end="131" abstract="false" final="false" static="true" visibility="public">
+    <return type="int" nullable="false"/>
+  </method>
+  <method name="searchTreeDepth" start="132" end="135" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="getK" start="136" end="144" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="value" byreference="false" type="float"/>
+  </method>
+  <method name="payMerchant" start="145" end="148" abstract="false" final="false" static="true" visibility="public">
+    <return type="object" nullable="false">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </return>
+  </method>
+  <method name="destroySession" start="150" end="152" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="deleteSession" start="153" end="155" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="property" byreference="false" type="string"/>
+    <parameter name="persist" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="saveSession" start="156" end="158" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="property" byreference="false" type="string"/>
+    <parameter name="values" byreference="false" type="array"/>
+    <parameter name="persist" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="getSession" start="159" end="161" abstract="false" final="false" static="true" visibility="public">
+    <return type="array" nullable="false"/>
+    <parameter name="property" byreference="false" type="string"/>
+  </method>
+  <method name="currentSession" start="162" end="164" abstract="false" final="false" static="true" visibility="public">
+    <return type="object" nullable="false">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </return>
+  </method>
+  <method name="currentParty" start="166" end="168" abstract="false" final="false" static="true" visibility="public">
+    <return type="object" nullable="false">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </return>
+  </method>
+  <method name="currentCompany" start="169" end="171" abstract="false" final="false" static="true" visibility="public">
+    <return type="object" nullable="false">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </return>
+  </method>
+  <method name="defaultCurrency" start="172" end="174" abstract="false" final="false" static="true" visibility="public">
+    <return type="object" nullable="false">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </return>
+  </method>
+  <method name="maskEmail" start="175" end="185" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="email" byreference="false" type="string"/>
+    <parameter name="minFill" byreference="false" type="integer" default="4"/>
+  </method>
+  <method name="getOp" start="186" end="189" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+    <parameter name="op" byreference="false" type="string" default="'r'"/>
+  </method>
+  <method name="getNamePattern" start="190" end="193" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getPhonePattern" start="194" end="197" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getSamplePhone" start="198" end="201" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getPasswordPattern" start="202" end="205" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getSamplePassword" start="206" end="209" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getSampleName" start="210" end="213" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="instanceDepth" start="214" end="217" abstract="false" final="false" static="true" visibility="public">
+    <return type="int" nullable="false"/>
+  </method>
+  <method name="graphDepth" start="218" end="221" abstract="false" final="false" static="true" visibility="public">
+    <return type="int" nullable="false"/>
+  </method>
+  <method name="cachePolicy" start="222" end="225" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="sessionCachePolicy" start="226" end="229" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="isCache" start="230" end="233" abstract="false" final="false" static="true" visibility="public">
+    <return type="bool" nullable="false"/>
+  </method>
+  <method name="cache" start="234" end="236" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="type" byreference="false" type="string"/>
+    <parameter name="id" byreference="false" type="string"/>
+    <parameter name="model" byreference="false" type="object">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+    <parameter name="policy" byreference="false" type="string" default="NULL"/>
+    <parameter name="domain" byreference="false" type="string" default="'app.blockstale.com'"/>
+  </method>
+  <method name="cacheGraph" start="237" end="247" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="type" byreference="false" type="string"/>
+    <parameter name="id" byreference="false" type="string"/>
+    <parameter name="array" byreference="false" type="array"/>
+    <parameter name="policy" byreference="false" type="string" default="NULL"/>
+    <parameter name="domain" byreference="false" type="string" default="'app.blockstale.com'"/>
+  </method>
+  <method name="uncache" start="248" end="264" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="type" byreference="false" type="string"/>
+    <parameter name="id" byreference="false" type="string"/>
+    <parameter name="policy" byreference="false" type="string" default="NULL"/>
+    <parameter name="domain" byreference="false" type="string" default="'app.blockstale.com'"/>
+  </method>
+  <method name="getCache" start="265" end="298" abstract="false" final="false" static="true" visibility="public">
+    <return type="array" nullable="false"/>
+    <parameter name="type" byreference="false" type="string"/>
+    <parameter name="id" byreference="false" type="string"/>
+    <parameter name="policy" byreference="false" type="string" default="NULL"/>
+    <parameter name="domain" byreference="false" type="string" default="'app.blockstale.com'"/>
+  </method>
+  <method name="isProduction" start="299" end="302" abstract="false" final="false" static="true" visibility="public">
+    <return type="bool" nullable="false"/>
+  </method>
+  <method name="isLog" start="303" end="306" abstract="false" final="false" static="true" visibility="public">
+    <return type="bool" nullable="false"/>
+  </method>
+  <method name="isLogActions" start="307" end="310" abstract="false" final="false" static="true" visibility="public">
+    <return type="bool" nullable="false"/>
+  </method>
+  <method name="isLogMigrate" start="311" end="314" abstract="false" final="false" static="true" visibility="public">
+    <return type="bool" nullable="false"/>
+  </method>
+  <method name="isTransform" start="315" end="318" abstract="false" final="false" static="true" visibility="public">
+    <return type="bool" nullable="false"/>
+  </method>
+  <method name="tokenize" start="319" end="321" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="str" byreference="false" type="string"/>
+  </method>
+  <method name="println" start="322" end="324" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="str" byreference="false" type="string"/>
+  </method>
+  <method name="getKey" start="325" end="335" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+    <parameter name="length" byreference="false" type="integer" default="3"/>
+  </method>
+  <method name="getUID" start="336" end="338" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getComCode" start="339" end="341" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getClientIP" start="342" end="359" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="getClientDevice" start="360" end="424" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+    <inline>
+      <comment value="switch($os){" line="364"/>
+      <comment value="case 'iPhone': /*do something...*/ break;" line="365"/>
+      <comment value="case 'Android': /*do something...*/ break;" line="366"/>
+      <comment value="case 'iPad': /*do something...*/ break;" line="367"/>
+      <comment value="case 'iPod': /*do something...*/ break;" line="368"/>
+      <comment value="case 'webOS': /*do something...*/ break;" line="369"/>
+      <comment value="}" line="370"/>
+      <comment value="echo $_SERVER['HTTP_USER_AGENT'] . &quot;\n\n&quot;;" line="373"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$browser = get_browser(null, true);" line="374"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="print_r($browser);" line="375"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="The above example will output something similar to:" line="376"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7) Gecko/20040803 Firefox/0.9.3" line="377"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Array" line="378"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="(" line="379"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[browser_name_regex] =&gt; ^mozilla/5\.0 (windows; .; windows nt 5\.1; .*rv:.*) gecko/.* firefox/0\.9.*$" line="380"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[browser_name_pattern] =&gt; Mozilla/5.0 (Windows; ?; Windows NT 5.1; *rv:*) Gecko/* Firefox/0.9*" line="381"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[parent] =&gt; Firefox 0.9" line="382"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[platform] =&gt; WinXP" line="383"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[browser] =&gt; Firefox" line="384"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[version] =&gt; 0.9" line="385"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[majorver] =&gt; 0" line="386"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[minorver] =&gt; 9" line="387"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[cssversion] =&gt; 2" line="388"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[frames] =&gt; 1" line="389"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[iframes] =&gt; 1" line="390"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[tables] =&gt; 1" line="391"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[cookies] =&gt; 1" line="392"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[backgroundsounds] =&gt;" line="393"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[vbscript] =&gt;" line="394"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[javascript] =&gt; 1" line="395"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[javaapplets] =&gt; 1" line="396"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[activexcontrols] =&gt;" line="397"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[cdf] =&gt;" line="398"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[aol] =&gt;" line="399"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[beta] =&gt; 1" line="400"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[win16] =&gt;" line="401"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[crawler] =&gt;" line="402"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[stripper] =&gt;" line="403"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[wap] =&gt;" line="404"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[netclr] =&gt;" line="405"/>
+      <comment xmlns="http://xml.phpdox.net/src" value=")" line="406"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Notes ¶" line="407"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Note:" line="408"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="In order for this to work, your browscap configuration setting in php.ini must point to the correct location of the browscap.ini file on your system." line="409"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="browscap.ini is not bundled with PHP, but you may find an up-to-date » php_browscap.ini file here." line="410"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="While browscap.ini contains information on many browsers, it relies on user updates to keep the database current. The format of the file is fairly self-explanatory." line="411"/>
+    </inline>
+  </method>
+  <method name="curl" start="431" end="461" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description/>
+      <param type="string" variable="$endpoint"/>
+      <param type="array" variable="$default"/>
+      <return type="array"/>
+      <throws type="object">
+        <type full="Exception" namespace="" name="Exception"/>
+      </throws>
+    </docblock>
+    <return type="array" nullable="false"/>
+    <parameter name="endpoint" byreference="false" type="string"/>
+    <parameter name="default" byreference="false" type="array" default="NULL"/>
+    <parameter name="jsondecode" byreference="false" type="boolean" default="true"/>
+    <parameter name="curlOpt" byreference="false" type="array" default=""/>
+    <inline>
+      <comment value="CURLOPT_CONNECTTIMEOUT - The number of seconds to wait while trying to connect. Use 0 to wait indefinitely." line="436"/>
+      <comment value="CURLOPT_TIMEOUT - The maximum number of seconds to allow cURL functions to execute." line="437"/>
+      <comment value="$http_status = curl_getinfo($ch, CURLINFO_HTTP_CODE);" line="442"/>
+      <comment value="if($http_status !== 200){}" line="444"/>
+    </inline>
+  </method>
+  <method name="getIPInfo" start="462" end="473" abstract="false" final="false" static="true" visibility="public">
+    <return type="array" nullable="false"/>
+    <inline>
+      <comment value="{" line="464"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="&quot;ip&quot;: &quot;129.205.113.251&quot;," line="465"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="&quot;city&quot;: &quot;Nchia&quot;," line="466"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="&quot;region&quot;: &quot;Rivers&quot;," line="467"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="&quot;country&quot;: &quot;NG&quot;," line="468"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="&quot;loc&quot;: &quot;4.7931,7.1206&quot;," line="469"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="&quot;org&quot;: &quot;AS37148 Globacom Limited&quot;," line="470"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="&quot;timezone&quot;: &quot;Africa/Lagos&quot;" line="471"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="472"/>
+    </inline>
+  </method>
+  <method name="startsWith" start="474" end="477" abstract="false" final="false" static="true" visibility="public">
+    <return type="bool" nullable="false"/>
+    <parameter name="haystack" byreference="false" type="string"/>
+    <parameter name="needle" byreference="false" type="string"/>
+  </method>
+  <method name="endsWith" start="478" end="482" abstract="false" final="false" static="true" visibility="public">
+    <return type="bool" nullable="false"/>
+    <parameter name="haystack" byreference="false" type="string"/>
+    <parameter name="needle" byreference="false" type="string"/>
+  </method>
+  <method name="linearize" start="483" end="487" abstract="false" final="false" static="true" visibility="public">
+    <return type="array" nullable="false"/>
+    <parameter name="array" byreference="false" type="array"/>
+    <parameter name="column" byreference="false" type="string"/>
+  </method>
+  <method name="arraySyntax" start="488" end="504" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="array" byreference="false" type="array"/>
+    <parameter name="delimiter" byreference="false" type="string" default="'&quot;'"/>
+    <parameter name="key" byreference="false" type="string" default="NULL"/>
+    <parameter name="enclose" byreference="false" type="array" default=""/>
+  </method>
+  <method name="concat" start="505" end="513" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+    <parameter name="array" byreference="false" type="array"/>
+    <parameter name="delim" byreference="false" type="string" default="','"/>
+    <parameter name="quote" byreference="false" type="string" default="&quot;'&quot;"/>
+  </method>
+  <method name="in_array" start="514" end="516" abstract="false" final="false" static="true" visibility="public">
+    <return type="bool" nullable="false"/>
+    <parameter name="needle" byreference="false" type="string"/>
+    <parameter name="haystack" byreference="false" type="array"/>
+  </method>
+  <method name="subset" start="517" end="519" abstract="false" final="false" static="true" visibility="public">
+    <return type="bool" nullable="false"/>
+    <parameter name="subset" byreference="false" type="array"/>
+    <parameter name="superset" byreference="false" type="array"/>
+  </method>
+  <method name="intersect" start="520" end="522" abstract="false" final="false" static="true" visibility="public">
+    <return type="array" nullable="false"/>
+    <parameter name="subset" byreference="false" type="array"/>
+    <parameter name="superset" byreference="false" type="array"/>
+  </method>
+  <method name="setEquals" start="523" end="525" abstract="false" final="false" static="true" visibility="public">
+    <return type="bool" nullable="false"/>
+    <parameter name="subset" byreference="false" type="array"/>
+    <parameter name="superset" byreference="false" type="array"/>
+  </method>
+  <method name="prettify" start="526" end="528" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+    <parameter name="title" byreference="false" type="string"/>
+    <parameter name="content" byreference="false" type="string"/>
+  </method>
+  <method name="parseDate" start="529" end="540" abstract="false" final="false" static="true" visibility="public">
+    <return type="object" nullable="true">
+      <type full="DateTime" namespace="" name="DateTime"/>
+    </return>
+    <parameter name="Model" byreference="false" type="object">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+  </method>
+  <method name="dateToString" start="541" end="543" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="date" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="simpleDate" start="544" end="546" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="date" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="smartDays" start="547" end="566" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="date" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="smartDate" start="567" end="598" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="date" byreference="false" type="{unknown}"/>
+    <parameter name="sortable" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="smartTime" start="599" end="604" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="offset" byreference="false" type="{unknown}"/>
+    <parameter name="sortable" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="getFullDifff" start="605" end="637" abstract="false" final="false" static="true" visibility="public">
+    <return type="float" nullable="false"/>
+    <parameter name="str_interval" byreference="false" type="{unknown}"/>
+    <parameter name="dt_menor" byreference="false" type="{unknown}"/>
+    <parameter name="dt_maior" byreference="false" type="{unknown}"/>
+    <parameter name="relative" byreference="false" type="boolean" default="false"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="parseMoney" start="638" end="641" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+    <parameter name="str" byreference="false" type="float"/>
+    <inline>
+      <comment value="return &quot;&amp;#8358;&quot;.number_format($str,2,&quot;.&quot;,&quot;,&quot;);" line="640"/>
+    </inline>
+  </method>
+  <method name="parseFloat" start="642" end="644" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+    <parameter name="str" byreference="false" type="float"/>
+    <parameter name="decimal" byreference="false" type="integer" default="0"/>
+    <parameter name="thousandSeparator" byreference="false" type="string" default="''"/>
+  </method>
+  <method name="hashPassword" start="645" end="647" abstract="false" final="false" static="false" visibility="public">
+    <return type="string" nullable="false"/>
+    <parameter name="pwd" byreference="false" type="string"/>
+  </method>
+  <method name="verifyPassword" start="648" end="650" abstract="false" final="false" static="false" visibility="public">
+    <return type="bool" nullable="false"/>
+    <parameter name="pwd" byreference="false" type="string"/>
+    <parameter name="hash" byreference="false" type="string"/>
+  </method>
+  <method name="getHash" start="651" end="653" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+    <parameter name="payload" byreference="false" type="string"/>
+  </method>
+  <method name="characterize" start="654" end="656" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="str" byreference="false" type="string"/>
+    <parameter name="character" byreference="false" type="string"/>
+    <parameter name="chunk" byreference="false" type="int"/>
+  </method>
+  <method name="randomToken" start="657" end="670" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="length" byreference="false" type="integer" default="32"/>
+  </method>
+  <method name="getRelativePath" start="671" end="701" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+    <parameter name="from" byreference="false" type="string"/>
+    <parameter name="to" byreference="false" type="string"/>
+    <inline>
+      <comment value="some compatibility fixes for Windows paths" line="672"/>
+    </inline>
+  </method>
+</class>

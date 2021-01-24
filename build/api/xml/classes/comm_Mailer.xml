@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="comm\Mailer" namespace="comm" name="Mailer" abstract="false" final="false" start="14" end="122">
+  <file path="../src/service/comm" file="Mailer.php" realpath="/home/folarin/code/onec/users-info-svc/src/service/comm/Mailer.php" size="4215" time="2020-12-11T13:20:56+00:00" unixtime="1607692856" sha1="eba3cb26ed37acee019d5e1428f97d34d809a778" relative="service/comm/Mailer.php"/>
+  <method name="send" start="15" end="104" abstract="false" final="false" static="true" visibility="public">
+    <return type="bool" nullable="false"/>
+    <parameter name="subject" byreference="false" type="string"/>
+    <parameter name="to" byreference="false" type="array"/>
+    <parameter name="html" byreference="false" type="string"/>
+    <parameter name="text" byreference="false" type="string"/>
+    <parameter name="attachments" byreference="false" type="array" default=""/>
+    <parameter name="from" byreference="false" type="string" default="NULL"/>
+    <parameter name="replyTo" byreference="false" type="string" default="NULL"/>
+    <parameter name="cc" byreference="false" type="array" default=""/>
+    <parameter name="bcc" byreference="false" type="array" default=""/>
+  </method>
+  <method name="save_mail" start="112" end="121" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="mail" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="You can change 'Sent Mail' to any other folder or tag" line="113"/>
+      <comment value="Tell your server to open an IMAP connection using the same username and password as you used for SMTP" line="116"/>
+    </inline>
+  </method>
+</class>

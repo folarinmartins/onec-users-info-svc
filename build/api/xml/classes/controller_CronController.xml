@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="controller\CronController" namespace="controller" name="CronController" abstract="false" final="false" start="9" end="267">
+  <file path="../src/controller" file="CronController.php" realpath="/home/folarin/code/onec/users-info-svc/src/controller/CronController.php" size="12179" time="2020-12-15T23:39:35+00:00" unixtime="1608075575" sha1="386050822bb87c6f3a6d362969e0ac3893707809" relative="controller/CronController.php"/>
+  <extends full="contract\Controller" namespace="contract" name="Controller"/>
+  <method name="zombieBTXJob" start="11" end="43" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <return type="object">
+        <type full="controller\void" namespace="controller" name="void"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="btxJob" start="45" end="228" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <return type="object">
+        <type full="controller\void" namespace="controller" name="void"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="done" start="230" end="235" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="job" byreference="false" type="string"/>
+    <parameter name="pid" byreference="false" type="string"/>
+  </method>
+  <method name="getRunner" start="236" end="243" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="true"/>
+    <parameter name="job" byreference="false" type="string"/>
+  </method>
+  <method name="register" start="244" end="255" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="true"/>
+    <parameter name="job" byreference="false" type="string"/>
+  </method>
+  <method name="canContinue" start="256" end="263" abstract="false" final="false" static="true" visibility="public">
+    <return type="bool" nullable="false"/>
+    <parameter name="job" byreference="false" type="string"/>
+    <parameter name="runner" byreference="false" type="string"/>
+  </method>
+  <method name="isFree" start="264" end="266" abstract="false" final="false" static="true" visibility="public">
+    <return type="bool" nullable="false"/>
+    <parameter name="job" byreference="false" type="string"/>
+  </method>
+  <parent full="contract\Controller" namespace="contract" name="Controller">
+    <member name="request" visibility="protected" static="false" line="6"/>
+    <method name="index" start="7" end="7" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="create" start="8" end="8" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="store" start="9" end="9" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="show" start="10" end="12" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="edit" start="13" end="13" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="update" start="14" end="14" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="destroy" start="15" end="15" abstract="false" final="false" static="true" visibility="public"/>
+  </parent>
+</class>

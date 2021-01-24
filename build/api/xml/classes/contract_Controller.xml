@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="contract\Controller" namespace="contract" name="Controller" abstract="true" final="false" start="5" end="16">
+  <file path="../src/contract" file="Controller.php" realpath="/home/folarin/code/onec/users-info-svc/src/contract/Controller.php" size="333" time="2020-11-05T16:41:38+00:00" unixtime="1604594498" sha1="e941752fb1dcf70b07c99a2ebbf159b4ec2e68c5" relative="contract/Controller.php"/>
+  <docblock>
+    <package value="contract"/>
+  </docblock>
+  <member name="request" visibility="protected" static="false" line="6"/>
+  <method name="index" start="7" end="7" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="create" start="8" end="8" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="store" start="9" end="9" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="show" start="10" end="12" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="edit" start="13" end="13" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="update" start="14" end="14" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="destroy" start="15" end="15" abstract="false" final="false" static="true" visibility="public"/>
+  <extenders>
+    <extender full="controller\UserController" namespace="controller" name="UserController"/>
+    <extender full="controller\VoucherController" namespace="controller" name="VoucherController"/>
+    <extender full="controller\SettingsController" namespace="controller" name="SettingsController"/>
+    <extender full="controller\BTCController" namespace="controller" name="BTCController"/>
+    <extender full="controller\AccountController" namespace="controller" name="AccountController"/>
+    <extender full="controller\DashboardController" namespace="controller" name="DashboardController"/>
+    <extender full="controller\CronController" namespace="controller" name="CronController"/>
+    <extender full="controller\FIATController" namespace="controller" name="FIATController"/>
+    <extender full="controller\SessionController" namespace="controller" name="SessionController"/>
+    <extender full="controller\APIController" namespace="controller" name="APIController"/>
+  </extenders>
+</class>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="comm\Comm" namespace="comm" name="Comm" abstract="false" final="false" start="8" end="944">
+  <file path="../src/service/comm" file="Comm.php" realpath="/home/folarin/code/onec/users-info-svc/src/service/comm/Comm.php" size="50295" time="2020-12-16T01:03:11+00:00" unixtime="1608080591" sha1="a19b7283a2dc9e19dcbe5eb2351c3799d1941ce0" relative="service/comm/Comm.php"/>
+  <method name="sendNotification" start="9" end="940" abstract="false" final="false" static="true" visibility="public">
+    <return type="bool" nullable="false"/>
+    <parameter name="model" byreference="false" type="object">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+    <parameter name="notificationType" byreference="false" type="string"/>
+    <parameter name="media" byreference="false" type="array" default=""/>
+    <parameter name="refProxy" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="refPX" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="getNotification" start="941" end="943" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="type" byreference="false" type="string"/>
+    <parameter name="title" byreference="false" type="string"/>
+    <parameter name="medium" byreference="false" type="string"/>
+    <parameter name="html" byreference="false" type="string"/>
+    <parameter name="text" byreference="false" type="string"/>
+    <parameter name="model" byreference="false" type="object">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+  </method>
+</class>

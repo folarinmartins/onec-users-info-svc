@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="controller\APIController" namespace="controller" name="APIController" abstract="false" final="false" start="11" end="373">
+  <file path="../src/controller" file="APIController.php" realpath="/home/folarin/code/onec/users-info-svc/src/controller/APIController.php" size="14116" time="2020-12-15T23:48:33+00:00" unixtime="1608076113" sha1="43b3fc489fba6e7b3b45f058f574cb4de3e226d9" relative="controller/APIController.php"/>
+  <extends full="contract\Controller" namespace="contract" name="Controller"/>
+  <method name="getConfirmedBTCAddressBalance" start="17" end="107" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$btcAddress">
+        <type full="model\Model" namespace="model" name="Model"/>
+      </param>
+      <return type="object">
+        <type full="contract\Quantity" namespace="contract" name="Quantity"/>
+      </return>
+      <throws type="object">
+        <type full="Exception" namespace="" name="Exception"/>
+      </throws>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="contract\Quantity" namespace="contract" name="Quantity"/>
+    </return>
+    <parameter name="btcAddress" byreference="false" type="object">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+  </method>
+  <method name="getBTCAddressBalance" start="108" end="213" abstract="false" final="false" static="true" visibility="public">
+    <return type="object" nullable="false">
+      <type full="contract\Quantity" namespace="contract" name="Quantity"/>
+    </return>
+    <parameter name="btcAddress" byreference="false" type="object">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+  </method>
+  <method name="reloadBlockchainWallets" start="215" end="235" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="initBanks" start="236" end="248" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="getAPIKey" start="249" end="251" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getVoucherCode" start="252" end="256" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getMerchantCommission" start="257" end="260" abstract="false" final="false" static="true" visibility="public">
+    <return type="float" nullable="false"/>
+  </method>
+  <method name="getVoucherAdminCommission" start="261" end="264" abstract="false" final="false" static="true" visibility="public">
+    <return type="float" nullable="false"/>
+  </method>
+  <method name="getVoucherVendorCommission" start="265" end="272" abstract="false" final="false" static="true" visibility="public">
+    <return type="float" nullable="false"/>
+  </method>
+  <method name="getVoucherCommission" start="273" end="275" abstract="false" final="false" static="true" visibility="public">
+    <return type="float" nullable="false"/>
+  </method>
+  <method name="getPref" start="276" end="278" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="true"/>
+    <parameter name="user" byreference="false" type="object">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+    <parameter name="pref" byreference="false" type="string"/>
+    <parameter name="default" byreference="false" type="string" default="''"/>
+  </method>
+  <method name="getWithdrawalFee" start="279" end="289" abstract="false" final="false" static="true" visibility="public">
+    <return type="object" nullable="false">
+      <type full="contract\Quantity" namespace="contract" name="Quantity"/>
+    </return>
+    <parameter name="currency" byreference="false" type="object">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+  </method>
+  <method name="getVoucherMinimum" start="290" end="299" abstract="false" final="false" static="true" visibility="public">
+    <return type="object" nullable="false">
+      <type full="contract\Quantity" namespace="contract" name="Quantity"/>
+    </return>
+    <parameter name="currency" byreference="false" type="object">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+  </method>
+  <method name="getNetworkFee" start="300" end="324" abstract="false" final="false" static="true" visibility="public">
+    <return type="object" nullable="false">
+      <type full="contract\Quantity" namespace="contract" name="Quantity"/>
+    </return>
+    <parameter name="currency" byreference="false" type="object">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+    <inline>
+      <comment value="{&quot;fastestFee&quot;:82,&quot;halfHourFee&quot;:80,&quot;hourFee&quot;:56}" line="320"/>
+      <comment value="fastestFee: The lowest fee (in satoshis per byte) that will currently result in the fastest transaction confirmations (usually 0 to 1 block delay)." line="321"/>
+      <comment value="halfHourFee: The lowest fee (in satoshis per byte) that will confirm transactions within half an hour (with 90% probability)." line="322"/>
+      <comment value="hourFee: The lowest fee (in satoshis per byte) that will confirm transactions within an hour (with 90% probability)." line="323"/>
+    </inline>
+  </method>
+  <method name="convert" start="325" end="341" abstract="false" final="false" static="true" visibility="public">
+    <return type="object" nullable="false">
+      <type full="contract\Quantity" namespace="contract" name="Quantity"/>
+    </return>
+    <parameter name="qty" byreference="false" type="object">
+      <type full="contract\Quantity" namespace="contract" name="Quantity"/>
+    </parameter>
+    <parameter name="currency" byreference="false" type="object">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+    <parameter name="sell" byreference="false" type="boolean" default="true"/>
+  </method>
+  <method name="getVoucherValidity" start="342" end="346" abstract="false" final="false" static="true" visibility="public">
+    <return type="int" nullable="false"/>
+  </method>
+  <method name="btcSpotPrice" start="347" end="350" abstract="false" final="false" static="true" visibility="public">
+    <return type="float" nullable="false"/>
+    <parameter name="quote" byreference="false" type="object">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+  </method>
+  <method name="getFX" start="358" end="372" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$base">
+        <type full="model\Model" namespace="model" name="Model"/>
+      </param>
+      <param type="object" variable="$quote">
+        <type full="model\Model" namespace="model" name="Model"/>
+      </param>
+      <param type="object" variable="$sell">
+        <type full="controller\bool" namespace="controller" name="bool"/>
+      </param>
+      <return type="float"/>
+      <throws type="object">
+        <type full="Exception" namespace="" name="Exception"/>
+      </throws>
+    </docblock>
+    <return type="float" nullable="false"/>
+    <parameter name="base" byreference="false" type="object">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+    <parameter name="quote" byreference="false" type="object">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+    <parameter name="sell" byreference="false" type="boolean" default="true"/>
+  </method>
+  <parent full="contract\Controller" namespace="contract" name="Controller">
+    <member name="request" visibility="protected" static="false" line="6"/>
+    <method name="index" start="7" end="7" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="create" start="8" end="8" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="store" start="9" end="9" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="show" start="10" end="12" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="edit" start="13" end="13" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="update" start="14" end="14" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="destroy" start="15" end="15" abstract="false" final="false" static="true" visibility="public"/>
+  </parent>
+</class>

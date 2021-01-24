@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="database\DBController" namespace="database" name="DBController" abstract="false" final="false" start="7" end="175">
+  <file path="../src/database" file="DBController.php" realpath="/home/folarin/code/onec/users-info-svc/src/database/DBController.php" size="5177" time="2021-01-22T05:34:16+00:00" unixtime="1611293656" sha1="a83f66475d85a78a03f0c831e2caf1c00a879803" relative="database/DBController.php"/>
+  <member name="conn" visibility="private" static="false" line="8"/>
+  <constant type="string" name="CACHE_KEY" value="'query'"/>
+  <member name="query" visibility="private" static="false" line="10"/>
+  <constructor name="__construct" start="11" end="14" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="connectDB" start="15" end="25" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getConnection" start="26" end="28" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="listFields" start="30" end="42" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <return type="object">
+        <type full="database\void" namespace="database" name="void"/>
+      </return>
+    </docblock>
+    <inline>
+      <comment value="if (!$result) {" line="33"/>
+      <comment value="echo 'Could not run query: ' . 'mysql_error()';" line="34"/>
+      <comment value="exit;" line="35"/>
+      <comment value="}" line="36"/>
+      <comment value="if ($dbController-&gt;affectedRows() &gt; 0) {" line="37"/>
+      <comment value="while ($row = mysql_fetch_assoc($result)) {" line="38"/>
+      <comment value="}" line="40"/>
+      <comment value="}" line="41"/>
+    </inline>
+  </method>
+  <method name="runQuery" start="48" end="56" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="mixed" variable="$query"/>
+      <param type="object" variable="$debug">
+        <type full="database\bool" namespace="database" name="bool"/>
+      </param>
+      <return type="object">
+        <type full="database\mysqli_result|bool" namespace="database" name="mysqli_result|bool"/>
+      </return>
+    </docblock>
+    <parameter name="query" byreference="false" type="string"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="getQuery" start="57" end="59" abstract="false" final="false" static="false" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="affectedRows" start="60" end="62" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getResultSet" start="69" end="86" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="string" variable="$query"/>
+      <param type="object" variable="$debug">
+        <type full="database\bool" namespace="database" name="bool"/>
+      </param>
+      <param type="object" variable="$skipCache">
+        <type full="database\bool" namespace="database" name="bool"/>
+      </param>
+      <return type="array"/>
+    </docblock>
+    <return type="array" nullable="false"/>
+    <parameter name="query" byreference="false" type="string"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+    <parameter name="skipCache" byreference="false" type="boolean" default="true"/>
+  </method>
+  <method name="numRows" start="87" end="92" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="result" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="migrate" start="93" end="95" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="query" byreference="false" type="string"/>
+  </method>
+  <method name="create" start="96" end="103" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="table" byreference="false" type="string"/>
+    <parameter name="fields" byreference="false" type="{unknown}"/>
+    <parameter name="values" byreference="false" type="{unknown}"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="update" start="104" end="108" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="table" byreference="false" type="string"/>
+    <parameter name="field" byreference="false" type="{unknown}"/>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+    <parameter name="haystack" byreference="false" type="{unknown}"/>
+    <parameter name="needle" byreference="false" type="{unknown}"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="updateAdvanced" start="109" end="118" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="table" byreference="false" type="string"/>
+    <parameter name="cvSet" byreference="false" type="array"/>
+    <parameter name="haystack" byreference="false" type="string"/>
+    <parameter name="needle" byreference="false" type="string"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="updateGeneric" start="119" end="128" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="table" byreference="false" type="{unknown}"/>
+    <parameter name="query" byreference="false" type="{unknown}"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="deleteAll" start="129" end="132" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="table" byreference="false" type="string"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+    <inline>
+      <comment value="$filter = &quot;WHERE $haystack='$needle'&quot;;" line="130"/>
+    </inline>
+  </method>
+  <method name="delete" start="133" end="135" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="table" byreference="false" type="string"/>
+    <parameter name="haystack" byreference="false" type="string"/>
+    <parameter name="needle" byreference="false" type="string"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+    <parameter name="dkey" byreference="false" type="string" default="NULL"/>
+  </method>
+  <method name="deleteGeneric" start="136" end="150" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="table" byreference="false" type="string"/>
+    <parameter name="filter" byreference="false" type="string"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+    <parameter name="soft" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="getAll" start="151" end="153" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="table" byreference="false" type="string"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+    <parameter name="skipCache" byreference="false" type="boolean" default="true"/>
+  </method>
+  <method name="get" start="154" end="157" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="table" byreference="false" type="string"/>
+    <parameter name="haystack" byreference="false" type="string"/>
+    <parameter name="needle" byreference="false" type="string"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="getGeneric" start="158" end="164" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="table" byreference="false" type="string"/>
+    <parameter name="filter" byreference="false" type="string" default="&quot;&quot;"/>
+    <parameter name="cols" byreference="false" type="string" default="NULL"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+    <parameter name="skipCache" byreference="false" type="boolean" default="true"/>
+  </method>
+  <method name="getPaginated" start="165" end="174" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="table" byreference="false" type="string"/>
+    <parameter name="filter" byreference="false" type="string" default="&quot;&quot;"/>
+    <parameter name="cols" byreference="false" type="string" default="'*'"/>
+    <parameter name="page" byreference="false" type="integer" default="0"/>
+    <parameter name="limit" byreference="false" type="integer" default="100"/>
+    <parameter name="debug" byreference="false" type="boolean" default="false"/>
+  </method>
+</class>

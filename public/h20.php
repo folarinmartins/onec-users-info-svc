@@ -1,7 +1,7 @@
 <?php
 	// chdir(realpath(__DIR__));
-
-	require_once realpath(__DIR__).'/../bootstrap/boot.php';
+	// echo 'got to h20 '.realpath(__DIR__.'/../src/bootstrap/boot.php');
+	require_once realpath(__DIR__.'/../src/bootstrap/boot.php');
 	use helper\Utility;
 	use view\Page;
 	use comm\Link;

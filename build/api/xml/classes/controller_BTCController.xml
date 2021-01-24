@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="controller\BTCController" namespace="controller" name="BTCController" abstract="false" final="false" start="12" end="310">
+  <file path="../src/controller" file="BTCController.php" realpath="/home/folarin/code/onec/users-info-svc/src/controller/BTCController.php" size="13573" time="2020-12-15T23:22:29+00:00" unixtime="1608074549" sha1="6c955dc5a7f8e5abe05457b3eda78b66d05f4be2" relative="controller/BTCController.php"/>
+  <extends full="contract\Controller" namespace="contract" name="Controller"/>
+  <method name="getUserWallet" start="14" end="24" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <return type="object">
+        <type full="controller\void" namespace="controller" name="void"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </return>
+    <parameter name="user" byreference="false" type="object">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+    <parameter name="forceNew" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="getUsableAddress" start="25" end="64" abstract="false" final="false" static="true" visibility="public">
+    <return type="object" nullable="true">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </return>
+    <parameter name="user" byreference="false" type="object">
+      <type full="model\Model" namespace="model" name="Model"/>
+    </parameter>
+    <parameter name="forceNew" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="send" start="65" end="105" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="pingBTX" start="106" end="147" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="hookBTX" start="148" end="166" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="initReceivePayment" start="167" end="241" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="initTopup" start="242" end="309" abstract="false" final="false" static="true" visibility="public"/>
+  <parent full="contract\Controller" namespace="contract" name="Controller">
+    <member name="request" visibility="protected" static="false" line="6"/>
+    <method name="index" start="7" end="7" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="create" start="8" end="8" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="store" start="9" end="9" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="show" start="10" end="12" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="edit" start="13" end="13" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="update" start="14" end="14" abstract="false" final="false" static="true" visibility="public"/>
+    <method name="destroy" start="15" end="15" abstract="false" final="false" static="true" visibility="public"/>
+  </parent>
+</class>

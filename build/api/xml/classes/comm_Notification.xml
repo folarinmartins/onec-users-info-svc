@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="comm\Notification" namespace="comm" name="Notification" abstract="false" final="false" start="10" end="12">
+  <file path="../src/service/comm" file="Notification.php" realpath="/home/folarin/code/onec/users-info-svc/src/service/comm/Notification.php" size="185" time="2020-10-17T19:37:38+00:00" unixtime="1602963458" sha1="104fe5e449f6048c9388b30ba99d7b577b7bb014" relative="service/comm/Notification.php"/>
+  <docblock>
+    <description compact="TODO: Log all communications for receipts, resend, scheduling, status, audit"/>
+  </docblock>
+</class>

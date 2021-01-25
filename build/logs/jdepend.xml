@@ -24,14 +24,14 @@
         <Class sourceFile="/home/folarin/code/onec/users-info-svc/src/contract/EventListener.php">EventListener</Class>
       </AbstractClasses>
       <DependsUpon>
-        <Package>helper</Package>
         <Package>model</Package>
+        <Package>helper</Package>
         <Package>view</Package>
       </DependsUpon>
       <UsedBy>
-        <Package>comm</Package>
-        <Package>model</Package>
         <Package>controller</Package>
+        <Package>model</Package>
+        <Package>comm</Package>
         <Package>plaf</Package>
       </UsedBy>
     </Package>
@@ -60,14 +60,14 @@
       </ConcreteClasses>
       <AbstractClasses/>
       <DependsUpon>
-        <Package>comm</Package>
-        <Package>helper</Package>
-        <Package>model</Package>
-        <Package>view</Package>
-        <Package>contract</Package>
         <Package>Sonata\GoogleAuthenticator</Package>
         <Package></Package>
         <Package>Blockchain\Conversion</Package>
+        <Package>contract</Package>
+        <Package>model</Package>
+        <Package>helper</Package>
+        <Package>comm</Package>
+        <Package>view</Package>
       </DependsUpon>
       <UsedBy>
         <Package>comm</Package>
@@ -91,8 +91,8 @@
       </ConcreteClasses>
       <AbstractClasses/>
       <DependsUpon>
-        <Package>helper</Package>
         <Package></Package>
+        <Package>helper</Package>
       </DependsUpon>
       <UsedBy>
         <Package>helper</Package>
@@ -114,18 +114,18 @@
         <Class sourceFile="/home/folarin/code/onec/users-info-svc/src/helper/Utility.php">Utility</Class>
       </AbstractClasses>
       <DependsUpon>
+        <Package></Package>
         <Package>model</Package>
         <Package>database</Package>
-        <Package></Package>
       </DependsUpon>
       <UsedBy>
-        <Package>comm</Package>
+        <Package>contract</Package>
+        <Package>controller</Package>
         <Package>model</Package>
         <Package>database</Package>
-        <Package>controller</Package>
+        <Package>comm</Package>
         <Package>view</Package>
         <Package>plaf</Package>
-        <Package>contract</Package>
       </UsedBy>
     </Package>
     <Package name="model">
@@ -144,18 +144,18 @@
       </ConcreteClasses>
       <AbstractClasses/>
       <DependsUpon>
-        <Package>helper</Package>
-        <Package>contract</Package>
         <Package></Package>
+        <Package>contract</Package>
+        <Package>helper</Package>
       </DependsUpon>
       <UsedBy>
+        <Package>contract</Package>
+        <Package>controller</Package>
+        <Package>helper</Package>
         <Package>comm</Package>
         <Package>Paystack\Payment</Package>
-        <Package>helper</Package>
-        <Package>controller</Package>
         <Package>view</Package>
         <Package>plaf</Package>
-        <Package>contract</Package>
       </UsedBy>
     </Package>
     <Package name="Paystack\Payment">
@@ -174,8 +174,8 @@
       </ConcreteClasses>
       <AbstractClasses/>
       <DependsUpon>
-        <Package>Paystack</Package>
         <Package>model</Package>
+        <Package>Paystack</Package>
       </DependsUpon>
       <UsedBy>
         <Package>Paystack</Package>
@@ -197,8 +197,8 @@
       </ConcreteClasses>
       <AbstractClasses/>
       <DependsUpon>
-        <Package>Paystack\Payment</Package>
         <Package></Package>
+        <Package>Paystack\Payment</Package>
       </DependsUpon>
       <UsedBy>
         <Package>Paystack\Payment</Package>
@@ -224,14 +224,14 @@
       </ConcreteClasses>
       <AbstractClasses/>
       <DependsUpon>
-        <Package>helper</Package>
-        <Package>model</Package>
-        <Package>controller</Package>
-        <Package>view</Package>
-        <Package>contract</Package>
-        <Package></Package>
-        <Package>PHPMailer\PHPMailer</Package>
         <Package>AfricasTalking\SDK</Package>
+        <Package>PHPMailer\PHPMailer</Package>
+        <Package></Package>
+        <Package>contract</Package>
+        <Package>controller</Package>
+        <Package>model</Package>
+        <Package>helper</Package>
+        <Package>view</Package>
       </DependsUpon>
       <UsedBy>
         <Package>controller</Package>
@@ -255,11 +255,11 @@
       </ConcreteClasses>
       <AbstractClasses/>
       <DependsUpon>
-        <Package>comm</Package>
-        <Package>helper</Package>
-        <Package>model</Package>
-        <Package>controller</Package>
         <Package>contract</Package>
+        <Package>controller</Package>
+        <Package>model</Package>
+        <Package>helper</Package>
+        <Package>comm</Package>
       </DependsUpon>
       <UsedBy/>
     </Package>
@@ -282,76 +282,77 @@
       </ConcreteClasses>
       <AbstractClasses/>
       <DependsUpon>
-        <Package>comm</Package>
-        <Package>helper</Package>
         <Package>model</Package>
+        <Package>helper</Package>
+        <Package>comm</Package>
       </DependsUpon>
       <UsedBy>
-        <Package>comm</Package>
-        <Package>controller</Package>
         <Package>contract</Package>
+        <Package>controller</Package>
+        <Package>comm</Package>
       </UsedBy>
     </Package>
   </Packages>
   <Cycles>
     <Package Name="contract">
       <Package>contract</Package>
-      <Package>helper</Package>
       <Package>model</Package>
-      <Package>helper</Package>
+      <Package>contract</Package>
     </Package>
     <Package Name="controller">
       <Package>controller</Package>
-      <Package>comm</Package>
-      <Package>helper</Package>
+      <Package>contract</Package>
       <Package>model</Package>
-      <Package>helper</Package>
+      <Package>contract</Package>
     </Package>
     <Package Name="database">
       <Package>database</Package>
       <Package>helper</Package>
       <Package>model</Package>
-      <Package>helper</Package>
+      <Package>contract</Package>
+      <Package>model</Package>
     </Package>
     <Package Name="helper">
       <Package>helper</Package>
       <Package>model</Package>
-      <Package>helper</Package>
+      <Package>contract</Package>
+      <Package>model</Package>
     </Package>
     <Package Name="model">
       <Package>model</Package>
-      <Package>helper</Package>
+      <Package>contract</Package>
       <Package>model</Package>
     </Package>
     <Package Name="Paystack\Payment">
       <Package>Paystack\Payment</Package>
-      <Package>Paystack</Package>
-      <Package>Paystack\Payment</Package>
+      <Package>model</Package>
+      <Package>contract</Package>
+      <Package>model</Package>
     </Package>
     <Package Name="Paystack">
       <Package>Paystack</Package>
       <Package>Paystack\Payment</Package>
-      <Package>Paystack</Package>
+      <Package>model</Package>
+      <Package>contract</Package>
+      <Package>model</Package>
     </Package>
     <Package Name="comm">
       <Package>comm</Package>
-      <Package>helper</Package>
+      <Package>contract</Package>
       <Package>model</Package>
-      <Package>helper</Package>
+      <Package>contract</Package>
     </Package>
     <Package Name="plaf">
       <Package>plaf</Package>
-      <Package>comm</Package>
-      <Package>helper</Package>
+      <Package>contract</Package>
       <Package>model</Package>
-      <Package>helper</Package>
+      <Package>contract</Package>
     </Package>
     <Package Name="view">
       <Package>view</Package>
-      <Package>comm</Package>
-      <Package>helper</Package>
       <Package>model</Package>
-      <Package>helper</Package>
+      <Package>contract</Package>
+      <Package>model</Package>
     </Package>
   </Cycles>
 </PDepend>

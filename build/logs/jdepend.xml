@@ -29,9 +29,9 @@
         <Package>view</Package>
       </DependsUpon>
       <UsedBy>
-        <Package>controller</Package>
         <Package>model</Package>
         <Package>comm</Package>
+        <Package>controller</Package>
         <Package>plaf</Package>
       </UsedBy>
     </Package>
@@ -60,14 +60,14 @@
       </ConcreteClasses>
       <AbstractClasses/>
       <DependsUpon>
-        <Package>Sonata\GoogleAuthenticator</Package>
-        <Package></Package>
         <Package>Blockchain\Conversion</Package>
-        <Package>contract</Package>
+        <Package></Package>
+        <Package>Sonata\GoogleAuthenticator</Package>
         <Package>model</Package>
         <Package>helper</Package>
         <Package>comm</Package>
         <Package>view</Package>
+        <Package>contract</Package>
       </DependsUpon>
       <UsedBy>
         <Package>comm</Package>
@@ -119,13 +119,13 @@
         <Package>database</Package>
       </DependsUpon>
       <UsedBy>
-        <Package>contract</Package>
-        <Package>controller</Package>
         <Package>model</Package>
         <Package>database</Package>
         <Package>comm</Package>
-        <Package>view</Package>
+        <Package>controller</Package>
         <Package>plaf</Package>
+        <Package>view</Package>
+        <Package>contract</Package>
       </UsedBy>
     </Package>
     <Package name="model">
@@ -145,17 +145,17 @@
       <AbstractClasses/>
       <DependsUpon>
         <Package></Package>
-        <Package>contract</Package>
         <Package>helper</Package>
+        <Package>contract</Package>
       </DependsUpon>
       <UsedBy>
-        <Package>contract</Package>
-        <Package>controller</Package>
         <Package>helper</Package>
         <Package>comm</Package>
         <Package>Paystack\Payment</Package>
-        <Package>view</Package>
+        <Package>controller</Package>
         <Package>plaf</Package>
+        <Package>view</Package>
+        <Package>contract</Package>
       </UsedBy>
     </Package>
     <Package name="Paystack\Payment">
@@ -224,19 +224,19 @@
       </ConcreteClasses>
       <AbstractClasses/>
       <DependsUpon>
-        <Package>AfricasTalking\SDK</Package>
-        <Package>PHPMailer\PHPMailer</Package>
         <Package></Package>
-        <Package>contract</Package>
-        <Package>controller</Package>
         <Package>model</Package>
         <Package>helper</Package>
+        <Package>controller</Package>
         <Package>view</Package>
+        <Package>contract</Package>
+        <Package>PHPMailer\PHPMailer</Package>
+        <Package>AfricasTalking\SDK</Package>
       </DependsUpon>
       <UsedBy>
         <Package>controller</Package>
-        <Package>view</Package>
         <Package>plaf</Package>
+        <Package>view</Package>
       </UsedBy>
     </Package>
     <Package name="plaf">
@@ -255,11 +255,11 @@
       </ConcreteClasses>
       <AbstractClasses/>
       <DependsUpon>
-        <Package>contract</Package>
-        <Package>controller</Package>
         <Package>model</Package>
         <Package>helper</Package>
         <Package>comm</Package>
+        <Package>controller</Package>
+        <Package>contract</Package>
       </DependsUpon>
       <UsedBy/>
     </Package>
@@ -287,9 +287,9 @@
         <Package>comm</Package>
       </DependsUpon>
       <UsedBy>
-        <Package>contract</Package>
-        <Package>controller</Package>
         <Package>comm</Package>
+        <Package>controller</Package>
+        <Package>contract</Package>
       </UsedBy>
     </Package>
   </Packages>
@@ -297,61 +297,60 @@
     <Package Name="contract">
       <Package>contract</Package>
       <Package>model</Package>
-      <Package>contract</Package>
+      <Package>helper</Package>
+      <Package>model</Package>
     </Package>
     <Package Name="controller">
       <Package>controller</Package>
-      <Package>contract</Package>
       <Package>model</Package>
-      <Package>contract</Package>
+      <Package>helper</Package>
+      <Package>model</Package>
     </Package>
     <Package Name="database">
       <Package>database</Package>
       <Package>helper</Package>
       <Package>model</Package>
-      <Package>contract</Package>
-      <Package>model</Package>
+      <Package>helper</Package>
     </Package>
     <Package Name="helper">
       <Package>helper</Package>
       <Package>model</Package>
-      <Package>contract</Package>
-      <Package>model</Package>
+      <Package>helper</Package>
     </Package>
     <Package Name="model">
       <Package>model</Package>
-      <Package>contract</Package>
+      <Package>helper</Package>
       <Package>model</Package>
     </Package>
     <Package Name="Paystack\Payment">
       <Package>Paystack\Payment</Package>
       <Package>model</Package>
-      <Package>contract</Package>
+      <Package>helper</Package>
       <Package>model</Package>
     </Package>
     <Package Name="Paystack">
       <Package>Paystack</Package>
       <Package>Paystack\Payment</Package>
       <Package>model</Package>
-      <Package>contract</Package>
+      <Package>helper</Package>
       <Package>model</Package>
     </Package>
     <Package Name="comm">
       <Package>comm</Package>
-      <Package>contract</Package>
       <Package>model</Package>
-      <Package>contract</Package>
+      <Package>helper</Package>
+      <Package>model</Package>
     </Package>
     <Package Name="plaf">
       <Package>plaf</Package>
-      <Package>contract</Package>
       <Package>model</Package>
-      <Package>contract</Package>
+      <Package>helper</Package>
+      <Package>model</Package>
     </Package>
     <Package Name="view">
       <Package>view</Package>
       <Package>model</Package>
-      <Package>contract</Package>
+      <Package>helper</Package>
       <Package>model</Package>
     </Package>
   </Cycles>

@@ -1,4 +1,4 @@
-/vendor/
+# /vendor/
 session/
 .vscode/
 node_modules/

@@ -42,7 +42,7 @@
 	<target name="static-analysis-parallel" description="Performs static analysis (executing the tools in parallel)">
 		<parallel threadCount="2">
 			<sequential>
-				<!-- <antcall target="pdepend" /> -->
+				<antcall target="pdepend" />
 				<antcall target="phpmd-ci" />
 			</sequential>
 			<antcall target="lint" />

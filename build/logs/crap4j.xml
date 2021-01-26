@@ -1,0 +1,4008 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<crap_result>
+  <project/>
+  <timestamp>2021-01-26 04:01:51</timestamp>
+  <stats>
+    <name>Method Crap Stats</name>
+    <methodCount>363</methodCount>
+    <crapMethodCount>46</crapMethodCount>
+    <crapLoad>490</crapLoad>
+    <totalCrap>13920.33</totalCrap>
+    <crapMethodPercent>12.67</crapMethodPercent>
+  </stats>
+  <methods>
+    <method>
+      <package>contract</package>
+      <className>contract\Controller</className>
+      <methodName>index</methodName>
+      <methodSignature>index()</methodSignature>
+      <fullMethod>index()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Controller</className>
+      <methodName>create</methodName>
+      <methodSignature>create()</methodSignature>
+      <fullMethod>create()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Controller</className>
+      <methodName>store</methodName>
+      <methodSignature>store()</methodSignature>
+      <fullMethod>store()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Controller</className>
+      <methodName>show</methodName>
+      <methodSignature>show()</methodSignature>
+      <fullMethod>show()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Controller</className>
+      <methodName>edit</methodName>
+      <methodSignature>edit()</methodSignature>
+      <fullMethod>edit()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Controller</className>
+      <methodName>update</methodName>
+      <methodSignature>update()</methodSignature>
+      <fullMethod>update()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Controller</className>
+      <methodName>destroy</methodName>
+      <methodSignature>destroy()</methodSignature>
+      <fullMethod>destroy()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Event</className>
+      <methodName>listen</methodName>
+      <methodSignature>listen(contract\EventListener $listener, string $op, string $prop, string $UID)</methodSignature>
+      <fullMethod>listen(contract\EventListener $listener, string $op, string $prop, string $UID)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Event</className>
+      <methodName>unlisten</methodName>
+      <methodSignature>unlisten(contract\EventListener $listener, string $op, string $model)</methodSignature>
+      <fullMethod>unlisten(contract\EventListener $listener, string $op, string $model)</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Event</className>
+      <methodName>trigger</methodName>
+      <methodSignature>trigger(model\Model $model, string $op, string $prop, string $from, string $to): bool</methodSignature>
+      <fullMethod>trigger(model\Model $model, string $op, string $prop, string $from, string $to): bool</fullMethod>
+      <crap>210</crap>
+      <complexity>14</complexity>
+      <coverage>0</coverage>
+      <crapLoad>14</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Message</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(string $title, string $message, string $theme)</methodSignature>
+      <fullMethod>__construct(string $title, string $message, string $theme)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Message</className>
+      <methodName>getTitle</methodName>
+      <methodSignature>getTitle(): string</methodSignature>
+      <fullMethod>getTitle(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Message</className>
+      <methodName>setTitle</methodName>
+      <methodSignature>setTitle(string $title)</methodSignature>
+      <fullMethod>setTitle(string $title)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Message</className>
+      <methodName>getTheme</methodName>
+      <methodSignature>getTheme(): string</methodSignature>
+      <fullMethod>getTheme(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Message</className>
+      <methodName>setTheme</methodName>
+      <methodSignature>setTheme(string $theme)</methodSignature>
+      <fullMethod>setTheme(string $theme)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Message</className>
+      <methodName>getMessage</methodName>
+      <methodSignature>getMessage(): string</methodSignature>
+      <fullMethod>getMessage(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Message</className>
+      <methodName>setMessage</methodName>
+      <methodSignature>setMessage(string $message)</methodSignature>
+      <fullMethod>setMessage(string $message)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Quantity</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(float $number, string $unit)</methodSignature>
+      <fullMethod>__construct(float $number, string $unit)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Quantity</className>
+      <methodName>getUnit</methodName>
+      <methodSignature>getUnit(): string</methodSignature>
+      <fullMethod>getUnit(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Quantity</className>
+      <methodName>setUnit</methodName>
+      <methodSignature>setUnit(string $unit)</methodSignature>
+      <fullMethod>setUnit(string $unit)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Quantity</className>
+      <methodName>getNumber</methodName>
+      <methodSignature>getNumber(): float</methodSignature>
+      <fullMethod>getNumber(): float</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Quantity</className>
+      <methodName>setNumber</methodName>
+      <methodSignature>setNumber(float $number)</methodSignature>
+      <fullMethod>setNumber(float $number)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Request</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(array $params, string $method, array $files)</methodSignature>
+      <fullMethod>__construct(array $params, string $method, array $files)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Request</className>
+      <methodName>getParams</methodName>
+      <methodSignature>getParams(): array</methodSignature>
+      <fullMethod>getParams(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Request</className>
+      <methodName>setParams</methodName>
+      <methodSignature>setParams(array $params)</methodSignature>
+      <fullMethod>setParams(array $params)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Request</className>
+      <methodName>getParam</methodName>
+      <methodSignature>getParam(string $index)</methodSignature>
+      <fullMethod>getParam(string $index)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Request</className>
+      <methodName>setParam</methodName>
+      <methodSignature>setParam(string $index, $value)</methodSignature>
+      <fullMethod>setParam(string $index, $value)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Request</className>
+      <methodName>getContexts</methodName>
+      <methodSignature>getContexts(): array</methodSignature>
+      <fullMethod>getContexts(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Request</className>
+      <methodName>setContexts</methodName>
+      <methodSignature>setContexts(array $contexts)</methodSignature>
+      <fullMethod>setContexts(array $contexts)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Request</className>
+      <methodName>getContext</methodName>
+      <methodSignature>getContext(string $index)</methodSignature>
+      <fullMethod>getContext(string $index)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Request</className>
+      <methodName>setContext</methodName>
+      <methodSignature>setContext(string $index, $value)</methodSignature>
+      <fullMethod>setContext(string $index, $value)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Request</className>
+      <methodName>getFiles</methodName>
+      <methodSignature>getFiles(): array</methodSignature>
+      <fullMethod>getFiles(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Request</className>
+      <methodName>setFiles</methodName>
+      <methodSignature>setFiles(array $files)</methodSignature>
+      <fullMethod>setFiles(array $files)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Request</className>
+      <methodName>getFile</methodName>
+      <methodSignature>getFile(string $index): array</methodSignature>
+      <fullMethod>getFile(string $index): array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Request</className>
+      <methodName>getVariables</methodName>
+      <methodSignature>getVariables(): array</methodSignature>
+      <fullMethod>getVariables(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Request</className>
+      <methodName>setVariables</methodName>
+      <methodSignature>setVariables(array $variables)</methodSignature>
+      <fullMethod>setVariables(array $variables)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Request</className>
+      <methodName>getVariable</methodName>
+      <methodSignature>getVariable(string $index): ?string</methodSignature>
+      <fullMethod>getVariable(string $index): ?string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Request</className>
+      <methodName>getMethod</methodName>
+      <methodSignature>getMethod(): string</methodSignature>
+      <fullMethod>getMethod(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Request</className>
+      <methodName>setMethod</methodName>
+      <methodSignature>setMethod(string $method)</methodSignature>
+      <fullMethod>setMethod(string $method)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Response</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(contract\Request $request)</methodSignature>
+      <fullMethod>__construct(contract\Request $request)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Response</className>
+      <methodName>getRequest</methodName>
+      <methodSignature>getRequest(): contract\Request</methodSignature>
+      <fullMethod>getRequest(): contract\Request</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Response</className>
+      <methodName>setRequest</methodName>
+      <methodSignature>setRequest(contract\Request $request)</methodSignature>
+      <fullMethod>setRequest(contract\Request $request)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Response</className>
+      <methodName>getPage</methodName>
+      <methodSignature>getPage(): ?view\Page</methodSignature>
+      <fullMethod>getPage(): ?view\Page</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Response</className>
+      <methodName>setPage</methodName>
+      <methodSignature>setPage(view\Page $page)</methodSignature>
+      <fullMethod>setPage(view\Page $page)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Response</className>
+      <methodName>getURL</methodName>
+      <methodSignature>getURL(string $index)</methodSignature>
+      <fullMethod>getURL(string $index)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Response</className>
+      <methodName>setURL</methodName>
+      <methodSignature>setURL(string $index, $url)</methodSignature>
+      <fullMethod>setURL(string $index, $url)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Response</className>
+      <methodName>getURLs</methodName>
+      <methodSignature>getURLs(): array</methodSignature>
+      <fullMethod>getURLs(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Response</className>
+      <methodName>setURLs</methodName>
+      <methodSignature>setURLs(array $url)</methodSignature>
+      <fullMethod>setURLs(array $url)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Response</className>
+      <methodName>getTexts</methodName>
+      <methodSignature>getTexts(): array</methodSignature>
+      <fullMethod>getTexts(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Response</className>
+      <methodName>setTexts</methodName>
+      <methodSignature>setTexts(array $text)</methodSignature>
+      <fullMethod>setTexts(array $text)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Response</className>
+      <methodName>setText</methodName>
+      <methodSignature>setText(string $index, $text)</methodSignature>
+      <fullMethod>setText(string $index, $text)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Response</className>
+      <methodName>getText</methodName>
+      <methodSignature>getText(string $index)</methodSignature>
+      <fullMethod>getText(string $index)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Response</className>
+      <methodName>getMessageBag</methodName>
+      <methodSignature>getMessageBag(): array</methodSignature>
+      <fullMethod>getMessageBag(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Response</className>
+      <methodName>setMessageBag</methodName>
+      <methodSignature>setMessageBag(array $messageBag)</methodSignature>
+      <fullMethod>setMessageBag(array $messageBag)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Response</className>
+      <methodName>addMessage</methodName>
+      <methodSignature>addMessage(contract\Message $message)</methodSignature>
+      <fullMethod>addMessage(contract\Message $message)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Response</className>
+      <methodName>getPayload</methodName>
+      <methodSignature>getPayload(): array</methodSignature>
+      <fullMethod>getPayload(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Response</className>
+      <methodName>setPayload</methodName>
+      <methodSignature>setPayload(array $payload)</methodSignature>
+      <fullMethod>setPayload(array $payload)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Response</className>
+      <methodName>addPayload</methodName>
+      <methodSignature>addPayload(string $key, $value)</methodSignature>
+      <fullMethod>addPayload(string $key, $value)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Response</className>
+      <methodName>getHeader</methodName>
+      <methodSignature>getHeader(): array</methodSignature>
+      <fullMethod>getHeader(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Response</className>
+      <methodName>setHeader</methodName>
+      <methodSignature>setHeader(array $header)</methodSignature>
+      <fullMethod>setHeader(array $header)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Response</className>
+      <methodName>addHeader</methodName>
+      <methodSignature>addHeader(string $key, $value)</methodSignature>
+      <fullMethod>addHeader(string $key, $value)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Response</className>
+      <methodName>getPayloadValue</methodName>
+      <methodSignature>getPayloadValue(string $key)</methodSignature>
+      <fullMethod>getPayloadValue(string $key)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Response</className>
+      <methodName>getStatusCode</methodName>
+      <methodSignature>getStatusCode(): int</methodSignature>
+      <fullMethod>getStatusCode(): int</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>contract</package>
+      <className>contract\Response</className>
+      <methodName>setStatusCode</methodName>
+      <methodSignature>setStatusCode(int $statusCode)</methodSignature>
+      <fullMethod>setStatusCode(int $statusCode)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\APIController</className>
+      <methodName>getConfirmedBTCAddressBalance</methodName>
+      <methodSignature>getConfirmedBTCAddressBalance(model\Model $btcAddress): contract\Quantity</methodSignature>
+      <fullMethod>getConfirmedBTCAddressBalance(model\Model $btcAddress): contract\Quantity</fullMethod>
+      <crap>72</crap>
+      <complexity>8</complexity>
+      <coverage>0</coverage>
+      <crapLoad>8</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\APIController</className>
+      <methodName>getBTCAddressBalance</methodName>
+      <methodSignature>getBTCAddressBalance(model\Model $btcAddress): contract\Quantity</methodSignature>
+      <fullMethod>getBTCAddressBalance(model\Model $btcAddress): contract\Quantity</fullMethod>
+      <crap>272</crap>
+      <complexity>16</complexity>
+      <coverage>0</coverage>
+      <crapLoad>17</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\APIController</className>
+      <methodName>reloadBlockchainWallets</methodName>
+      <methodSignature>reloadBlockchainWallets()</methodSignature>
+      <fullMethod>reloadBlockchainWallets()</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\APIController</className>
+      <methodName>initBanks</methodName>
+      <methodSignature>initBanks()</methodSignature>
+      <fullMethod>initBanks()</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\APIController</className>
+      <methodName>getAPIKey</methodName>
+      <methodSignature>getAPIKey(): string</methodSignature>
+      <fullMethod>getAPIKey(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\APIController</className>
+      <methodName>getVoucherCode</methodName>
+      <methodSignature>getVoucherCode(): string</methodSignature>
+      <fullMethod>getVoucherCode(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\APIController</className>
+      <methodName>getMerchantCommission</methodName>
+      <methodSignature>getMerchantCommission(): float</methodSignature>
+      <fullMethod>getMerchantCommission(): float</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\APIController</className>
+      <methodName>getVoucherAdminCommission</methodName>
+      <methodSignature>getVoucherAdminCommission(): float</methodSignature>
+      <fullMethod>getVoucherAdminCommission(): float</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\APIController</className>
+      <methodName>getVoucherVendorCommission</methodName>
+      <methodSignature>getVoucherVendorCommission(): float</methodSignature>
+      <fullMethod>getVoucherVendorCommission(): float</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\APIController</className>
+      <methodName>getVoucherCommission</methodName>
+      <methodSignature>getVoucherCommission(): float</methodSignature>
+      <fullMethod>getVoucherCommission(): float</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\APIController</className>
+      <methodName>getPref</methodName>
+      <methodSignature>getPref(model\Model $user, string $pref, string $default): ?string</methodSignature>
+      <fullMethod>getPref(model\Model $user, string $pref, string $default): ?string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\APIController</className>
+      <methodName>getWithdrawalFee</methodName>
+      <methodSignature>getWithdrawalFee(model\Model $currency): contract\Quantity</methodSignature>
+      <fullMethod>getWithdrawalFee(model\Model $currency): contract\Quantity</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\APIController</className>
+      <methodName>getVoucherMinimum</methodName>
+      <methodSignature>getVoucherMinimum(model\Model $currency): contract\Quantity</methodSignature>
+      <fullMethod>getVoucherMinimum(model\Model $currency): contract\Quantity</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\APIController</className>
+      <methodName>getNetworkFee</methodName>
+      <methodSignature>getNetworkFee(model\Model $currency): contract\Quantity</methodSignature>
+      <fullMethod>getNetworkFee(model\Model $currency): contract\Quantity</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\APIController</className>
+      <methodName>convert</methodName>
+      <methodSignature>convert(contract\Quantity $qty, model\Model $currency, bool $sell): contract\Quantity</methodSignature>
+      <fullMethod>convert(contract\Quantity $qty, model\Model $currency, bool $sell): contract\Quantity</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\APIController</className>
+      <methodName>getVoucherValidity</methodName>
+      <methodSignature>getVoucherValidity(): int</methodSignature>
+      <fullMethod>getVoucherValidity(): int</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\APIController</className>
+      <methodName>btcSpotPrice</methodName>
+      <methodSignature>btcSpotPrice(model\Model $quote): float</methodSignature>
+      <fullMethod>btcSpotPrice(model\Model $quote): float</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\APIController</className>
+      <methodName>getFX</methodName>
+      <methodSignature>getFX(model\Model $base, model\Model $quote, bool $sell): float</methodSignature>
+      <fullMethod>getFX(model\Model $base, model\Model $quote, bool $sell): float</fullMethod>
+      <crap>42</crap>
+      <complexity>6</complexity>
+      <coverage>0</coverage>
+      <crapLoad>6</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\AccountController</className>
+      <methodName>getBalance</methodName>
+      <methodSignature>getBalance(model\Model $party, model\Model $coparty, string $currency, string $account): contract\Quantity</methodSignature>
+      <fullMethod>getBalance(model\Model $party, model\Model $coparty, string $currency, string $account): contract\Quantity</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\AccountController</className>
+      <methodName>shouldDoBalance</methodName>
+      <methodSignature>shouldDoBalance(model\Model $party, model\Model $coparty, string $currency, string $account): bool</methodSignature>
+      <fullMethod>shouldDoBalance(model\Model $party, model\Model $coparty, string $currency, string $account): bool</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\AccountController</className>
+      <methodName>doBalance</methodName>
+      <methodSignature>doBalance(model\Model $party, model\Model $coparty, string $currency, string $account): contract\Quantity</methodSignature>
+      <fullMethod>doBalance(model\Model $party, model\Model $coparty, string $currency, string $account): contract\Quantity</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\BTCController</className>
+      <methodName>getUserWallet</methodName>
+      <methodSignature>getUserWallet(model\Model $user, $forceNew): model\Model</methodSignature>
+      <fullMethod>getUserWallet(model\Model $user, $forceNew): model\Model</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\BTCController</className>
+      <methodName>getUsableAddress</methodName>
+      <methodSignature>getUsableAddress(model\Model $user, bool $forceNew): ?model\Model</methodSignature>
+      <fullMethod>getUsableAddress(model\Model $user, bool $forceNew): ?model\Model</fullMethod>
+      <crap>72</crap>
+      <complexity>8</complexity>
+      <coverage>0</coverage>
+      <crapLoad>8</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\BTCController</className>
+      <methodName>send</methodName>
+      <methodSignature>send()</methodSignature>
+      <fullMethod>send()</fullMethod>
+      <crap>30</crap>
+      <complexity>5</complexity>
+      <coverage>0</coverage>
+      <crapLoad>5</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\BTCController</className>
+      <methodName>pingBTX</methodName>
+      <methodSignature>pingBTX()</methodSignature>
+      <fullMethod>pingBTX()</fullMethod>
+      <crap>72</crap>
+      <complexity>8</complexity>
+      <coverage>0</coverage>
+      <crapLoad>8</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\BTCController</className>
+      <methodName>hookBTX</methodName>
+      <methodSignature>hookBTX()</methodSignature>
+      <fullMethod>hookBTX()</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\BTCController</className>
+      <methodName>initReceivePayment</methodName>
+      <methodSignature>initReceivePayment()</methodSignature>
+      <fullMethod>initReceivePayment()</fullMethod>
+      <crap>30</crap>
+      <complexity>5</complexity>
+      <coverage>0</coverage>
+      <crapLoad>5</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\BTCController</className>
+      <methodName>initTopup</methodName>
+      <methodSignature>initTopup()</methodSignature>
+      <fullMethod>initTopup()</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\CronController</className>
+      <methodName>zombieBTXJob</methodName>
+      <methodSignature>zombieBTXJob()</methodSignature>
+      <fullMethod>zombieBTXJob()</fullMethod>
+      <crap>56</crap>
+      <complexity>7</complexity>
+      <coverage>0</coverage>
+      <crapLoad>7</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\CronController</className>
+      <methodName>btxJob</methodName>
+      <methodSignature>btxJob()</methodSignature>
+      <fullMethod>btxJob()</fullMethod>
+      <crap>462</crap>
+      <complexity>21</complexity>
+      <coverage>0</coverage>
+      <crapLoad>22</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\CronController</className>
+      <methodName>done</methodName>
+      <methodSignature>done(string $job, string $pid)</methodSignature>
+      <fullMethod>done(string $job, string $pid)</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\CronController</className>
+      <methodName>getRunner</methodName>
+      <methodSignature>getRunner(string $job): ?string</methodSignature>
+      <fullMethod>getRunner(string $job): ?string</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\CronController</className>
+      <methodName>register</methodName>
+      <methodSignature>register(string $job): ?string</methodSignature>
+      <fullMethod>register(string $job): ?string</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\CronController</className>
+      <methodName>canContinue</methodName>
+      <methodSignature>canContinue(string $job, string $runner): bool</methodSignature>
+      <fullMethod>canContinue(string $job, string $runner): bool</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\CronController</className>
+      <methodName>isFree</methodName>
+      <methodSignature>isFree(string $job): bool</methodSignature>
+      <fullMethod>isFree(string $job): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\DashboardController</className>
+      <methodName>show</methodName>
+      <methodSignature>show()</methodSignature>
+      <fullMethod>show()</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\DashboardController</className>
+      <methodName>listPayout</methodName>
+      <methodSignature>listPayout()</methodSignature>
+      <fullMethod>listPayout()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\DashboardController</className>
+      <methodName>readPayout</methodName>
+      <methodSignature>readPayout()</methodSignature>
+      <fullMethod>readPayout()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\DashboardController</className>
+      <methodName>updatePayout</methodName>
+      <methodSignature>updatePayout()</methodSignature>
+      <fullMethod>updatePayout()</fullMethod>
+      <crap>42</crap>
+      <complexity>6</complexity>
+      <coverage>0</coverage>
+      <crapLoad>6</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\DashboardController</className>
+      <methodName>showKYC</methodName>
+      <methodSignature>showKYC()</methodSignature>
+      <fullMethod>showKYC()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\DashboardController</className>
+      <methodName>updateKYC</methodName>
+      <methodSignature>updateKYC()</methodSignature>
+      <fullMethod>updateKYC()</fullMethod>
+      <crap>272</crap>
+      <complexity>16</complexity>
+      <coverage>0</coverage>
+      <crapLoad>17</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\DashboardController</className>
+      <methodName>listKYC</methodName>
+      <methodSignature>listKYC()</methodSignature>
+      <fullMethod>listKYC()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\DashboardController</className>
+      <methodName>readKYC</methodName>
+      <methodSignature>readKYC()</methodSignature>
+      <fullMethod>readKYC()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\FIATController</className>
+      <methodName>payoutFIAT</methodName>
+      <methodSignature>payoutFIAT()</methodSignature>
+      <fullMethod>payoutFIAT()</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\FIATController</className>
+      <methodName>pingFTX</methodName>
+      <methodSignature>pingFTX()</methodSignature>
+      <fullMethod>pingFTX()</fullMethod>
+      <crap>90</crap>
+      <complexity>9</complexity>
+      <coverage>0</coverage>
+      <crapLoad>9</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\FIATController</className>
+      <methodName>hookFTX</methodName>
+      <methodSignature>hookFTX()</methodSignature>
+      <fullMethod>hookFTX()</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\FIATController</className>
+      <methodName>initWithdraw</methodName>
+      <methodSignature>initWithdraw()</methodSignature>
+      <fullMethod>initWithdraw()</fullMethod>
+      <crap>30</crap>
+      <complexity>5</complexity>
+      <coverage>0</coverage>
+      <crapLoad>5</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\FIATController</className>
+      <methodName>initTopup</methodName>
+      <methodSignature>initTopup()</methodSignature>
+      <fullMethod>initTopup()</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\FIATController</className>
+      <methodName>initReceivePayment</methodName>
+      <methodSignature>initReceivePayment()</methodSignature>
+      <fullMethod>initReceivePayment()</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\SessionController</className>
+      <methodName>fwd</methodName>
+      <methodSignature>fwd()</methodSignature>
+      <fullMethod>fwd()</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\SessionController</className>
+      <methodName>logout</methodName>
+      <methodSignature>logout()</methodSignature>
+      <fullMethod>logout()</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\SessionController</className>
+      <methodName>showVerify2FA</methodName>
+      <methodSignature>showVerify2FA()</methodSignature>
+      <fullMethod>showVerify2FA()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\SessionController</className>
+      <methodName>attemptVerify2FA</methodName>
+      <methodSignature>attemptVerify2FA()</methodSignature>
+      <fullMethod>attemptVerify2FA()</fullMethod>
+      <crap>72</crap>
+      <complexity>8</complexity>
+      <coverage>0</coverage>
+      <crapLoad>8</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\SessionController</className>
+      <methodName>showQR</methodName>
+      <methodSignature>showQR()</methodSignature>
+      <fullMethod>showQR()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\SessionController</className>
+      <methodName>showLogin</methodName>
+      <methodSignature>showLogin()</methodSignature>
+      <fullMethod>showLogin()</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\SessionController</className>
+      <methodName>attemptLogin</methodName>
+      <methodSignature>attemptLogin()</methodSignature>
+      <fullMethod>attemptLogin()</fullMethod>
+      <crap>42</crap>
+      <complexity>6</complexity>
+      <coverage>0</coverage>
+      <crapLoad>6</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\SessionController</className>
+      <methodName>showRegister</methodName>
+      <methodSignature>showRegister()</methodSignature>
+      <fullMethod>showRegister()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\SessionController</className>
+      <methodName>attemptRegister</methodName>
+      <methodSignature>attemptRegister()</methodSignature>
+      <fullMethod>attemptRegister()</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\SessionController</className>
+      <methodName>check2FACode</methodName>
+      <methodSignature>check2FACode(model\Model $user, string $code): bool</methodSignature>
+      <fullMethod>check2FACode(model\Model $user, string $code): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\SessionController</className>
+      <methodName>verifyCSRF</methodName>
+      <methodSignature>verifyCSRF(): bool</methodSignature>
+      <fullMethod>verifyCSRF(): bool</fullMethod>
+      <crap>30</crap>
+      <complexity>5</complexity>
+      <coverage>0</coverage>
+      <crapLoad>5</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\SessionController</className>
+      <methodName>init</methodName>
+      <methodSignature>init(model\Model $newUser): bool</methodSignature>
+      <fullMethod>init(model\Model $newUser): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\SessionController</className>
+      <methodName>doLogin</methodName>
+      <methodSignature>doLogin(): bool</methodSignature>
+      <fullMethod>doLogin(): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\SessionController</className>
+      <methodName>isLoggedIn</methodName>
+      <methodSignature>isLoggedIn(model\Model $user): bool</methodSignature>
+      <fullMethod>isLoggedIn(model\Model $user): bool</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\SessionController</className>
+      <methodName>destroy</methodName>
+      <methodSignature>destroy()</methodSignature>
+      <fullMethod>destroy()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\SessionController</className>
+      <methodName>setOTPCookie</methodName>
+      <methodSignature>setOTPCookie(model\Model $user): bool</methodSignature>
+      <fullMethod>setOTPCookie(model\Model $user): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\SessionController</className>
+      <methodName>hasValidOTPCookie</methodName>
+      <methodSignature>hasValidOTPCookie(model\Model $user): bool</methodSignature>
+      <fullMethod>hasValidOTPCookie(model\Model $user): bool</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\SettingsController</className>
+      <methodName>show</methodName>
+      <methodSignature>show()</methodSignature>
+      <fullMethod>show()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\UserController</className>
+      <methodName>create</methodName>
+      <methodSignature>create()</methodSignature>
+      <fullMethod>create()</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\UserController</className>
+      <methodName>getById</methodName>
+      <methodSignature>getById()</methodSignature>
+      <fullMethod>getById()</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\UserController</className>
+      <methodName>delete</methodName>
+      <methodSignature>delete()</methodSignature>
+      <fullMethod>delete()</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\UserController</className>
+      <methodName>getAll</methodName>
+      <methodSignature>getAll()</methodSignature>
+      <fullMethod>getAll()</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\UserController</className>
+      <methodName>update</methodName>
+      <methodSignature>update()</methodSignature>
+      <fullMethod>update()</fullMethod>
+      <crap>30</crap>
+      <complexity>5</complexity>
+      <coverage>0</coverage>
+      <crapLoad>5</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\VoucherController</className>
+      <methodName>showRedeem</methodName>
+      <methodSignature>showRedeem()</methodSignature>
+      <fullMethod>showRedeem()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\VoucherController</className>
+      <methodName>redeemVTX</methodName>
+      <methodSignature>redeemVTX()</methodSignature>
+      <fullMethod>redeemVTX()</fullMethod>
+      <crap>132</crap>
+      <complexity>11</complexity>
+      <coverage>0</coverage>
+      <crapLoad>11</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\VoucherController</className>
+      <methodName>issueVTX</methodName>
+      <methodSignature>issueVTX()</methodSignature>
+      <fullMethod>issueVTX()</fullMethod>
+      <crap>90</crap>
+      <complexity>9</complexity>
+      <coverage>0</coverage>
+      <crapLoad>9</crapLoad>
+    </method>
+    <method>
+      <package>controller</package>
+      <className>controller\VoucherController</className>
+      <methodName>initVTX</methodName>
+      <methodSignature>initVTX()</methodSignature>
+      <fullMethod>initVTX()</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>database</package>
+      <className>database\DBController</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct()</methodSignature>
+      <fullMethod>__construct()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>database</package>
+      <className>database\DBController</className>
+      <methodName>connectDB</methodName>
+      <methodSignature>connectDB()</methodSignature>
+      <fullMethod>connectDB()</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>database</package>
+      <className>database\DBController</className>
+      <methodName>getConnection</methodName>
+      <methodSignature>getConnection()</methodSignature>
+      <fullMethod>getConnection()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>database</package>
+      <className>database\DBController</className>
+      <methodName>listFields</methodName>
+      <methodSignature>listFields()</methodSignature>
+      <fullMethod>listFields()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>database</package>
+      <className>database\DBController</className>
+      <methodName>runQuery</methodName>
+      <methodSignature>runQuery(string $query, $debug)</methodSignature>
+      <fullMethod>runQuery(string $query, $debug)</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>database</package>
+      <className>database\DBController</className>
+      <methodName>getQuery</methodName>
+      <methodSignature>getQuery(): string</methodSignature>
+      <fullMethod>getQuery(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>database</package>
+      <className>database\DBController</className>
+      <methodName>affectedRows</methodName>
+      <methodSignature>affectedRows()</methodSignature>
+      <fullMethod>affectedRows()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>database</package>
+      <className>database\DBController</className>
+      <methodName>getResultSet</methodName>
+      <methodSignature>getResultSet(string $query, bool $debug, bool $skipCache): array</methodSignature>
+      <fullMethod>getResultSet(string $query, bool $debug, bool $skipCache): array</fullMethod>
+      <crap>56</crap>
+      <complexity>7</complexity>
+      <coverage>0</coverage>
+      <crapLoad>7</crapLoad>
+    </method>
+    <method>
+      <package>database</package>
+      <className>database\DBController</className>
+      <methodName>numRows</methodName>
+      <methodSignature>numRows($result)</methodSignature>
+      <fullMethod>numRows($result)</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>database</package>
+      <className>database\DBController</className>
+      <methodName>migrate</methodName>
+      <methodSignature>migrate(string $query)</methodSignature>
+      <fullMethod>migrate(string $query)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>database</package>
+      <className>database\DBController</className>
+      <methodName>create</methodName>
+      <methodSignature>create(string $table, $fields, $values, $debug)</methodSignature>
+      <fullMethod>create(string $table, $fields, $values, $debug)</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>database</package>
+      <className>database\DBController</className>
+      <methodName>update</methodName>
+      <methodSignature>update(string $table, $field, $value, $haystack, $needle, $debug)</methodSignature>
+      <fullMethod>update(string $table, $field, $value, $haystack, $needle, $debug)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>database</package>
+      <className>database\DBController</className>
+      <methodName>updateAdvanced</methodName>
+      <methodSignature>updateAdvanced(string $table, array $cvSet, string $haystack, string $needle, $debug)</methodSignature>
+      <fullMethod>updateAdvanced(string $table, array $cvSet, string $haystack, string $needle, $debug)</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>database</package>
+      <className>database\DBController</className>
+      <methodName>updateGeneric</methodName>
+      <methodSignature>updateGeneric($table, $query, $debug)</methodSignature>
+      <fullMethod>updateGeneric($table, $query, $debug)</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>database</package>
+      <className>database\DBController</className>
+      <methodName>deleteAll</methodName>
+      <methodSignature>deleteAll(string $table, $debug)</methodSignature>
+      <fullMethod>deleteAll(string $table, $debug)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>database</package>
+      <className>database\DBController</className>
+      <methodName>delete</methodName>
+      <methodSignature>delete(string $table, string $haystack, string $needle, bool $debug, string $dkey)</methodSignature>
+      <fullMethod>delete(string $table, string $haystack, string $needle, bool $debug, string $dkey)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>database</package>
+      <className>database\DBController</className>
+      <methodName>deleteGeneric</methodName>
+      <methodSignature>deleteGeneric(string $table, string $filter, bool $debug, $soft)</methodSignature>
+      <fullMethod>deleteGeneric(string $table, string $filter, bool $debug, $soft)</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>database</package>
+      <className>database\DBController</className>
+      <methodName>getAll</methodName>
+      <methodSignature>getAll(string $table, bool $debug, bool $skipCache)</methodSignature>
+      <fullMethod>getAll(string $table, bool $debug, bool $skipCache)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>database</package>
+      <className>database\DBController</className>
+      <methodName>get</methodName>
+      <methodSignature>get(string $table, string $haystack, string $needle, bool $debug)</methodSignature>
+      <fullMethod>get(string $table, string $haystack, string $needle, bool $debug)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>database</package>
+      <className>database\DBController</className>
+      <methodName>getGeneric</methodName>
+      <methodSignature>getGeneric(string $table, string $filter, string $cols, bool $debug, bool $skipCache)</methodSignature>
+      <fullMethod>getGeneric(string $table, string $filter, string $cols, bool $debug, bool $skipCache)</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>database</package>
+      <className>database\DBController</className>
+      <methodName>getPaginated</methodName>
+      <methodSignature>getPaginated(string $table, string $filter, string $cols, int $page, int $limit, bool $debug)</methodSignature>
+      <fullMethod>getPaginated(string $table, string $filter, string $cols, int $page, int $limit, bool $debug)</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>database</package>
+      <className>database\RedisWrapper</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct($server, $port)</methodSignature>
+      <fullMethod>__construct($server, $port)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>database</package>
+      <className>database\RedisWrapper</className>
+      <methodName>getRedis</methodName>
+      <methodSignature>getRedis(): Redis</methodSignature>
+      <fullMethod>getRedis(): Redis</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>database</package>
+      <className>database\RedisWrapper</className>
+      <methodName>get</methodName>
+      <methodSignature>get($key): ?string</methodSignature>
+      <fullMethod>get($key): ?string</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>database</package>
+      <className>database\RedisWrapper</className>
+      <methodName>set</methodName>
+      <methodSignature>set(string $key, string $value): bool</methodSignature>
+      <fullMethod>set(string $key, string $value): bool</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>database</package>
+      <className>database\RedisWrapper</className>
+      <methodName>del</methodName>
+      <methodSignature>del($key): bool</methodSignature>
+      <fullMethod>del($key): bool</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>isMobile</methodName>
+      <methodSignature>isMobile(): bool</methodSignature>
+      <fullMethod>isMobile(): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>startLog</methodName>
+      <methodSignature>startLog(string $desc): string</methodSignature>
+      <fullMethod>startLog(string $desc): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getLog</methodName>
+      <methodSignature>getLog(string $key, bool $end)</methodSignature>
+      <fullMethod>getLog(string $key, bool $end)</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getInterface</methodName>
+      <methodSignature>getInterface(): string</methodSignature>
+      <fullMethod>getInterface(): string</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>isCron</methodName>
+      <methodSignature>isCron(): bool</methodSignature>
+      <fullMethod>isCron(): bool</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>isCLI</methodName>
+      <methodSignature>isCLI(): bool</methodSignature>
+      <fullMethod>isCLI(): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>isWeb</methodName>
+      <methodSignature>isWeb(): bool</methodSignature>
+      <fullMethod>isWeb(): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getWords</methodName>
+      <methodSignature>getWords(string $sentence, int $count)</methodSignature>
+      <fullMethod>getWords(string $sentence, int $count)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>migrate</methodName>
+      <methodSignature>migrate($value)</methodSignature>
+      <fullMethod>migrate($value)</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>log</methodName>
+      <methodSignature>log($value)</methodSignature>
+      <fullMethod>log($value)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>debug</methodName>
+      <methodSignature>debug($str)</methodSignature>
+      <fullMethod>debug($str)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getLogFile</methodName>
+      <methodSignature>getLogFile(string $key): string</methodSignature>
+      <fullMethod>getLogFile(string $key): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getEnvVariable</methodName>
+      <methodSignature>getEnvVariable(string $key)</methodSignature>
+      <fullMethod>getEnvVariable(string $key)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>addDays</methodName>
+      <methodSignature>addDays($date, $op, $denor): DateTime</methodSignature>
+      <fullMethod>addDays($date, $op, $denor): DateTime</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>isAfterWorkingDays</methodName>
+      <methodSignature>isAfterWorkingDays($dn, $d0, $weekdays): bool</methodSignature>
+      <fullMethod>isAfterWorkingDays($dn, $d0, $weekdays): bool</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>isAfter</methodName>
+      <methodSignature>isAfter($dn, $d0): bool</methodSignature>
+      <fullMethod>isAfter($dn, $d0): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getDateTrichotomy</methodName>
+      <methodSignature>getDateTrichotomy($dd)</methodSignature>
+      <fullMethod>getDateTrichotomy($dd)</fullMethod>
+      <crap>30</crap>
+      <complexity>5</complexity>
+      <coverage>0</coverage>
+      <crapLoad>5</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getEnv</methodName>
+      <methodSignature>getEnv(): string</methodSignature>
+      <fullMethod>getEnv(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getCredential</methodName>
+      <methodSignature>getCredential($provider, $key)</methodSignature>
+      <fullMethod>getCredential($provider, $key)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getActiveStates</methodName>
+      <methodSignature>getActiveStates(): array</methodSignature>
+      <fullMethod>getActiveStates(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getInactiveStates</methodName>
+      <methodSignature>getInactiveStates(): array</methodSignature>
+      <fullMethod>getInactiveStates(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getURL</methodName>
+      <methodSignature>getURL($index): string</methodSignature>
+      <fullMethod>getURL($index): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getNote</methodName>
+      <methodSignature>getNote($index): string</methodSignature>
+      <fullMethod>getNote($index): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>newInstanceLimit</methodName>
+      <methodSignature>newInstanceLimit(): int</methodSignature>
+      <fullMethod>newInstanceLimit(): int</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>subtypeDepth</methodName>
+      <methodSignature>subtypeDepth(): int</methodSignature>
+      <fullMethod>subtypeDepth(): int</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>UIDLength</methodName>
+      <methodSignature>UIDLength(): int</methodSignature>
+      <fullMethod>UIDLength(): int</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>searchTreeDepth</methodName>
+      <methodSignature>searchTreeDepth()</methodSignature>
+      <fullMethod>searchTreeDepth()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getK</methodName>
+      <methodSignature>getK(float $value)</methodSignature>
+      <fullMethod>getK(float $value)</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>payMerchant</methodName>
+      <methodSignature>payMerchant(): model\Model</methodSignature>
+      <fullMethod>payMerchant(): model\Model</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>destroySession</methodName>
+      <methodSignature>destroySession()</methodSignature>
+      <fullMethod>destroySession()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>deleteSession</methodName>
+      <methodSignature>deleteSession(string $property, bool $persist)</methodSignature>
+      <fullMethod>deleteSession(string $property, bool $persist)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>saveSession</methodName>
+      <methodSignature>saveSession(string $property, array $values, bool $persist)</methodSignature>
+      <fullMethod>saveSession(string $property, array $values, bool $persist)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getSession</methodName>
+      <methodSignature>getSession(string $property): array</methodSignature>
+      <fullMethod>getSession(string $property): array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>currentSession</methodName>
+      <methodSignature>currentSession(): model\Model</methodSignature>
+      <fullMethod>currentSession(): model\Model</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>currentParty</methodName>
+      <methodSignature>currentParty(): model\Model</methodSignature>
+      <fullMethod>currentParty(): model\Model</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>currentCompany</methodName>
+      <methodSignature>currentCompany(): model\Model</methodSignature>
+      <fullMethod>currentCompany(): model\Model</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>defaultCurrency</methodName>
+      <methodSignature>defaultCurrency(): model\Model</methodSignature>
+      <fullMethod>defaultCurrency(): model\Model</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>maskEmail</methodName>
+      <methodSignature>maskEmail(string $email, int $minFill)</methodSignature>
+      <fullMethod>maskEmail(string $email, int $minFill)</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getOp</methodName>
+      <methodSignature>getOp($op): string</methodSignature>
+      <fullMethod>getOp($op): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getNamePattern</methodName>
+      <methodSignature>getNamePattern(): string</methodSignature>
+      <fullMethod>getNamePattern(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getPhonePattern</methodName>
+      <methodSignature>getPhonePattern(): string</methodSignature>
+      <fullMethod>getPhonePattern(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getSamplePhone</methodName>
+      <methodSignature>getSamplePhone(): string</methodSignature>
+      <fullMethod>getSamplePhone(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getPasswordPattern</methodName>
+      <methodSignature>getPasswordPattern(): string</methodSignature>
+      <fullMethod>getPasswordPattern(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getSamplePassword</methodName>
+      <methodSignature>getSamplePassword(): string</methodSignature>
+      <fullMethod>getSamplePassword(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getSampleName</methodName>
+      <methodSignature>getSampleName(): string</methodSignature>
+      <fullMethod>getSampleName(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>instanceDepth</methodName>
+      <methodSignature>instanceDepth(): int</methodSignature>
+      <fullMethod>instanceDepth(): int</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>graphDepth</methodName>
+      <methodSignature>graphDepth(): int</methodSignature>
+      <fullMethod>graphDepth(): int</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>cachePolicy</methodName>
+      <methodSignature>cachePolicy(): string</methodSignature>
+      <fullMethod>cachePolicy(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>sessionCachePolicy</methodName>
+      <methodSignature>sessionCachePolicy(): string</methodSignature>
+      <fullMethod>sessionCachePolicy(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>isCache</methodName>
+      <methodSignature>isCache(): bool</methodSignature>
+      <fullMethod>isCache(): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>cache</methodName>
+      <methodSignature>cache(string $type, string $id, model\Model $model, string $policy, string $domain)</methodSignature>
+      <fullMethod>cache(string $type, string $id, model\Model $model, string $policy, string $domain)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>cacheGraph</methodName>
+      <methodSignature>cacheGraph(string $type, string $id, array $array, string $policy, string $domain)</methodSignature>
+      <fullMethod>cacheGraph(string $type, string $id, array $array, string $policy, string $domain)</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>uncache</methodName>
+      <methodSignature>uncache(string $type, string $id, string $policy, string $domain)</methodSignature>
+      <fullMethod>uncache(string $type, string $id, string $policy, string $domain)</fullMethod>
+      <crap>56</crap>
+      <complexity>7</complexity>
+      <coverage>0</coverage>
+      <crapLoad>7</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getCache</methodName>
+      <methodSignature>getCache(string $type, string $id, string $policy, string $domain): array</methodSignature>
+      <fullMethod>getCache(string $type, string $id, string $policy, string $domain): array</fullMethod>
+      <crap>182</crap>
+      <complexity>13</complexity>
+      <coverage>0</coverage>
+      <crapLoad>13</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>isProduction</methodName>
+      <methodSignature>isProduction(): bool</methodSignature>
+      <fullMethod>isProduction(): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>isLog</methodName>
+      <methodSignature>isLog(): bool</methodSignature>
+      <fullMethod>isLog(): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>isLogActions</methodName>
+      <methodSignature>isLogActions(): bool</methodSignature>
+      <fullMethod>isLogActions(): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>isLogMigrate</methodName>
+      <methodSignature>isLogMigrate(): bool</methodSignature>
+      <fullMethod>isLogMigrate(): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>isTransform</methodName>
+      <methodSignature>isTransform(): bool</methodSignature>
+      <fullMethod>isTransform(): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>tokenize</methodName>
+      <methodSignature>tokenize(string $str)</methodSignature>
+      <fullMethod>tokenize(string $str)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>println</methodName>
+      <methodSignature>println(string $str)</methodSignature>
+      <fullMethod>println(string $str)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getKey</methodName>
+      <methodSignature>getKey(int $length): string</methodSignature>
+      <fullMethod>getKey(int $length): string</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getUID</methodName>
+      <methodSignature>getUID(): string</methodSignature>
+      <fullMethod>getUID(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getComCode</methodName>
+      <methodSignature>getComCode(): string</methodSignature>
+      <fullMethod>getComCode(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getClientIP</methodName>
+      <methodSignature>getClientIP()</methodSignature>
+      <fullMethod>getClientIP()</fullMethod>
+      <crap>56</crap>
+      <complexity>7</complexity>
+      <coverage>0</coverage>
+      <crapLoad>7</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getClientDevice</methodName>
+      <methodSignature>getClientDevice(): string</methodSignature>
+      <fullMethod>getClientDevice(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>curl</methodName>
+      <methodSignature>curl(string $endpoint, array $default, $jsondecode, array $curlOpt): array</methodSignature>
+      <fullMethod>curl(string $endpoint, array $default, $jsondecode, array $curlOpt): array</fullMethod>
+      <crap>5.33</crap>
+      <complexity>5</complexity>
+      <coverage>76.47</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getIPInfo</methodName>
+      <methodSignature>getIPInfo(): array</methodSignature>
+      <fullMethod>getIPInfo(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>startsWith</methodName>
+      <methodSignature>startsWith(string $haystack, string $needle): bool</methodSignature>
+      <fullMethod>startsWith(string $haystack, string $needle): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>endsWith</methodName>
+      <methodSignature>endsWith(string $haystack, string $needle): bool</methodSignature>
+      <fullMethod>endsWith(string $haystack, string $needle): bool</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>linearize</methodName>
+      <methodSignature>linearize(array $array, string $column): array</methodSignature>
+      <fullMethod>linearize(array $array, string $column): array</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>arraySyntax</methodName>
+      <methodSignature>arraySyntax(array $array, string $delimiter, string $key, array $enclose)</methodSignature>
+      <fullMethod>arraySyntax(array $array, string $delimiter, string $key, array $enclose)</fullMethod>
+      <crap>30</crap>
+      <complexity>5</complexity>
+      <coverage>0</coverage>
+      <crapLoad>5</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>concat</methodName>
+      <methodSignature>concat(array $array, string $delim, string $quote): string</methodSignature>
+      <fullMethod>concat(array $array, string $delim, string $quote): string</fullMethod>
+      <crap>30</crap>
+      <complexity>5</complexity>
+      <coverage>0</coverage>
+      <crapLoad>5</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>in_array</methodName>
+      <methodSignature>in_array(string $needle, array $haystack): bool</methodSignature>
+      <fullMethod>in_array(string $needle, array $haystack): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>subset</methodName>
+      <methodSignature>subset(array $subset, array $superset): bool</methodSignature>
+      <fullMethod>subset(array $subset, array $superset): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>intersect</methodName>
+      <methodSignature>intersect(array $subset, array $superset): array</methodSignature>
+      <fullMethod>intersect(array $subset, array $superset): array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>setEquals</methodName>
+      <methodSignature>setEquals(array $subset, array $superset): bool</methodSignature>
+      <fullMethod>setEquals(array $subset, array $superset): bool</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>prettify</methodName>
+      <methodSignature>prettify(string $title, string $content): string</methodSignature>
+      <fullMethod>prettify(string $title, string $content): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>parseDate</methodName>
+      <methodSignature>parseDate(model\Model $Model): ?DateTime</methodSignature>
+      <fullMethod>parseDate(model\Model $Model): ?DateTime</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>dateToString</methodName>
+      <methodSignature>dateToString($date)</methodSignature>
+      <fullMethod>dateToString($date)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>simpleDate</methodName>
+      <methodSignature>simpleDate($date)</methodSignature>
+      <fullMethod>simpleDate($date)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>smartDays</methodName>
+      <methodSignature>smartDays($date)</methodSignature>
+      <fullMethod>smartDays($date)</fullMethod>
+      <crap>42</crap>
+      <complexity>6</complexity>
+      <coverage>0</coverage>
+      <crapLoad>6</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>smartDate</methodName>
+      <methodSignature>smartDate($date, $sortable)</methodSignature>
+      <fullMethod>smartDate($date, $sortable)</fullMethod>
+      <crap>110</crap>
+      <complexity>10</complexity>
+      <coverage>0</coverage>
+      <crapLoad>10</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>smartTime</methodName>
+      <methodSignature>smartTime($offset, $sortable)</methodSignature>
+      <fullMethod>smartTime($offset, $sortable)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getFullDifff</methodName>
+      <methodSignature>getFullDifff($str_interval, $dt_menor, $dt_maior, $relative, $debug): float</methodSignature>
+      <fullMethod>getFullDifff($str_interval, $dt_menor, $dt_maior, $relative, $debug): float</fullMethod>
+      <crap>132</crap>
+      <complexity>11</complexity>
+      <coverage>0</coverage>
+      <crapLoad>11</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>parseMoney</methodName>
+      <methodSignature>parseMoney(float $str): string</methodSignature>
+      <fullMethod>parseMoney(float $str): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>parseFloat</methodName>
+      <methodSignature>parseFloat(float $str, int $decimal, string $thousandSeparator): string</methodSignature>
+      <fullMethod>parseFloat(float $str, int $decimal, string $thousandSeparator): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>hashPassword</methodName>
+      <methodSignature>hashPassword(string $pwd): string</methodSignature>
+      <fullMethod>hashPassword(string $pwd): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>verifyPassword</methodName>
+      <methodSignature>verifyPassword(string $pwd, string $hash): bool</methodSignature>
+      <fullMethod>verifyPassword(string $pwd, string $hash): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getHash</methodName>
+      <methodSignature>getHash(string $payload): string</methodSignature>
+      <fullMethod>getHash(string $payload): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>characterize</methodName>
+      <methodSignature>characterize(string $str, string $character, int $chunk)</methodSignature>
+      <fullMethod>characterize(string $str, string $character, int $chunk)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>randomToken</methodName>
+      <methodSignature>randomToken(int $length)</methodSignature>
+      <fullMethod>randomToken(int $length)</fullMethod>
+      <crap>42</crap>
+      <complexity>6</complexity>
+      <coverage>0</coverage>
+      <crapLoad>6</crapLoad>
+    </method>
+    <method>
+      <package>helper</package>
+      <className>helper\Utility</className>
+      <methodName>getRelativePath</methodName>
+      <methodSignature>getRelativePath(string $from, string $to): string</methodSignature>
+      <fullMethod>getRelativePath(string $from, string $to): string</fullMethod>
+      <crap>42</crap>
+      <complexity>6</complexity>
+      <coverage>0</coverage>
+      <crapLoad>6</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(string $UID, string $id)</methodSignature>
+      <fullMethod>__construct(string $UID, string $id)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>getInstanceByProperty</methodName>
+      <methodSignature>getInstanceByProperty(string $haystack, string $needle): ?model\Model</methodSignature>
+      <fullMethod>getInstanceByProperty(string $haystack, string $needle): ?model\Model</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>getInstance</methodName>
+      <methodSignature>getInstance(string $id): ?model\Model</methodSignature>
+      <fullMethod>getInstance(string $id): ?model\Model</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>getPref</methodName>
+      <methodSignature>getPref(string $key, string $default, bool $debug): ?string</methodSignature>
+      <fullMethod>getPref(string $key, string $default, bool $debug): ?string</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>setPref</methodName>
+      <methodSignature>setPref(string $key, string $value, bool $debug): bool</methodSignature>
+      <fullMethod>setPref(string $key, string $value, bool $debug): bool</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>instanceof</methodName>
+      <methodSignature>instanceof(model\Model $model): bool</methodSignature>
+      <fullMethod>instanceof(model\Model $model): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>getType</methodName>
+      <methodSignature>getType(): string</methodSignature>
+      <fullMethod>getType(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>getUID</methodName>
+      <methodSignature>getUID(): string</methodSignature>
+      <fullMethod>getUID(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>getSpecs</methodName>
+      <methodSignature>getSpecs(): array</methodSignature>
+      <fullMethod>getSpecs(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>getTable</methodName>
+      <methodSignature>getTable(): string</methodSignature>
+      <fullMethod>getTable(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>reloadCache</methodName>
+      <methodSignature>reloadCache(bool $force)</methodSignature>
+      <fullMethod>reloadCache(bool $force)</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>getCache</methodName>
+      <methodSignature>getCache()</methodSignature>
+      <fullMethod>getCache()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>getID</methodName>
+      <methodSignature>getID()</methodSignature>
+      <fullMethod>getID()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>uncache</methodName>
+      <methodSignature>uncache(string $id)</methodSignature>
+      <fullMethod>uncache(string $id)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>create</methodName>
+      <methodSignature>create($fields, $values, $debug): bool</methodSignature>
+      <fullMethod>create($fields, $values, $debug): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>updateFiles</methodName>
+      <methodSignature>updateFiles(string $prop, string $index, string $format)</methodSignature>
+      <fullMethod>updateFiles(string $prop, string $index, string $format)</fullMethod>
+      <crap>56</crap>
+      <complexity>7</complexity>
+      <coverage>0</coverage>
+      <crapLoad>7</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>updateMap</methodName>
+      <methodSignature>updateMap(array $map, string $id, $debug): int</methodSignature>
+      <fullMethod>updateMap(array $map, string $id, $debug): int</fullMethod>
+      <crap>182</crap>
+      <complexity>13</complexity>
+      <coverage>0</coverage>
+      <crapLoad>13</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>insertMap</methodName>
+      <methodSignature>insertMap($map, $debug): ?model\Model</methodSignature>
+      <fullMethod>insertMap($map, $debug): ?model\Model</fullMethod>
+      <crap>110</crap>
+      <complexity>10</complexity>
+      <coverage>0</coverage>
+      <crapLoad>10</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>getProperty</methodName>
+      <methodSignature>getProperty($field)</methodSignature>
+      <fullMethod>getProperty($field)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>init</methodName>
+      <methodSignature>init(bool $force, string $id)</methodSignature>
+      <fullMethod>init(bool $force, string $id)</fullMethod>
+      <crap>90</crap>
+      <complexity>9</complexity>
+      <coverage>0</coverage>
+      <crapLoad>9</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>getState</methodName>
+      <methodSignature>getState(model\Model $stateful): string</methodSignature>
+      <fullMethod>getState(model\Model $stateful): string</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>getStateInstance</methodName>
+      <methodSignature>getStateInstance(model\Model $stateful, bool $debug): ?model\Model</methodSignature>
+      <fullMethod>getStateInstance(model\Model $stateful, bool $debug): ?model\Model</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>getTransition</methodName>
+      <methodSignature>getTransition(model\Model $stateful): array</methodSignature>
+      <fullMethod>getTransition(model\Model $stateful): array</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>getTransitions</methodName>
+      <methodSignature>getTransitions(model\Model $stateful, bool $transition): array</methodSignature>
+      <fullMethod>getTransitions(model\Model $stateful, bool $transition): array</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>setState</methodName>
+      <methodSignature>setState(string $state, model\Model $user, string $description, model\Model $stateful): ?model\MOdel</methodSignature>
+      <fullMethod>setState(string $state, model\Model $user, string $description, model\Model $stateful): ?model\MOdel</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>advance</methodName>
+      <methodSignature>advance(string $state0, string $staten, model\Model $user, string $description, model\Model $stateful): ?model\MOdel</methodSignature>
+      <fullMethod>advance(string $state0, string $staten, model\Model $user, string $description, model\Model $stateful): ?model\MOdel</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>groupByDate</methodName>
+      <methodSignature>groupByDate(string $filter, bool $debug): array</methodSignature>
+      <fullMethod>groupByDate(string $filter, bool $debug): array</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>getInstancesMap</methodName>
+      <methodSignature>getInstancesMap(string $haystack, string $needle): array</methodSignature>
+      <fullMethod>getInstancesMap(string $haystack, string $needle): array</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>get</methodName>
+      <methodSignature>get($haystack, $needle, $debug, $skipCache): array</methodSignature>
+      <fullMethod>get($haystack, $needle, $debug, $skipCache): array</fullMethod>
+      <crap>42</crap>
+      <complexity>6</complexity>
+      <coverage>0</coverage>
+      <crapLoad>6</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>getAllAtState</methodName>
+      <methodSignature>getAllAtState(string $state, string $haystack, string $needle, int $page, int $max, $debug): array</methodSignature>
+      <fullMethod>getAllAtState(string $state, string $haystack, string $needle, int $page, int $max, $debug): array</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>getAll</methodName>
+      <methodSignature>getAll($debug, $skipCache)</methodSignature>
+      <fullMethod>getAll($debug, $skipCache)</fullMethod>
+      <crap>30</crap>
+      <complexity>5</complexity>
+      <coverage>0</coverage>
+      <crapLoad>5</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>getGeneric</methodName>
+      <methodSignature>getGeneric($filter, $debug, $cols, $skipCache)</methodSignature>
+      <fullMethod>getGeneric($filter, $debug, $cols, $skipCache)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>getPaginated</methodName>
+      <methodSignature>getPaginated($filter, $cols, int $page, int $limit, $debug)</methodSignature>
+      <fullMethod>getPaginated($filter, $cols, int $page, int $limit, $debug)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>getAdvanced</methodName>
+      <methodSignature>getAdvanced($cols, $filter, $debug)</methodSignature>
+      <fullMethod>getAdvanced($cols, $filter, $debug)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>updateProperty</methodName>
+      <methodSignature>updateProperty(string $field, $value, bool $debug)</methodSignature>
+      <fullMethod>updateProperty(string $field, $value, bool $debug)</fullMethod>
+      <crap>56</crap>
+      <complexity>7</complexity>
+      <coverage>0</coverage>
+      <crapLoad>7</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>update</methodName>
+      <methodSignature>update($field, $value, $haystack, $needle, $debug)</methodSignature>
+      <fullMethod>update($field, $value, $haystack, $needle, $debug)</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>updateGeneric</methodName>
+      <methodSignature>updateGeneric($filter, $debug)</methodSignature>
+      <fullMethod>updateGeneric($filter, $debug)</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>deleteAll</methodName>
+      <methodSignature>deleteAll()</methodSignature>
+      <fullMethod>deleteAll()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>delete</methodName>
+      <methodSignature>delete($haystack, $needle, $debug, $soft)</methodSignature>
+      <fullMethod>delete($haystack, $needle, $debug, $soft)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>deleteGeneric</methodName>
+      <methodSignature>deleteGeneric($filter, $debug, $soft)</methodSignature>
+      <fullMethod>deleteGeneric($filter, $debug, $soft)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>hasProperty</methodName>
+      <methodSignature>hasProperty($field)</methodSignature>
+      <fullMethod>hasProperty($field)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>model</package>
+      <className>model\Model</className>
+      <methodName>getFieldMeta</methodName>
+      <methodSignature>getFieldMeta()</methodSignature>
+      <fullMethod>getFieldMeta()</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Paystack\Payment</package>
+      <className>Paystack\Payment\Payment</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(Paystack\Paystack $Paystack)</methodSignature>
+      <fullMethod>__construct(Paystack\Paystack $Paystack)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Paystack\Payment</package>
+      <className>Paystack\Payment\Payment</className>
+      <methodName>credentials</methodName>
+      <methodSignature>credentials($id, $pw1, $pw2)</methodSignature>
+      <fullMethod>credentials($id, $pw1, $pw2)</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Paystack\Payment</package>
+      <className>Paystack\Payment\Payment</className>
+      <methodName>_checkCredentials</methodName>
+      <methodSignature>_checkCredentials()</methodSignature>
+      <fullMethod>_checkCredentials()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Paystack\Payment</package>
+      <className>Paystack\Payment\Payment</className>
+      <methodName>reqParams</methodName>
+      <methodSignature>reqParams($extras)</methodSignature>
+      <fullMethod>reqParams($extras)</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Paystack\Payment</package>
+      <className>Paystack\Payment\Payment</className>
+      <methodName>url</methodName>
+      <methodSignature>url($resource)</methodSignature>
+      <fullMethod>url($resource)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Paystack\Payment</package>
+      <className>Paystack\Payment\Payment</className>
+      <methodName>get</methodName>
+      <methodSignature>get($resource, $params)</methodSignature>
+      <fullMethod>get($resource, $params)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Paystack\Payment</package>
+      <className>Paystack\Payment\Payment</className>
+      <methodName>call</methodName>
+      <methodSignature>call($resource, $params)</methodSignature>
+      <fullMethod>call($resource, $params)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Paystack\Payment</package>
+      <className>Paystack\Payment\Payment</className>
+      <methodName>getIdentifier</methodName>
+      <methodSignature>getIdentifier()</methodSignature>
+      <fullMethod>getIdentifier()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Paystack\Payment</package>
+      <className>Paystack\Payment\Payment</className>
+      <methodName>verify</methodName>
+      <methodSignature>verify(string $reference): ?model\Model</methodSignature>
+      <fullMethod>verify(string $reference): ?model\Model</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Paystack</package>
+      <className>Paystack\Paystack</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct($api_code)</methodSignature>
+      <fullMethod>__construct($api_code)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Paystack</package>
+      <className>Paystack\Paystack</className>
+      <methodName>__destruct</methodName>
+      <methodSignature>__destruct()</methodSignature>
+      <fullMethod>__destruct()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Paystack</package>
+      <className>Paystack\Paystack</className>
+      <methodName>setTimeout</methodName>
+      <methodSignature>setTimeout($timeout)</methodSignature>
+      <fullMethod>setTimeout($timeout)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Paystack</package>
+      <className>Paystack\Paystack</className>
+      <methodName>post</methodName>
+      <methodSignature>post($resource, $data)</methodSignature>
+      <fullMethod>post($resource, $data)</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Paystack</package>
+      <className>Paystack\Paystack</className>
+      <methodName>get</methodName>
+      <methodSignature>get($resource, $params)</methodSignature>
+      <fullMethod>get($resource, $params)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Paystack</package>
+      <className>Paystack\Paystack</className>
+      <methodName>_call</methodName>
+      <methodSignature>_call()</methodSignature>
+      <fullMethod>_call()</fullMethod>
+      <crap>30</crap>
+      <complexity>5</complexity>
+      <coverage>0</coverage>
+      <crapLoad>5</crapLoad>
+    </method>
+    <method>
+      <package>comm</package>
+      <className>comm\Comm</className>
+      <methodName>sendNotification</methodName>
+      <methodSignature>sendNotification(model\Model $model, string $notificationType, array $media, $refProxy, $refPX): bool</methodSignature>
+      <fullMethod>sendNotification(model\Model $model, string $notificationType, array $media, $refProxy, $refPX): bool</fullMethod>
+      <crap>7656</crap>
+      <complexity>87</complexity>
+      <coverage>0</coverage>
+      <crapLoad>90</crapLoad>
+    </method>
+    <method>
+      <package>comm</package>
+      <className>comm\Comm</className>
+      <methodName>getNotification</methodName>
+      <methodSignature>getNotification(string $type, string $title, string $medium, string $html, string $text, model\Model $model)</methodSignature>
+      <fullMethod>getNotification(string $type, string $title, string $medium, string $html, string $text, model\Model $model)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>comm</package>
+      <className>comm\Link</className>
+      <methodName>getProtocol</methodName>
+      <methodSignature>getProtocol($appendSlash): string</methodSignature>
+      <fullMethod>getProtocol($appendSlash): string</fullMethod>
+      <crap>30</crap>
+      <complexity>5</complexity>
+      <coverage>0</coverage>
+      <crapLoad>5</crapLoad>
+    </method>
+    <method>
+      <package>comm</package>
+      <className>comm\Link</className>
+      <methodName>getHost</methodName>
+      <methodSignature>getHost($appendSlash): string</methodSignature>
+      <fullMethod>getHost($appendSlash): string</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>comm</package>
+      <className>comm\Link</className>
+      <methodName>getBaseDir</methodName>
+      <methodSignature>getBaseDir($appendSlash): string</methodSignature>
+      <fullMethod>getBaseDir($appendSlash): string</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>comm</package>
+      <className>comm\Link</className>
+      <methodName>getBaseURL</methodName>
+      <methodSignature>getBaseURL($appendSlash): string</methodSignature>
+      <fullMethod>getBaseURL($appendSlash): string</fullMethod>
+      <crap>30</crap>
+      <complexity>5</complexity>
+      <coverage>0</coverage>
+      <crapLoad>5</crapLoad>
+    </method>
+    <method>
+      <package>comm</package>
+      <className>comm\Link</className>
+      <methodName>getLink</methodName>
+      <methodSignature>getLink($uri, $redirect): string</methodSignature>
+      <fullMethod>getLink($uri, $redirect): string</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>comm</package>
+      <className>comm\Link</className>
+      <methodName>getDummyLink</methodName>
+      <methodSignature>getDummyLink()</methodSignature>
+      <fullMethod>getDummyLink()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>comm</package>
+      <className>comm\Link</className>
+      <methodName>get404</methodName>
+      <methodSignature>get404()</methodSignature>
+      <fullMethod>get404()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>comm</package>
+      <className>comm\Link</className>
+      <methodName>get505</methodName>
+      <methodSignature>get505()</methodSignature>
+      <fullMethod>get505()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>comm</package>
+      <className>comm\Link</className>
+      <methodName>getURL</methodName>
+      <methodSignature>getURL($index, array $params): string</methodSignature>
+      <fullMethod>getURL($index, array $params): string</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>comm</package>
+      <className>comm\Link</className>
+      <methodName>getB64File</methodName>
+      <methodSignature>getB64File(model\Model $file): string</methodSignature>
+      <fullMethod>getB64File(model\Model $file): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>comm</package>
+      <className>comm\Link</className>
+      <methodName>getFile</methodName>
+      <methodSignature>getFile(model\Model $file, bool $public): string</methodSignature>
+      <fullMethod>getFile(model\Model $file, bool $public): string</fullMethod>
+      <crap>42</crap>
+      <complexity>6</complexity>
+      <coverage>0</coverage>
+      <crapLoad>6</crapLoad>
+    </method>
+    <method>
+      <package>comm</package>
+      <className>comm\Link</className>
+      <methodName>getURI</methodName>
+      <methodSignature>getURI($link): string</methodSignature>
+      <fullMethod>getURI($link): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>comm</package>
+      <className>comm\Link</className>
+      <methodName>isAuth</methodName>
+      <methodSignature>isAuth(string $link): bool</methodSignature>
+      <fullMethod>isAuth(string $link): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>comm</package>
+      <className>comm\Link</className>
+      <methodName>encode</methodName>
+      <methodSignature>encode($link, $redirect)</methodSignature>
+      <fullMethod>encode($link, $redirect)</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>comm</package>
+      <className>comm\Mailer</className>
+      <methodName>send</methodName>
+      <methodSignature>send(string $subject, array $to, string $html, string $text, array $attachments, string $from, string $replyTo, array $cc, array $bcc): bool</methodSignature>
+      <fullMethod>send(string $subject, array $to, string $html, string $text, array $attachments, string $from, string $replyTo, array $cc, array $bcc): bool</fullMethod>
+      <crap>132</crap>
+      <complexity>11</complexity>
+      <coverage>0</coverage>
+      <crapLoad>11</crapLoad>
+    </method>
+    <method>
+      <package>comm</package>
+      <className>comm\Mailer</className>
+      <methodName>save_mail</methodName>
+      <methodSignature>save_mail($mail)</methodSignature>
+      <fullMethod>save_mail($mail)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>comm</package>
+      <className>comm\Messager</className>
+      <methodName>send</methodName>
+      <methodSignature>send(string $text, array $to, string $from, array $cc): bool</methodSignature>
+      <fullMethod>send(string $text, array $to, string $from, array $cc): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>plaf</package>
+      <className>plaf\ActionListener</className>
+      <methodName>stateChanged</methodName>
+      <methodSignature>stateChanged(model\Model $model, string $op, string $prop, string $from, string $to): bool</methodSignature>
+      <fullMethod>stateChanged(model\Model $model, string $op, string $prop, string $from, string $to): bool</fullMethod>
+      <crap>1056</crap>
+      <complexity>32</complexity>
+      <coverage>0</coverage>
+      <crapLoad>33</crapLoad>
+    </method>
+    <method>
+      <package>view</package>
+      <className>view\Email</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(array $variables, string $contentFile, string $templatesPath, string $interface)</methodSignature>
+      <fullMethod>__construct(array $variables, string $contentFile, string $templatesPath, string $interface)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>view</package>
+      <className>view\Email</className>
+      <methodName>init</methodName>
+      <methodSignature>init()</methodSignature>
+      <fullMethod>init()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>view</package>
+      <className>view\Email</className>
+      <methodName>getInstance</methodName>
+      <methodSignature>getInstance($variables, $contentFile, $templatePath): view\Email</methodSignature>
+      <fullMethod>getInstance($variables, $contentFile, $templatePath): view\Email</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>view</package>
+      <className>view\Email</className>
+      <methodName>render</methodName>
+      <methodSignature>render(): string</methodSignature>
+      <fullMethod>render(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>view</package>
+      <className>view\Page</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(array $variables, string $contentFile, string $templatesPath, string $interface)</methodSignature>
+      <fullMethod>__construct(array $variables, string $contentFile, string $templatesPath, string $interface)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>view</package>
+      <className>view\Page</className>
+      <methodName>init</methodName>
+      <methodSignature>init()</methodSignature>
+      <fullMethod>init()</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>view</package>
+      <className>view\Page</className>
+      <methodName>getInstance</methodName>
+      <methodSignature>getInstance(array $variables, string $contentFile, string $templatePath, string $interface): view\Page</methodSignature>
+      <fullMethod>getInstance(array $variables, string $contentFile, string $templatePath, string $interface): view\Page</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>view</package>
+      <className>view\Page</className>
+      <methodName>redirect</methodName>
+      <methodSignature>redirect(string $url, bool $force)</methodSignature>
+      <fullMethod>redirect(string $url, bool $force)</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>view</package>
+      <className>view\Page</className>
+      <methodName>show404</methodName>
+      <methodSignature>show404()</methodSignature>
+      <fullMethod>show404()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>view</package>
+      <className>view\Page</className>
+      <methodName>show505</methodName>
+      <methodSignature>show505()</methodSignature>
+      <fullMethod>show505()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>view</package>
+      <className>view\Page</className>
+      <methodName>showErrorPage</methodName>
+      <methodSignature>showErrorPage(string $code)</methodSignature>
+      <fullMethod>showErrorPage(string $code)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>view</package>
+      <className>view\Page</className>
+      <methodName>getRoles</methodName>
+      <methodSignature>getRoles(): string</methodSignature>
+      <fullMethod>getRoles(): string</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>view</package>
+      <className>view\Page</className>
+      <methodName>getMenu</methodName>
+      <methodSignature>getMenu(view\TypeProxy $companyProxy, view\TypeProxy $userProxy): view\ProxyType</methodSignature>
+      <fullMethod>getMenu(view\TypeProxy $companyProxy, view\TypeProxy $userProxy): view\ProxyType</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>view</package>
+      <className>view\PageElement</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(array $variables, string $contentFile, string $templatesPath, string $interface)</methodSignature>
+      <fullMethod>__construct(array $variables, string $contentFile, string $templatesPath, string $interface)</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>view</package>
+      <className>view\PageElement</className>
+      <methodName>getTemplatePath</methodName>
+      <methodSignature>getTemplatePath()</methodSignature>
+      <fullMethod>getTemplatePath()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>view</package>
+      <className>view\PageElement</className>
+      <methodName>getContentFile</methodName>
+      <methodSignature>getContentFile()</methodSignature>
+      <fullMethod>getContentFile()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>view</package>
+      <className>view\PageElement</className>
+      <methodName>setContentFile</methodName>
+      <methodSignature>setContentFile(string $contentFile)</methodSignature>
+      <fullMethod>setContentFile(string $contentFile)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>view</package>
+      <className>view\PageElement</className>
+      <methodName>getContent</methodName>
+      <methodSignature>getContent()</methodSignature>
+      <fullMethod>getContent()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>view</package>
+      <className>view\PageElement</className>
+      <methodName>getVariables</methodName>
+      <methodSignature>getVariables()</methodSignature>
+      <fullMethod>getVariables()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>view</package>
+      <className>view\PageElement</className>
+      <methodName>setVariables</methodName>
+      <methodSignature>setVariables(array $variables)</methodSignature>
+      <fullMethod>setVariables(array $variables)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>view</package>
+      <className>view\PageElement</className>
+      <methodName>getInterface</methodName>
+      <methodSignature>getInterface()</methodSignature>
+      <fullMethod>getInterface()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>view</package>
+      <className>view\PageElement</className>
+      <methodName>setInterface</methodName>
+      <methodSignature>setInterface(array $interface)</methodSignature>
+      <fullMethod>setInterface(array $interface)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>view</package>
+      <className>view\PageElement</className>
+      <methodName>setVariable</methodName>
+      <methodSignature>setVariable(string $index, $value)</methodSignature>
+      <fullMethod>setVariable(string $index, $value)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>view</package>
+      <className>view\PageElement</className>
+      <methodName>render</methodName>
+      <methodSignature>render(): string</methodSignature>
+      <fullMethod>render(): string</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>view</package>
+      <className>view\PageElement</className>
+      <methodName>canRender</methodName>
+      <methodSignature>canRender()</methodSignature>
+      <fullMethod>canRender()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>view</package>
+      <className>view\PageX</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(model\TypeProxy $pageProxy, array $variables, string $templatesPath)</methodSignature>
+      <fullMethod>__construct(model\TypeProxy $pageProxy, array $variables, string $templatesPath)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>view</package>
+      <className>view\PageX</className>
+      <methodName>show</methodName>
+      <methodSignature>show(model\TypeProxy $pageProxy, array $variables, string $templatesPath)</methodSignature>
+      <fullMethod>show(model\TypeProxy $pageProxy, array $variables, string $templatesPath)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+  </methods>
+</crap_result>

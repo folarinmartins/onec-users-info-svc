@@ -16,7 +16,7 @@
 		{
 			"label": "PHP Unit",
 			"type": "shell",
-			"command": "phpunit --colors=always --bootstrap ./src/bootstrap/boot.php ./tests",
+			"command": "phpunit --colors=always --bootstrap tests/autoload.php tests",
 			"problemMatcher": [],
 			"group": {
 				"kind": "test",

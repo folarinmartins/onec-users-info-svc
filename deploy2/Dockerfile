@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
-MAINTAINER Folarin Martins <folarin@engineer.com>
+LABEL maintainer="Folarin Martins <folarin@engineer.com>"
 
 ENV TZ=Africa/Lagos
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone

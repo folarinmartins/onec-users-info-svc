@@ -8,5 +8,5 @@
 		echo 'Connection failed'. $conn->connect_error;
 	}
 	
-	echo 'YES! Successfully connected to MYSQL: '.realpath(__DIR__);
+	echo 'YES! Successfully connected to MYSQL: PWD is: '.realpath(__DIR__);
 ?>

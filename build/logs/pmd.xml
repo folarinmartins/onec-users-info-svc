@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<pmd version="2.9.1snapshot202009232245" timestamp="2021-01-29T03:49:52+01:00">
+<pmd version="2.9.1snapshot202009232245" timestamp="2021-01-29T15:21:07+01:00">
   <file name="/home/folarin/code/onec/users-info-svc/src/bootstrap/boot.php">
-    <violation beginline="181" endline="181" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+    <violation beginline="180" endline="180" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
       Avoid unused local variables such as '$key'.
     </violation>
   </file>
@@ -100,10 +100,10 @@
     </violation>
   </file>
   <file name="/home/folarin/code/onec/users-info-svc/src/database/DBController.php">
-    <violation beginline="120" endline="120" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+    <violation beginline="135" endline="135" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
       Avoid unused local variables such as '$ret'.
     </violation>
-    <violation beginline="142" endline="142" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+    <violation beginline="157" endline="157" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
       Avoid unused local variables such as '$ret'.
     </violation>
   </file>

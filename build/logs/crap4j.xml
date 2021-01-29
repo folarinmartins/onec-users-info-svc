@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2021-01-29 03:49:58</timestamp>
+  <timestamp>2021-01-29 15:21:14</timestamp>
   <stats>
     <name>Method Crap Stats</name>
-    <methodCount>363</methodCount>
+    <methodCount>364</methodCount>
     <crapMethodCount>46</crapMethodCount>
     <crapLoad>490</crapLoad>
     <totalCrap>13926.33</totalCrap>
-    <crapMethodPercent>12.67</crapMethodPercent>
+    <crapMethodPercent>12.64</crapMethodPercent>
   </stats>
   <methods>
     <method>
@@ -1491,8 +1491,8 @@
       <methodName>getAll</methodName>
       <methodSignature>getAll()</methodSignature>
       <fullMethod>getAll()</fullMethod>
-      <crap>12</crap>
-      <complexity>3</complexity>
+      <crap>6</crap>
+      <complexity>2</complexity>
       <coverage>0</coverage>
       <crapLoad>0</crapLoad>
     </method>
@@ -1565,9 +1565,20 @@
     <method>
       <package>database</package>
       <className>database\DBController</className>
+      <methodName>test</methodName>
+      <methodSignature>test()</methodSignature>
+      <fullMethod>test()</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>database</package>
+      <className>database\DBController</className>
       <methodName>connectDB</methodName>
-      <methodSignature>connectDB()</methodSignature>
-      <fullMethod>connectDB()</fullMethod>
+      <methodSignature>connectDB(): mysqli</methodSignature>
+      <fullMethod>connectDB(): mysqli</fullMethod>
       <crap>12</crap>
       <complexity>3</complexity>
       <coverage>0</coverage>
@@ -1577,8 +1588,8 @@
       <package>database</package>
       <className>database\DBController</className>
       <methodName>getConnection</methodName>
-      <methodSignature>getConnection()</methodSignature>
-      <fullMethod>getConnection()</fullMethod>
+      <methodSignature>getConnection(): mysqli</methodSignature>
+      <fullMethod>getConnection(): mysqli</fullMethod>
       <crap>2</crap>
       <complexity>1</complexity>
       <coverage>0</coverage>

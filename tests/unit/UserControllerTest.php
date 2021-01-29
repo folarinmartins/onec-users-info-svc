@@ -22,7 +22,7 @@ class UserControllerTest extends TestCase{
 			$curlOpt = [
 				CURLOPT_CUSTOMREQUEST => "DELETE",	
 			];
-			Utility::curl('http://onec.localhost/users/'.self::$stub,[],true,$curlOpt);
+			Utility::curl('http://localhost:5000/users/'.self::$stub,[],true,$curlOpt);
 		}
 	}
 	function testCreate(){
@@ -41,7 +41,7 @@ class UserControllerTest extends TestCase{
 				'Content-Type: application/json',
 				'Content-Length: ' . strlen($payload)]
 		];
-		$response = Utility::curl('http://onec.localhost/users',[],true,$curlOpt);
+		$response = Utility::curl('http://localhost:5000/users',[],true,$curlOpt);
 		// fwrite(STDOUT,__METHOD__.'\n');
 		self::assertArrayHasKey('data',$response,'data array check');
 		self::assertArrayHasKey('id',$response['data'],'Data has ID key');
@@ -51,7 +51,7 @@ class UserControllerTest extends TestCase{
 		self::$stub = $response['data']['id'];
 	}
 	function testGetAll(){
-		$response = Utility::curl('http://onec.localhost/users',[]);
+		$response = Utility::curl('http://localhost:5000/users',[]);
 		$this->assertArrayHasKey('data',$response);
 		$this->assertNotEmpty($response['data']);
 		$this->assertNotEmpty($response['data'][0]);
@@ -60,7 +60,7 @@ class UserControllerTest extends TestCase{
 	function testGetById(){
 		if(self::$stub){
 			// fwrite(STDERR,self::$stub.' in getById');
-			$response = Utility::curl('http://onec.localhost/users/'.self::$stub,[]);
+			$response = Utility::curl('http://localhost:5000/users/'.self::$stub,[]);
 			$this->assertArrayHasKey('data',$response);
 			$this->assertNotEmpty($response['data']);
 			$this->assertNotEmpty($response['data']['id']);
@@ -74,7 +74,7 @@ class UserControllerTest extends TestCase{
 			$curlOpt = [
 				 CURLOPT_CUSTOMREQUEST => "DELETE",	
 			];
-			$response = Utility::curl('http://onec.localhost/users/'.self::$stub,[],true,$curlOpt);
+			$response = Utility::curl('http://localhost:5000/users/'.self::$stub,[],true,$curlOpt);
 			$this->assertArrayHasKey('response',$response);
 			$this->assertEquals(200,$response['response']);
 			$this->assertArrayHasKey('data',$response);

@@ -1,7 +1,9 @@
 <?php
 namespace database;
 
+use Exception;
 use helper\Utility;
+use mysqli;
 use mysqli_result;
 
 class DBController{
@@ -12,18 +14,31 @@ class DBController{
 		$this->conn = $this->connectDB();
 		$this->query = '';
 	}
-	function connectDB(){
+	function test(){
+		$host = 'db'; //service name from docker-compose.yml
+		$user = 'mysql_dba';
+		$password = '7~6%{ipu[n1w';
+		$db = 'onec_user_info';
+		$conn = new mysqli($host,$user,$password,$db);
+		if($conn->connect_error){
+			echo 'Connection failed'. $conn->connect_error;
+		}
+
+		echo 'YES! Successfully connected to MYSQL: PWD is: '.realpath(__DIR__);
+		return $conn;
+	}
+	function connectDB():mysqli{
 		static $connection;
 
 		if(!isset($connection)){
-			$connection = mysqli_connect(DB_HOST,DB_USERNAME,DB_PASSWORD,DB_DBNAME);
-		}
-		if($connection === false){
-			return \mysqli_connect_error();
+			$connection = new mysqli(DB_HOST,DB_USERNAME,DB_PASSWORD,DB_DBNAME);
+			if($connection->connect_error){
+				throw new Exception('Connection failed'. $connection->connect_error);
+			}
 		}
 		return $connection;
 	}
-	function getConnection(){
+	function getConnection():mysqli{
 		return $this->conn;
 	}
 	/** @return void  */

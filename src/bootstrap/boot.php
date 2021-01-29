@@ -3,8 +3,7 @@
 	require_once realpath(__DIR__.'/../config/config.php');//'/../../config/config.php');
 	require_once realpath(__DIR__.'/../autoload.php');
 	require_once realpath(__DIR__.'/../../vendor/autoload.php');//. '/../../vendor/autoload.php');
-
-
+	
 	use comm\Link;
 	use database\DBController;
 	use helper\Utility;
@@ -267,5 +266,3 @@
 	function session(string $index):string{
 		return Utility::getSession($index)[0]??'';
 	}
-?>
-

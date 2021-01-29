@@ -1,0 +1,10 @@
+web:
+    ports:
+        - 80:80
+    environment:
+        PRODUCTION: "true"
+
+cache:
+    environment:
+        TTL: "500"
+# docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d

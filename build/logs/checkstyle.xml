@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="3.5.8">
+<file name="/home/folarin/code/onec/users-info-svc/src/public/index.php">
+ <error line="2" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="3" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="4" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="5" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="6" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="6" column="29" severity="error" message="No space found after comma in argument list" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
+ <error line="6" column="35" severity="error" message="No space found after comma in argument list" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
+ <error line="6" column="45" severity="error" message="No space found after comma in argument list" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
+ <error line="7" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="7" column="5" severity="error" message="Line indented incorrectly; expected 0 spaces, found 4" source="Generic.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="7" column="5" severity="error" message="Expected 1 space(s) after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="7" column="28" severity="error" message="Expected 1 space(s) after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="8" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="9" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="9" column="5" severity="error" message="Line indented incorrectly; expected 0 spaces, found 4" source="Generic.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="10" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="11" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="12" column="1" severity="error" message="A closing tag is not permitted at the end of a PHP file" source="PSR2.Files.ClosingTag.NotAllowed"/>
+</file>
 <file name="/home/folarin/code/onec/users-info-svc/src/cron/btx-monitor.php">
  <error line="5" column="1" severity="error" message="There must be one blank line after the last USE statement; 2 found;" source="PSR2.Namespaces.UseDeclaration.SpaceAfterLastUse"/>
 </file>
@@ -4759,54 +4779,64 @@
  <error line="50" column="29" severity="error" message="Opening brace should be on a new line" source="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine"/>
  <error line="51" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
  <error line="52" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="53" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
  <error line="54" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
- <error line="54" column="9" severity="error" message="Expected 1 space(s) after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
- <error line="54" column="36" severity="error" message="Expected 1 space(s) after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
  <error line="55" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
- <error line="56" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
  <error line="57" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
- <error line="57" column="9" severity="error" message="Expected 1 space after closing brace; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace"/>
- <error line="57" column="10" severity="error" message="Expected 1 space(s) after ELSE keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="57" column="9" severity="error" message="Expected 1 space(s) after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="57" column="32" severity="error" message="Expected 1 space(s) after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
  <error line="58" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
  <error line="59" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
- <error line="59" column="54" severity="error" message="No space found after comma in argument list" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
- <error line="59" column="87" severity="error" message="No space found after comma in argument list" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
  <error line="60" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
  <error line="61" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
  <error line="62" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
- <error line="62" column="12" severity="error" message="Visibility must be declared on method &quot;update&quot;" source="Squiz.Scope.MethodScope.Missing"/>
- <error line="62" column="29" severity="error" message="Opening brace should be on a new line" source="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine"/>
+ <error line="62" column="9" severity="error" message="Expected 1 space(s) after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="62" column="36" severity="error" message="Expected 1 space(s) after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
  <error line="63" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
  <error line="64" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
  <error line="65" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="65" column="9" severity="error" message="Expected 1 space after closing brace; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace"/>
+ <error line="65" column="10" severity="error" message="Expected 1 space(s) after ELSE keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
  <error line="66" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
  <error line="67" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
- <error line="67" column="9" severity="error" message="Expected 1 space(s) after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
- <error line="67" column="43" severity="error" message="Expected 1 space(s) after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="67" column="54" severity="error" message="No space found after comma in argument list" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
+ <error line="67" column="87" severity="error" message="No space found after comma in argument list" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
  <error line="68" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
- <error line="68" column="13" severity="error" message="Expected 1 space(s) after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
- <error line="68" column="67" severity="error" message="Expected 1 space(s) after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
  <error line="69" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
- <error line="69" column="125" severity="warning" message="Line exceeds 120 characters; contains 125 characters" source="Generic.Files.LineLength.TooLong"/>
  <error line="70" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="70" column="12" severity="error" message="Visibility must be declared on method &quot;update&quot;" source="Squiz.Scope.MethodScope.Missing"/>
+ <error line="70" column="29" severity="error" message="Opening brace should be on a new line" source="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine"/>
  <error line="71" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
- <error line="71" column="13" severity="error" message="Expected 1 space after closing brace; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace"/>
- <error line="71" column="14" severity="warning" message="Usage of ELSE IF is discouraged; use ELSEIF instead" source="PSR2.ControlStructures.ElseIfDeclaration.NotAllowed"/>
- <error line="71" column="14" severity="error" message="Expected 1 space(s) after ELSE keyword; newline found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
  <error line="72" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
- <error line="72" column="13" severity="error" message="Expected 1 space(s) after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
- <error line="72" column="84" severity="error" message="Expected 1 space(s) after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
  <error line="73" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
  <error line="74" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
  <error line="75" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
- <error line="75" column="13" severity="error" message="Expected 1 space after closing brace; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace"/>
- <error line="75" column="14" severity="error" message="Expected 1 space(s) after ELSE keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="75" column="9" severity="error" message="Expected 1 space(s) after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="75" column="43" severity="error" message="Expected 1 space(s) after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
  <error line="76" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="76" column="13" severity="error" message="Expected 1 space(s) after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="76" column="67" severity="error" message="Expected 1 space(s) after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
  <error line="77" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="77" column="125" severity="warning" message="Line exceeds 120 characters; contains 125 characters" source="Generic.Files.LineLength.TooLong"/>
  <error line="78" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
  <error line="79" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="79" column="13" severity="error" message="Expected 1 space after closing brace; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace"/>
+ <error line="79" column="14" severity="warning" message="Usage of ELSE IF is discouraged; use ELSEIF instead" source="PSR2.ControlStructures.ElseIfDeclaration.NotAllowed"/>
+ <error line="79" column="14" severity="error" message="Expected 1 space(s) after ELSE keyword; newline found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
  <error line="80" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
- <error line="81" column="1" severity="error" message="Expected 1 newline at end of file; 0 found" source="PSR2.Files.EndFileNewline.NoneFound"/>
+ <error line="80" column="13" severity="error" message="Expected 1 space(s) after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="80" column="84" severity="error" message="Expected 1 space(s) after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="81" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="82" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="83" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="83" column="13" severity="error" message="Expected 1 space after closing brace; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace"/>
+ <error line="83" column="14" severity="error" message="Expected 1 space(s) after ELSE keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="84" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="85" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="86" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="87" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="88" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="89" column="1" severity="error" message="Expected 1 newline at end of file; 0 found" source="PSR2.Files.EndFileNewline.NoneFound"/>
 </file>
 <file name="/home/folarin/code/onec/users-info-svc/src/controller/VoucherController.php">
  <error line="12" column="43" severity="error" message="Opening brace of a class must be on the line after the definition" source="PSR2.Classes.ClassDeclaration.OpenBraceNewLine"/>

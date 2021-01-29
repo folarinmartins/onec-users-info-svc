@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="controller\UserController" namespace="controller" name="UserController" abstract="false" final="false" start="9" end="81">
-  <file path="../src/controller" file="UserController.php" realpath="/home/folarin/code/onec/users-info-svc/src/controller/UserController.php" size="2602" time="2021-01-23T07:53:25+00:00" unixtime="1611388405" sha1="4054beed59061b12ae3129e49258c9ade73906ad" relative="controller/UserController.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="controller\UserController" namespace="controller" name="UserController" abstract="false" final="false" start="9" end="89">
+  <file path="../src/controller" file="UserController.php" realpath="/home/folarin/code/onec/users-info-svc/src/controller/UserController.php" size="2822" time="2021-01-29T02:46:38+00:00" unixtime="1611888398" sha1="cf0c70f68f8c33235f9c35333b572fa4ef36a157" relative="controller/UserController.php"/>
   <extends full="contract\Controller" namespace="contract" name="Controller"/>
   <method name="create" start="10" end="24" abstract="false" final="false" static="true" visibility="public">
     <inline>
@@ -9,8 +9,8 @@
   </method>
   <method name="getById" start="25" end="37" abstract="false" final="false" static="true" visibility="public"/>
   <method name="delete" start="38" end="49" abstract="false" final="false" static="true" visibility="public"/>
-  <method name="getAll" start="50" end="61" abstract="false" final="false" static="true" visibility="public"/>
-  <method name="update" start="62" end="80" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="getAll" start="50" end="69" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="update" start="70" end="88" abstract="false" final="false" static="true" visibility="public"/>
   <parent full="contract\Controller" namespace="contract" name="Controller">
     <member name="request" visibility="protected" static="false" line="6"/>
     <method name="index" start="7" end="7" abstract="false" final="false" static="true" visibility="public"/>

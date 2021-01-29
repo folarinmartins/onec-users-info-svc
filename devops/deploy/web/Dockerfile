@@ -4,10 +4,10 @@ ENV APACHE_DOCUMENT_ROOT /var/www/app/public/
 RUN apt update && apt upgrade -y
 RUN docker-php-ext-install mysqli
 RUN a2enmod rewrite
-COPY . /var/www/app
+# COPY . /var/www/app
 RUN rm -r /var/www/html
 WORKDIR /var/www/
-RUN ln -s app/public html
+RUN ln -s /var/www/app/public html
 # COPY $USER:$USER ./src /var/www/html
 # COPY ./src /var/www/
 # COPY ./php/index.php /var/www/html/

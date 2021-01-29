@@ -1,6 +1,4 @@
 <?php
-	// chdir(realpath(__DIR__));
-	// echo 'got to h20 '.realpath(__DIR__.'/../src/bootstrap/boot.php');
 	require_once realpath(__DIR__.'/../src/bootstrap/boot.php');
 	use helper\Utility;
 	use view\Page;
@@ -79,6 +77,5 @@
 	if($ret){
 		header('Content-Type: application/json; charset=utf-8');
 		echo \json_encode($ret);	
-	}
-		
+	}		
 	http_response_code($response->getStatusCode());

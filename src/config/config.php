@@ -32,22 +32,22 @@ $config = array(
 	],
     "db" => array(
         ENV_PRODUCTION => array(
-            "dbname" => "one_user_info",
+            "dbname" => "onec_user_info",
             "username" => "mysql_dba",
             "password" => "7~6%{ipu[n1w",
-            "host" => "localhost"
+            "host" => "db"
         ),
         ENV_DEV => array(
-            "dbname" => "one_user_info",
+            "dbname" => "onec_user_info",
             "username" => "mysql_dba",
             "password" => "7~6%{ipu[n1w",
-            "host" => "localhost"
+            "host" => "db"
 		),
         ENV_STAGE => array(
-            "dbname" => "one_user_info",
+            "dbname" => "onec_user_info",
             "username" => "mysql_dba",
             "password" => "7~6%{ipu[n1w",
-            "host" => "localhost"
+            "host" => "db"
 		),
 		'spec' => [
 			'_shared' => [
@@ -1006,4 +1006,3 @@ if(session_status()!=PHP_SESSION_ACTIVE){
 	ini_set('session.save_path', SESSION_PATH);
 	session_start();
 }
-?>

@@ -1,17 +1,18 @@
-web:
-    build: .
-    volumes:
-        - ".:/code"
-    ports:
-        - 8883:80
-    environment:
-        DEBUG: "true"
+version: "3.9"
+# web:
+#     build: .
+#     volumes:
+#         - ".:/code"
+#     ports:
+#         - 8883:80
+#     environment:
+#         DEBUG: "true"
 
-db:
-    command: "-d"
-    ports:
-        - 5432:5432
+# db:
+#     command: "-d"
+#     ports:
+#         - 5432:5432
 
-cache:
-    ports:
-        - 6379:6379
+# cache:
+#     ports:
+#         - 6379:6379

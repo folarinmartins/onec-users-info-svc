@@ -26,18 +26,28 @@ services:
         volumes:
             - /etc/localtime:/etc/localtime:ro
             - /opt/mysql/data:/var/lib/mysql
-      
-      # cache:
-      #   image: redis:latest 
-            
-            
-      db-backup-periodic:
+    phpmyadmin:
+        # profiles: ["tools"]
+        image: phpmyadmin/phpmyadmin
+        environment:
+            MYSQL_ROOT_PASSWORD: password
+            MYSQL_USER: root
+        ports:
+            - 8001:80
+        # links:
+        #     - "db:mysql"
+        
+    cache:
+        image: redis:latest
+        # profiles:
+        #   - tools
+
+    db-backup-periodic:
+        # profiles: ["tools"]
         build: ./db-backup-periodic
         container_name: db-backup-periodic
         depends_on:
             - db
-        # profiles:
-        #   - init
         environment:
             MYSQL_CONTAINER_NAME: db
             MYSQL_DATABASE: onec_user_info

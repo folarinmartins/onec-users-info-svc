@@ -1,0 +1,9 @@
+---
+- name: deploy files to servers
+  hosts: test-servers
+  become: true
+  become_user: root
+  gather_facts: true
+  tasks:
+    - name: "copy file"
+      copy: src=/home/folarin/code/onec/users-info-svc/cm/web/index.php dest=/var/www/html/index.php

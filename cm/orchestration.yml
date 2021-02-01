@@ -1,0 +1,25 @@
+---
+- name: install apache & php & mysql
+  hosts: test-servers
+  # remote_user: root
+  become: true
+  become_user: root
+  gather_facts: true
+  tasks:
+    - name: "Install pip"
+      apt: name=python3-pip state=present
+    - name: Install libmysqlclient-dev
+      apt: name=libmysqlclient-dev state=present
+    - name: Install the Python MySQLB module
+      pip: name=mysqlclient
+    - name: Create database user mysql_dba
+      mysql_user: user=mysql_dba password=7~6%{ipu[n1w priv=*.*:ALL state=present
+    - name: Create DB edu
+      mysql_db: db=onec_user_info state=present
+    - name: Create table reg
+      command: mysql -u mysql_dba -p7~6%{ipu[n1w -e 'CREATE TABLE mod_users(name varchar(30), email varchar(31));' onec_user_info
+      
+      
+    
+      
+      # fatal: [192.168.43.137]: FAILED! => {"cache_update_time": 1611983811, "cache_updated": false, "changed": false, "msg": "'/usr/bin/apt-get -y -o \"Dpkg::Options::=--force-confdef\" -o \"Dpkg::Options::=--force-confold\"      install 'apache2'' failed: E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)\nE: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?\n", "rc": 100, "stderr": "E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)\nE: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?\n", "stderr_lines": ["E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)", "E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?"], "stdout": "", "stdout_lines": []}

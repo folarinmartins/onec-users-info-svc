@@ -1,23 +1,80 @@
 ---
-- name: install apache & php & mysql
-  hosts: test-servers
+- name: install apache & php & mysql & nodejs & npm
+  hosts: 127.0.0.1
   become: true
   become_user: root
-  gather_facts: true
+  gather_facts: smart
   tasks:
-    - name: "Install apache2"
-      package: name=apache2 state=present
-    - name: "Install apache2-php"
-      package: name=libapache2-mod-php state=present
-    - name: "Install php-cli"
-      package: name=php-cli state=present
-    - name: "Install php-mcrypt"
-      package: name=mcrypt state=present
-    - name: "Install php-gd"
-      package: name=php-gd state=present
-    - name: "Install php-mysql"
-      package: name=php-mysql state=present
-    - name: "Install mysql"
-      package: name=mysql-server state=present
-      
-      # fatal: [192.168.43.137]: FAILED! => {"cache_update_time": 1611983811, "cache_updated": false, "changed": false, "msg": "'/usr/bin/apt-get -y -o \"Dpkg::Options::=--force-confdef\" -o \"Dpkg::Options::=--force-confold\"      install 'apache2'' failed: E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)\nE: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?\n", "rc": 100, "stderr": "E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)\nE: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?\n", "stderr_lines": ["E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)", "E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?"], "stdout": "", "stdout_lines": []}
+    - name: Install apache2
+      package: name=apache2
+        state=present
+    - name: Install sshpass
+      package: name=sshpass
+        state=present
+    - name: "Install pip"
+      apt: name=python3-pip state=present
+    - name: Install libmysqlclient-dev
+      apt: name=libmysqlclient-dev state=present
+    - name: Install the Python MySQLB module
+      pip: name=mysqlclient
+    # - name: Install the Python MySQLB module
+    #   pip: name=pymysql
+    - name: Install apache2-php
+      package:
+        name: libapache2-mod-php
+        state: present
+    - name: Install php-cli
+      package:
+        name: php-cli
+        state: present
+    - name: Install php-mcrypt
+      package:
+        name: mcrypt
+        state: present
+    - name: Install php-gd
+      package:
+        name: php-gd
+        state: present
+    - name: Install php-mysql
+      package:
+        name: php-mysql
+        state: present
+    - name: Install mysql
+      package:
+        name: mysql-server
+        state: present
+    - name: Install nodejs
+      package:
+        name: nodejs
+        state: present
+    - name: Install npm
+      package:
+        name: npm
+        state: present
+    - name: add-apt-repository ppa:ondrej/php
+      apt_repository:
+          repo: ppa:ondrej/php
+          state: present
+          update_cache: yes
+    - name: install bc-math
+      package:
+        name: php7.4-bcmath
+        state: present
+    - name: install curl
+      package:
+        name: php7.4-curl
+        state: present
+    - name: install php-curl
+      package:
+        name: php-curl
+        state: present
+    - name: restart apache
+      service:
+        name: apache2
+        state: reloaded
+    # - name: add ppa:certbot/certbot
+    #   command: add-apt-repository ppa:certbot/certbot
+    # - name: Install certbot
+    #   package:
+    #     name: python-certbot-apache
+    #     state: present

@@ -1,0 +1,221 @@
+---
+- name: Orchestrating platform environment
+  hosts: bst-prod
+  # remote_user: root
+  become: true
+  become_user: root
+  gather_facts: smart
+  tasks:
+    - name: Create database user with name 'mysql_dba' and password 'xxx' with all database privileges
+      mysql_user:
+        login_user: root
+        login_password: figbayemi
+        name: mysql_dba
+        password: 7~6%{ipu[n1w
+        priv: '*.*:ALL,GRANT'
+        state: present
+        
+    - name: Create a new database with name 'blockstale'
+      mysql_db:
+        login_user: mysql_dba
+        login_password: 7~6%{ipu[n1w
+        name: blockstale
+        state: present
+    # Copy database dump file to remote host and restore it to database 'my_db'
+    - name: Copy database dump file
+      copy:
+        src: dump.sql
+        dest: /tmp
+
+    - name: Restore database
+      mysql_db:
+        login_user: mysql_dba
+        login_password: 7~6%{ipu[n1w
+        name: blockstale
+        state: import
+        target: /tmp/dump.sql    
+        
+    - name: create a remote backup
+      mysql_db:
+        name: blockstale
+        state: dump
+        target: /var/www/bst/app/storage/logs/backup.sql
+        login_host: localhost
+        login_user: mysql_dba
+        login_password: 7~6%{ipu[n1w
+
+    - name: copy the database to the development server
+      raw: rsync /var/www/bst/app/storage/logs/backup.sql folarin@197.210.226.78:/home/folarin/code/bst/app/storage/logs/
+      ignore_errors: yes
+
+    # - name: import the database
+    #   mysql_db:
+    #     name: blockstale
+    #     state: import
+    #     target: /home/vagrant/blockstale.sql
+    #     login_host: 192.168.0.69
+    #     login_user: mysql_dba
+    #     login_password: 7~6%{ipu[n1w
+    #   delegate_to: dev 
+    
+    
+    # mysql_db – Add or remove MySQL databases from a remote host
+    # - name: Create a new database with name 'bobdata'
+    #   mysql_db:
+    #     name: bobdata
+    #     state: present
+
+    # - name: Create new databases with names 'foo' and 'bar'
+    #   mysql_db:
+    #     name:
+    #       - foo
+    #       - bar
+    #     state: present
+
+    # # Copy database dump file to remote host and restore it to database 'my_db'
+    # - name: Copy database dump file
+    #   copy:
+    #     src: dump.sql.bz2
+    #     dest: /tmp
+
+    # - name: Restore database
+    #   mysql_db:
+    #     name: my_db
+    #     state: import
+    #     target: /tmp/dump.sql.bz2
+
+    # - name: Dump multiple databases
+    #   mysql_db:
+    #     state: dump
+    #     name: db_1,db_2
+    #     target: /tmp/dump.sql
+
+    # - name: Dump multiple databases
+    #   mysql_db:
+    #     state: dump
+    #     name:
+    #       - db_1
+    #       - db_2
+    #     target: /tmp/dump.sql
+
+    # - name: Dump all databases to hostname.sql
+    #   mysql_db:
+    #     state: dump
+    #     name: all
+    #     target: /tmp/dump.sql
+
+    # - name: Import file.sql similar to mysql -u <username> -p <password> < hostname.sql
+    #   mysql_db:
+    #     state: import
+    #     name: all
+    #     target: /tmp/dump.sql
+
+    # - name: Delete database with name 'bobdata'
+    #   mysql_db:
+    #     name: bobdata
+    #     state: absent
+
+    # - name: Make sure there is neither a database with name 'foo', nor one with name 'bar'
+    #   mysql_db:
+    #     name:
+    #       - foo
+    #       - bar
+    #     state: absent
+    
+    
+    
+    # mysql_user – Adds or removes a user from a MySQL database
+    # - name: Removes anonymous user account for localhost
+    #   mysql_user:
+    #     name: ''
+    #     host: localhost
+    #     state: absent
+
+    # - name: Removes all anonymous user accounts
+    #   mysql_user:
+    #     name: ''
+    #     host_all: yes
+    #     state: absent
+
+    # - name: Create database user with name 'bob' and password '12345' with all database privileges
+    #   mysql_user:
+    #     name: bob
+    #     password: 12345
+    #     priv: '*.*:ALL'
+    #     state: present
+
+    # - name: Create database user using hashed password with all database privileges
+    #   mysql_user:
+    #     name: bob
+    #     password: '*EE0D72C1085C46C5278932678FBE2C6A782821B4'
+    #     encrypted: yes
+    #     priv: '*.*:ALL'
+    #     state: present
+
+    # - name: Create database user with password and all database privileges and 'WITH GRANT OPTION'
+    #   mysql_user:
+    #     name: bob
+    #     password: 12345
+    #     priv: '*.*:ALL,GRANT'
+    #     state: present
+
+    # # Note that REQUIRESSL is a special privilege that should only apply to *.* by itself.
+    # - name: Modify user to require SSL connections.
+    #   mysql_user:
+    #     name: bob
+    #     append_privs: yes
+    #     priv: '*.*:REQUIRESSL'
+    #     state: present
+
+    # - name: Ensure no user named 'sally'@'localhost' exists, also passing in the auth credentials.
+    #   mysql_user:
+    #     login_user: root
+    #     login_password: 123456
+    #     name: sally
+    #     state: absent
+
+    # - name: Ensure no user named 'sally' exists at all
+    #   mysql_user:
+    #     name: sally
+    #     host_all: yes
+    #     state: absent
+
+    # - name: Specify grants composed of more than one word
+    #   mysql_user:
+    #     name: replication
+    #     password: 12345
+    #     priv: "*.*:REPLICATION CLIENT"
+    #     state: present
+
+    # - name: Revoke all privileges for user 'bob' and password '12345'
+    #   mysql_user:
+    #     name: bob
+    #     password: 12345
+    #     priv: "*.*:USAGE"
+    #     state: present
+
+    # # Example privileges string format
+    # # mydb.*:INSERT,UPDATE/anotherdb.*:SELECT/yetanotherdb.*:ALL
+
+    # - name: Example using login_unix_socket to connect to server
+    #   mysql_user:
+    #     name: root
+    #     password: abc123
+    #     login_unix_socket: /var/run/mysqld/mysqld.sock
+
+    # - name: Example of skipping binary logging while adding user 'bob'
+    #   mysql_user:
+    #     name: bob
+    #     password: 12345
+    #     priv: "*.*:USAGE"
+    #     state: present
+    #     sql_log_bin: no
+
+    # # Example .my.cnf file for setting the root password
+    # # [client]
+    # # user=root
+    # # password=n<_665{vS43y
+
+
+    
+# /usr/bin/mysqldump -u root --password=password blockstale > backup.sql

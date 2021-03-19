@@ -1,6 +1,7 @@
 version: "3.9"
 services:
     web:
+        restart: always
         build:
             context: ../../
             dockerfile: devops/deploy/web/Dockerfile
@@ -27,6 +28,7 @@ services:
             - /etc/localtime:/etc/localtime:ro
             - /opt/mysql/data:/var/lib/mysql
     phpmyadmin:
+        restart: always
         # profiles: ["tools"]
         image: phpmyadmin/phpmyadmin
         environment:

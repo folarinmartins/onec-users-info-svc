@@ -1,0 +1,38 @@
+---
+- name: Retrieve DB dump from remote host
+  hosts: bst-prod
+  become: true
+  become_user: root
+  gather_facts: smart
+  tasks:  
+    - name: create a remote backup
+      mysql_db:
+        name: blockstale
+        state: dump
+        target: /tmp/dump.sql
+        login_host: localhost
+        login_user: mysql_dba
+        login_password: 7~6%{ipu[n1w
+        
+    - name: copy the database to the development server
+      command: rsync -azP userone@165.227.134.194:/var/www/bst/app/storage/logs/ /home/folarin/code/bst/app/storage/logs/
+      ignore_errors: yes
+      delegate_to: 127.0.0.1
+
+    - name: Restore database
+      mysql_db:
+        login_user: mysql_dba
+        login_password: 7~6%{ipu[n1w
+        name: blockstale
+        state: import
+        target: /home/folarin/code/bst/app/storage/logs/dump.sql
+      delegate_to: 127.0.0.1
+
+
+# /usr/bin/mysqldump -u root --password=password blockstale > backup.sql
+# rsync -azP --exclude="storage/*" /home/folarin/code/bst/app/ root@165.227.134.194:/var/www/bst/app/
+# rsync -azP --exclude="storage/*" /home/folarin/code/bst/home root@165.227.134.194:/var/www/bst/
+# rsync -azP userone@165.227.134.194:/var/www/bst/app/storage/logs/ /home/folarin/code/bst/app/storage/logs/
+#  rsync -azP --exclude="storage/logs/*" --exclude="storage/session/*" /home/folarin/code/bst/app/ root@165.227.134.194:/var/www/bst/app/
+# curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
+

@@ -1,25 +1,126 @@
 ---
-- name: install apache & php & mysql
-  hosts: test-servers
+- name: Orchestrating platform environment
+  hosts: bst-prod
   # remote_user: root
   become: true
   become_user: root
-  gather_facts: true
+  gather_facts: smart
   tasks:
-    - name: "Install pip"
-      apt: name=python3-pip state=present
-    - name: Install libmysqlclient-dev
-      apt: name=libmysqlclient-dev state=present
-    - name: Install the Python MySQLB module
-      pip: name=mysqlclient
-    - name: Create database user mysql_dba
-      mysql_user: user=mysql_dba password=7~6%{ipu[n1w priv=*.*:ALL state=present
-    - name: Create DB edu
-      mysql_db: db=onec_user_info state=present
-    - name: Create table reg
-      command: mysql -u mysql_dba -p7~6%{ipu[n1w -e 'CREATE TABLE mod_users(name varchar(30), email varchar(31));' onec_user_info
-      
+    - name: "copy bst.conf config file"
+      copy:
+        src: /etc/apache2/sites-available/home.bst.conf
+        dest: /etc/apache2/sites-available/home.bst.conf
+    - name: "copy app.bst.conf config file"
+      copy:
+        src: /etc/apache2/sites-available/app.bst.conf
+        dest: /etc/apache2/sites-available/app.bst.conf
+    - name: "copy docs.bst.conf config file"
+      copy:
+        src: /etc/apache2/sites-available/docs.bst.conf
+        dest: /etc/apache2/sites-available/docs.bst.conf
+        
+  
+   # Symlinks
+    - name: sym-linking app
+      command: sudo ln -fs /var/www/bst/app/public /var/www/app.bst
+    - name: sym-linking docs
+      command: sudo ln -fs /var/www/bst/docs /var/www/docs.bst
+    - name: sym-linking home
+      command: sudo ln -fs /var/www/bst/home /var/www/home.bst
+    - name: sym-linking app/storage/public/assets folder
+      command: sudo ln -fs /var/www/bst/app/storage/public/assets /var/www/bst/app/public/
+    - name: sym-linking app/storage/public/assets folder
+      command: sudo ln -fs /var/www/bst/app/storage/public/uploads /var/www/bst/app/public/
+    
+    
+    # folder permissions
+    - name: make app folder usable - 0755
+      file:
+        dest: /var/www/
+        state: directory
+        owner: www-data
+        group: www-data
+        mode: 0755
+    - name: make storage folder writable
+      command: sudo chmod -R a+rw /var/www/bst/app/storage
+
+    - name: replace /home/folarin/code/bst with /var/www/bst/
+      shell: sed -i 's+/home/folarin/code/bst/+/var/www/bst/+g' /etc/apache2/sites-available/*bst.conf
+      args:
+        warn: false
+
+        
+    # sed 's+http://+https://www.cyberciti.biz+g' input.txt
+    
+    # cron job installation
+    - name: Install btx-monitor
+      cron:
+        user: "root"
+        minute: "*/2"
+        job: php -q /var/www/bst/app/src/cron/btx-monitor.php cache:clear
+    - name: Install zombie-btx-monitor
+      cron:
+        user: root
+        minute: "*/5"
+        job: php -q /var/www/bst/app/src/cron/zombie-btx-monitor.php cache:clear
+        
+    
+    # Install blockchain service-my-wallet package
+    - name: "Install blockchain-wallet-service"
+      command: sudo npm install -g blockchain-wallet-service
+    
+    # install, enable blockchain systemd node package & systemd service unit
+    - name: "copy blockchain-service"
+      copy:
+        src: /etc/systemd/system/blockchain.service
+        dest: /etc/systemd/system/blockchain.service
+    - name: "Enable Blockchain API Wallet Service"
+      service:
+        name: blockchain
+        enabled: yes
+    - name: "Start Blockchain API Wallet Service"
+      service:
+        name: blockchain
+        state: started
       
     
+    # prod routines
+    - name: a2dissite blockstale.com* sites
+      command: a2dissite blockstale.com www.blockstale.com
+      ignore_errors: yes
+    - name: delete blockstale.com.conf* files
+      file:
+        state: absent
+        path: "/etc/apache2/sites-available/blockstale.com*"
+    - name: replace bst.localhost with blockstale.com
+      shell: sed -i 's+bst.localhost+blockstale.com+g' /etc/apache2/sites-available/*bst.conf
+      args:
+        warn: false
+        
+
       
-      # fatal: [192.168.43.137]: FAILED! => {"cache_update_time": 1611983811, "cache_updated": false, "changed": false, "msg": "'/usr/bin/apt-get -y -o \"Dpkg::Options::=--force-confdef\" -o \"Dpkg::Options::=--force-confold\"      install 'apache2'' failed: E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)\nE: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?\n", "rc": 100, "stderr": "E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)\nE: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?\n", "stderr_lines": ["E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)", "E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?"], "stdout": "", "stdout_lines": []}
+    # Apache Server routine
+    - name: Enable rewrite module
+      command: a2enmod rewrite
+      
+    - name: a2ensite home,app,docs
+      command: a2ensite *bst.conf
+      
+    - name: reload apache
+      service:
+        name: apache2
+        state: reloaded
+  
+  # Disabling commands
+  # - name: disable clear cache
+  #     cron:
+  #       name: Clear cache
+  #       user: root
+  #       disabled: yes
+
+  # How to remove commands
+  # - name: disable clear cache
+  #   cron:
+  #     name: Clear Cache
+  #     user: root
+  #     state: absent

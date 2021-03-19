@@ -1,9 +1,48 @@
 ---
 - name: deploy files to servers
-  hosts: test-servers
+  hosts: bst-prod
   become: true
   become_user: root
-  gather_facts: true
-  tasks:
-    - name: "copy file"
-      copy: src=/home/folarin/code/onec/users-info-svc/cm/web/index.php dest=/var/www/html/index.php
+  gather_facts: smart
+  tasks:  
+    # - name: rsync app
+    #   shell: sudo rsync -azP --exclude="session/*" folarin@192.168.43.241:/home/folarin/code/bst/app var/www/bst/
+    #   args:
+    #     warn: false
+    # - name: rsync app
+    #   command: rsync -azP --exclude="session/*" /home/folarin/code/bst/app root@192.168.8.100:/var/www/bst/
+    # - name: "copy docs"
+    #   copy:
+    #     src: /home/folarin/code/bst/docs
+    #     dest: /var/www/bst/
+    #     owner: www-data
+    #     mode: u=rw,g=rx,o=rx
+    # - name: "copy home"
+    #   copy:
+    #     src: /home/folarin/code/bst/home
+    #     dest: /var/www/bst/
+    #     owner: www-data
+    #     mode: u=rw,g=rx,o=rx
+    # - name: "copy app"
+    #   copy:
+    #     src: /home/folarin/code/bst/app
+    #     dest: /var/www/bst/
+    #     owner: www-data
+    #     mode: 0755
+    # - name: Synchronize app directory
+    #   synchronize:
+    #     src: /home/folarin/code/bst/app
+    #     dest: /var/www/bst/app
+    #     mode: push
+    #     rsync_path: sudo rsync
+    #     rsync_opts:
+    #       - "-azP"
+    #       # - "--no-motd"
+    #       - "--exclude=.git"
+    #       - "--delete"
+    #       - "--backup"
+    #       - "--backup-dir=/etc/bk"
+    #       - "--exclude=sessions/*.*"
+# rsync -azP --exclude="session/*" /home/folarin/code/bst/app root@192.168.8.100:/var/www/bst/
+# rsync -azP --exclude="session/*" /home/folarin/code/bst/home root@192.168.8.100:/var/www/bst/
+# rsync -azP --exclude="session/*" /home/folarin/code/bst/docs root@192.168.8.100:/var/www/bst/

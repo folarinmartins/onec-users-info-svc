@@ -1,12 +1,12 @@
 ---
--hosts: webservers
+- hosts: webservers
   tasks:
     - name: install apache2
       apt: name=apache2 update_cache=yes state=latest
       
       
-    notify:
-      - restart apache2
+  notify:
+    - restart apache2
       
       
   handlers:
